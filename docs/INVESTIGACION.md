@@ -56,7 +56,7 @@ Véase la tabla completa en [`FUENTES.md`](FUENTES.md). Valoración por fuente:
 | Perú · Venezuela | Psicología y Mente | C | 122 y 127 expresiones. Divulgación; sobre todo fraseología. |
 | Uruguay | jergozo | D | Unas 1000 entradas. |
 | Puerto Rico · España | jergozo | D | Añadidos al retirar Brasil y Haití. **Falta una fuente C o A para Puerto Rico:** el *Tesoro lexicográfico del español de Puerto Rico* (Academia Puertorriqueña de la Lengua Española) sería la ideal. |
-| Todos | jergozo (serie uniforme) | D | Diccionario de cada uno de los 20 países, descargado con el mismo método para comparar con un criterio homogéneo. Es colaborativo: sólo vale como indicio. **Descarga en curso:** a 11 de noviembre están completos El Salvador, Uruguay, Argentina, Bolivia, Chile, Colombia y Costa Rica; las tablas del análisis se actualizarán al terminar. |
+| Todos | jergozo (serie uniforme) | D | Diccionario de cada uno de los 20 países, descargado con el mismo método para comparar con un criterio homogéneo. Es colaborativo: sólo vale como indicio. Descarga completa (11 de noviembre de 2026): 1242 páginas y unas 129 000 entradas, desde unas 660 (Paraguay) hasta unas 27 000 (México). Como en el Wikcionario, el volumen refleja la actividad de los usuarios, no la riqueza léxica. |
 
 **Derechos de autor:** de las fuentes C y D sólo se guardan las palabras encabezado y el enlace. Las páginas descargadas no se suben al repositorio.
 

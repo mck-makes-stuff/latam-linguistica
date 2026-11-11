@@ -54,33 +54,33 @@ Generado por `scripts/analizar.py` el 2026-11-11. Niveles: A = lexicografía aca
 | Chile | C | 145 | regla r_marcachile | https://www.marcachile.cl/modismos-chilenos-de-la-a-a-la-z/ |
 | Chile | D | 15083 | regla r_jergozo | https://jergozo.com/diccionario-chileno |
 | Colombia | C | 97 | manual (navegador) | https://quillbot.com/es/blog/vocabulario/palabras-de-colombia/ |
-| Colombia | D | 5343 | regla r_jergozo | https://jergozo.com/diccionario-colombiano |
+| Colombia | D | 14274 | regla r_jergozo | https://jergozo.com/diccionario-colombiano |
 | Costa Rica | D | 223 | regla r_nadaincluido | https://www.nadaincluido.com/diccionario-de-costa-rica/ |
-| Costa Rica | D | 1891 | regla r_jergozo | https://jergozo.com/diccionario-costaricense |
+| Costa Rica | D | 2112 | regla r_jergozo | https://jergozo.com/diccionario-costaricense |
 | Cuba | D | 10 | regla r_visitcuba | https://visitcuba.com/es/cuba-de-cerca/palabras-frases-jerga-cubana/ |
 | Cuba | C | 77 | regla r_cibercuba | https://www.cibercuba.com/lecturas/2018-01-20-u196555-e196506-s27315-te-presentamos-primer-diccionario-palabras-exclusivamente |
-| Cuba | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-cubano |
+| Cuba | D | 2533 | regla r_jergozo | https://jergozo.com/diccionario-cubano |
 | República Dominicana | D | 493 | regla r_colonial | https://www.colonialtours.com/diccionario.htm |
-| República Dominicana | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-dominicano |
+| República Dominicana | D | 4630 | regla r_jergozo | https://jergozo.com/diccionario-dominicano |
 | Ecuador | D | 70 | regla r_lingualinkup | https://lingualinkup.com/ecuadorian-spanish/ |
-| Ecuador | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-ecuatoriano |
-| España | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-jerga-de-espa%C3%B1a |
+| Ecuador | D | 3511 | regla r_jergozo | https://jergozo.com/diccionario-ecuatoriano |
+| España | D | 12103 | regla r_jergozo | https://jergozo.com/diccionario-jerga-de-espa%C3%B1a |
 | Guatemala | C | 0 | sin lista extraíble | https://chapinisima.com/hechoenca/blog-hecho-en-c-a |
-| Guatemala | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-guatemalteco |
+| Guatemala | D | 1794 | regla r_jergozo | https://jergozo.com/diccionario-guatemalteco |
 | Honduras | C | 0 | sin lista extraíble | https://www.scribd.com/document/480105987/Hondurenismos |
-| Honduras | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-hondure%C3%B1o |
+| Honduras | D | 4659 | regla r_jergozo | https://jergozo.com/diccionario-hondure%C3%B1o |
 | México | C | 182 | regla r_wordpress_tabla | https://visionlinguistica.wordpress.com/2019/05/30/regionalismos-y-diferencias-lexicas-en-el-norte-centro-y-sur-de-mexico/ |
-| México | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-mexicano |
+| México | D | 26991 | regla r_jergozo | https://jergozo.com/diccionario-mexicano |
 | Nicaragua | B | 690 | regla r_wikt_es | https://es.wiktionary.org/wiki/Ap%C3%A9ndice:Nicaraguanismos |
-| Nicaragua | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-nicaraguense |
+| Nicaragua | D | 1088 | regla r_jergozo | https://jergozo.com/diccionario-nicaraguense |
 | Panamá | B | 306 | regla r_wikt_en | https://en.wiktionary.org/wiki/Appendix:Glossary_of_Panamanian_Spanish |
-| Panamá | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-panamense |
+| Panamá | D | 962 | regla r_jergozo | https://jergozo.com/diccionario-panamense |
 | Perú | C | 122 | regla r_psicologia | https://psicologiaymente.com/reflexiones/palabras-expresiones-peruanas |
-| Perú | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-peruano |
-| Puerto Rico | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-puertoricense |
+| Perú | D | 3365 | regla r_jergozo | https://jergozo.com/diccionario-peruano |
+| Puerto Rico | D | 1535 | regla r_jergozo | https://jergozo.com/diccionario-puertoricense |
 | Paraguay | D | 612 | regla r_diccionariolibre | https://diccionariolibre.com/pais/paraguay |
-| Paraguay | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-paraguayo |
+| Paraguay | D | 658 | regla r_jergozo | https://jergozo.com/diccionario-paraguayo |
 | El Salvador | D | 4827 | regla r_jergozo | https://jergozo.com/diccionario-salvadore%C3%B1o |
 | Uruguay | D | 1004 | regla r_jergozo | https://jergozo.com/diccionario-uruguayo |
 | Venezuela | C | 127 | regla r_psicologia | https://psicologiaymente.com/reflexiones/palabras-expresiones-venezolanas |
-| Venezuela | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-venezolano |
+| Venezuela | D | 7263 | regla r_jergozo | https://jergozo.com/diccionario-venezolano |

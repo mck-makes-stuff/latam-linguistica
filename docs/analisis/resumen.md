@@ -197,40 +197,43 @@ Una palabra es un **marcador nacional fuerte** cuando el Wikcionario la marca s�
 
 | País | Lemas web (aportadas) | Lemas jergozo | Coinciden con Wikcionario | Marcadores fuertes |
 |---|---:|---:|---:|---:|
-| México | 182 | 0 | 39 | 12 |
-| Guatemala | 0 | 0 | 0 | 0 |
+| México | 182 | 26957 | 1276 | 494 |
+| Guatemala | 0 | 1792 | 150 | 10 |
 | El Salvador | 0 | 4822 | 294 | 46 |
-| Honduras | 0 | 0 | 0 | 0 |
-| Nicaragua | 688 | 0 | 70 | 7 |
-| Costa Rica | 223 | 1884 | 143 | 22 |
-| Panamá | 306 | 0 | 23 | 4 |
-| Cuba | 87 | 0 | 15 | 4 |
-| República Dominicana | 490 | 0 | 45 | 6 |
-| Puerto Rico | 0 | 0 | 0 | 0 |
-| Venezuela | 127 | 0 | 43 | 25 |
-| Colombia | 97 | 5333 | 367 | 97 |
-| Ecuador | 70 | 0 | 13 | 2 |
-| Perú | 122 | 0 | 22 | 2 |
+| Honduras | 0 | 4651 | 270 | 36 |
+| Nicaragua | 688 | 1087 | 155 | 17 |
+| Costa Rica | 223 | 2104 | 156 | 25 |
+| Panamá | 306 | 962 | 78 | 13 |
+| Cuba | 87 | 2532 | 261 | 77 |
+| República Dominicana | 490 | 4625 | 156 | 27 |
+| Puerto Rico | 0 | 1534 | 175 | 36 |
+| Venezuela | 127 | 7256 | 946 | 410 |
+| Colombia | 97 | 14246 | 948 | 245 |
+| Ecuador | 70 | 3506 | 309 | 42 |
+| Perú | 122 | 3363 | 413 | 75 |
 | Bolivia | 44 | 1259 | 176 | 20 |
 | Chile | 145 | 15063 | 1539 | 673 |
-| Paraguay | 612 | 0 | 53 | 4 |
+| Paraguay | 612 | 658 | 65 | 5 |
 | Argentina | 114 | 19188 | 2092 | 603 |
 | Uruguay | 0 | 1003 | 266 | 21 |
 
-- **México**: chamaco, chido, chilo, huacal, huerco, jitomate, plebe, pompa, puchar, tomate, troca, xoconostle
+- **México**: a wilbur, abonero, abrochar, abuelita de batman, acahual, acal, acalote, acamaya, acarreado, acatarrar, achichinar, achis, acitron, acitronar, acocote, acosijar, agandallar, agandalle, aguas, agujeta, ahoritita, ahoy, ajerar, al chile, alberca, albur, alburero, alcatraz, alfiler de seguridad, alicante, alifa, almartigon, amolada, amolado, amolar, amole, andador, andale, apa, archivar …
+- **Guatemala**: achis, canche, chirimia, chiris, cinchacear, coche, cuache, frances, poporopo, zapuyul
 - **El Salvador**: a cucucho, achivarse, ajambado, alacran, ausol, bolado, cabuda, calacear, caldereta, champerio, chinear, chipiar, cholco, coyolito, curtido, cutuco, dar verga, de choto, embocicar, emprendengarse, enhuevarse, entuturutar, fisiquear, goya, guinda, huipil, incachable, jaranero, juela, lenguetazo, magiar, melenguelear, molonquear, mumuja, pando, poner el dedo, puterio, riata, rondinear, rumbiar …
-- **Nicaragua**: desmarimbar, desturcarse, empericuetarse, ideay, matizar, tapinear, turquear
-- **Costa Rica**: achaques, aciguatarse, acunar, alitranco, aparchonar, baldazo, bretear, cabanga, carajillo, colacho, cuerdear, encholarse, encohetarse, esbajerar, fuerero, mae, perrera, polaquear, rol, samuelear, tajo, zaguate
-- **Panamá**: chombo, micha, nitido, que xopa
-- **Cuba**: acere, asere, burujon, fula
-- **República Dominicana**: chopa, guira, locrio, matatan, pariguayo, sica
-- **Venezuela**: achantado, armar un peo, cambur, caribear, chamo, conazo, corotos, cotufa, curucutear, dar la cola, echar carro, echarle pichon, echon, joder, jubilarse, jurungar, ladilla, macundales, niche, palo de agua, parchita, pasticho, poner la torta, rata, zaperoco
+- **Honduras**: alicuza, aturrar, bica, camochar, cancel, cativi, cerete, chascada, chepear, chinamo, chiri, contumerioso, copalear, cuatro letras, culuca, enchachar, escoba amargosa, jeme, juco, jura, licha, locear, mamero, nancear, nangara, nino, nique, olimpiadas, pijinear, potra, runguear, sobalevismo, sobijar, tegus, zuncuya, zunteco
+- **Nicaragua**: caitear, corcholear, coto, coyundear, desenguaracar, desguapar, desmarimbar, desturcarse, develizar, embuzonar, empericuetarse, ideay, matizar, pipito, quirina, tapinear, turquear
+- **Costa Rica**: achaques, aciguatarse, acunar, alitranco, aparchonar, baldazo, bretear, cabanga, carajillo, colacho, cuerdear, encholarse, encohetarse, esbajerar, fuerero, mae, perrera, polaquear, rol, samuelear, tajo, tijo, tiquizque, yure, zaguate
+- **Panamá**: agarrado, amachinarse, chombo, conguear, faracharse, mantequilla de la buena, mantequilla de la mala, micha, nitido, que xopa, racataca, togarse, vidajenear
+- **Cuba**: aba, abakua, abuje, acaguasarse, acere, acundangarse, aite, alegria, asere, astilla, azucar, bongo, botero, botonear, burujon, cachumbambe, caico, calimbar, cama, camao, camelia, cancamo, caraca, catalufa, chicharroneria, chiflido, chismosa, coco taxi, conga, corua, cuquear, curiel, deschabar, desempercudir, destupir, embarajar, empilonar, encangrejarse, encasquillarse, enchuchar …
+- **República Dominicana**: achuela, afrentoso, aguaji, alcojolado, alijar, bangano, cachu, chiripero, chopa, chopo, embicarse, guira, hoya, jarina, jarinear, jeepeta, kitipo, klk, locrio, matatan, medalaganariamente, muelu, nicaro, pariguayo, que lo que, sica, yautia
+- **Puerto Rico**: acabe, achiotera, acortejarse, afilorar, afirolar, agallarse, alcapurria, atrechar, baboseria, bibi, bichote, caculear, chavar, chavon, confligir, corillo, cuerda, echar una criolla, fatula, frontear, ganga, huelebicho, janguear, janguiar, lapachero, mafia, matrimonio, nangotado, nangotarse, piragua, pon, popeta, presentado, reyar, titere, viejera
+- **Venezuela**: a cuenta de oreja de cochino, a juro, a la machimberra, a los conazos, a millon, a precio de gallina flaca, a toda mecha, abasto, achantado, achantarse, achinchorrarse, adobo, al caletre, alfondoque, amellar, amorocharse, anime, antiparabolico, apersogar, apio, aplique, armar un peo, arrocero, arroparse hasta donde alcance la cobija, arroz con mango, atapuzar, atorado, atore, bala fria, balcon, bambino, bandera, barrio, barriotero, bastar, batata, bernegal, bloque, bobolongo, boca sucia …
 - **Colombia**: abejorrear, abejorriar, achajuanado, achilar, acuerpado, ajonjear, algo, alinado, amero, apechichar, apelotardado, aprestigiar, archivo, arepear, arrunchar, atarban, atarzanar, atembar, avion, azafate, balcarrotas, baracunatana, batato, billamarquin, biringo, boletearse, boquifrio, borondo, brujiar, cabezazo, cacharro, cachonear, cacorro, caiman, cambuche, camello, canaduz, caneca, cansera, cantar la tabla …
-- **Ecuador**: de ley, guambra
-- **Perú**: causa, pata
+- **Ecuador**: abarcar, achogcha, acial, amagar, amarcar, amatar, ananay, badulaque, batracio, billetear, cangagua, canguil, carishina, cauchar, cecinar, chuznieto, covacha, cuichi, de ley, empretecer, enserenar, enserenarse, gara, guambra, huachar, huango, llucho, longo, malear, melloco, monear, mortino, mudo, naruso, nuto, patucho, piquero, rastrojal, sisar, usamericano …
+- **Perú**: aborregarse, acarraladura, achorado, adefesiero, adoquin, alturado, ampayar, anexo, arrochar, arruga, bambear, barbada, barbiquejo, barchilon, barrunto, burrier, cacharpari, caigua, calero, camaronero, cancha blanca, causa, caviar, chalaca, chancon, chibola, chibolo, chingana, choncholi, chuchumeca, chup, chusco, cofla, conchatumare, cora, ficho, floro, gaga, gasfitero, gomear …
 - **Bolivia**: achujcha, achuma, almuerzo, ancuco, andavete, caima, chacharse, chapaco, chilchi, colla, cunumi, disparate, juquear, lagua, pepe, sonso, temar, timboy, yesca, zurubi
 - **Chile**: a medio morir saltando, a todo chancho, abastero, abrir el tarro, acachado, achaplinarse, achocado, achoclonar, achoclonarse, acholado, acholar, acholarse, achurrascar, aculatar, afilar, aforrar, agencia, agilarse, aguachar, al agua, al lote, al peo, al seco, ala, albacora, aliado, alicurco, amallarse, amasandero, amermelado, amurrarse, andar, andar pato, andate cabrito, angustiado, animita, aninarse, apegualar, apellinado, aperrar …
-- **Paraguay**: chura, curepa, kurepa, nderakore
+- **Paraguay**: cabure, chura, curepa, kurepa, nderakore
 - **Argentina**: a cococho, a full, a la bartola, a los pedos, abajera, abatatarse, abrojo, acamalar, acodillar, aisa, aji putapario, al palo, al pepe, alacranear, albergue transitorio, alcahuete, alcaucil, aliscafo, altro que, alunado, amurar, ancho, ancua, anda a cagar, antarca, antarquear, antarquearse, antichorro, apestillar, apiolarse, arrastrar el ala, aspavento, atado, atenti, atorrante, babuchas, bagarto, bailanta, bajarse, bala …
 - **Uruguay**: apolar, bagayero, bichicome, bo, botijear, brisco, cachila, camperear, candombear, cantegril, casona, chivito, chuminga, culote, divisa, salvar, ta, terraja, vamo arriba, vejiga, verija
 
@@ -240,63 +243,63 @@ Candidatas para conceptos «panamericanos» o para mostrar falsos amigos entre p
 
 | Palabra | Países | En España (Wikcionario/jergozo) |
 |---|---:|:---:|
-| pendejo | 19 |  |
-| chiva | 19 |  |
+| chiva | 19 | sí |
+| pendejo | 19 | sí |
+| sapo | 18 | sí |
+| cachar | 18 | sí |
+| mamon | 18 | sí |
+| pito | 18 | sí |
+| maleta | 18 | sí |
+| culiar | 18 |  |
+| bicho | 17 | sí |
+| tusa | 17 | sí |
+| pico | 17 | sí |
+| goma | 17 | sí |
 | epa | 17 |  |
-| maleta | 16 | sí |
+| chance | 17 |  |
+| jalar | 17 | sí |
+| llanta | 17 | sí |
+| torta | 17 | sí |
+| fregar | 17 | sí |
 | pina | 16 | sí |
-| barrilete | 16 |  |
+| pinga | 16 | sí |
 | mamadera | 16 |  |
-| bomba | 15 |  |
-| mamon | 15 |  |
-| desbarrancar | 15 |  |
-| ronda | 15 |  |
-| cachar | 15 | sí |
-| bicho | 15 |  |
-| despelote | 15 |  |
-| jacaranda | 14 |  |
-| motel | 14 |  |
-| mami | 14 |  |
-| pucha | 14 |  |
-| puteada | 14 |  |
-| pucho | 14 |  |
-| tuco | 14 | sí |
-| chivo | 13 |  |
-| canilla | 13 |  |
-| amelcocharse | 13 |  |
-| concha | 13 |  |
-| papaya | 13 |  |
-| guacho | 13 | sí |
-| mamado | 13 |  |
-| lagarto | 13 | sí |
-| alon | 13 |  |
-| goma | 13 |  |
-| kinder | 13 |  |
-| taquear | 13 |  |
-| corredera | 13 |  |
-| jalar | 13 | sí |
-| paco | 13 | sí |
-| sapo | 13 | sí |
-| chapa | 13 | sí |
-| friquear | 12 |  |
-| gacho | 12 | sí |
-| violin | 12 | sí |
-| poronga | 12 |  |
-| magullon | 12 |  |
-| chino | 12 | sí |
-| ciclovia | 12 |  |
-| coger | 12 | sí |
-| destemplarse | 12 |  |
-| coquito | 12 |  |
-| cabron | 12 | sí |
-| entero | 12 |  |
-| mano | 12 | sí |
-| jeta | 12 | sí |
-| friquearse | 12 |  |
-| monte | 12 |  |
-| argolla | 12 |  |
-| mamita | 12 |  |
-| pelotear | 12 |  |
-| yunta | 12 |  |
-| aguaitar | 12 |  |
-| barbasco | 11 |  |
+| baboso | 16 | sí |
+| garchar | 16 | sí |
+| gallo | 16 | sí |
+| tortillera | 16 | sí |
+| bola | 16 | sí |
+| paja | 16 | sí |
+| chapa | 16 | sí |
+| concha | 16 | sí |
+| jefe | 16 | sí |
+| fresco | 16 | sí |
+| barrilete | 16 |  |
+| paila | 16 |  |
+| china | 16 | sí |
+| bollo | 16 | sí |
+| te falta calle | 16 | sí |
+| canilla | 16 | sí |
+| chichi | 16 | sí |
+| cabron | 16 | sí |
+| jodido | 16 | sí |
+| pinta | 16 | sí |
+| pana | 16 | sí |
+| chota | 16 | sí |
+| despelote | 16 | sí |
+| bichota | 15 |  |
+| gancho | 15 | sí |
+| pendejitis aguda | 15 | sí |
+| roblox | 15 | sí |
+| hdp | 15 | sí |
+| regates | 15 | sí |
+| paco | 15 | sí |
+| salado | 15 | sí |
+| chocho | 15 | sí |
+| putear | 15 | sí |
+| nalgasprontas | 15 | sí |
+| paloma | 15 | sí |
+| chino | 15 | sí |
+| ahi viene tu mejor amigo | 15 | sí |
+| poronga | 15 | sí |
+| chivo | 15 |  |
