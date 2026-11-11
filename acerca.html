@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metodología y fuentes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <style>
+    .texto { max-width: 72ch; margin: 0 auto; padding: 32px clamp(16px, 4vw, 48px) 48px; }
+    .texto h2 { margin-top: 2rem; }
+    table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+    th, td { text-align: left; padding: 8px; border-bottom: 1px solid var(--linea); vertical-align: top; }
+    th { background: var(--crema-2); }
+    .cita { background: var(--blanco); border: 1px solid var(--linea); border-radius: var(--radio); padding: 12px 16px; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <header class="encabezado">
+    <div>
+      <h1>Metodología y fuentes</h1>
+      <p>Cómo se construyen los datos del mapa y qué límites tienen.</p>
+    </div>
+    <nav aria-label="Secciones">
+      <a href="index.html">Mapa</a>
+      <a href="acerca.html" aria-current="page">Metodología y fuentes</a>
+    </nav>
+  </header>
+
+  <main class="texto">
+    <h2>Enfoque</h2>
+    <p>El mapa parte de <strong>conceptos</strong> (la pajita para beber, las palomitas de maíz) y muestra qué palabras se registran para cada uno en cada país. Este enfoque, llamado onomasiológico, permite comparar todo el continente a la vez. Ninguna variante es «más correcta» que otra: el español es una lengua pluricéntrica, con normas cultas propias en cada país.</p>
+
+    <h2>Verificación por acepción</h2>
+    <p>Una misma palabra puede significar cosas distintas según el país: <em>guagua</em> es «autobús» en el Caribe y «bebé» en los Andes. Por eso cada variante se comprueba en la <strong>acepción</strong> concreta del Wikcionario que corresponde al concepto, mediante su marca regional (<code>{{ámbito}}</code>), y no sólo por la palabra.</p>
+
+    <h2>Niveles de fuente</h2>
+    <table>
+      <thead><tr><th>Nivel</th><th>Tipo</th><th>Ejemplos</th></tr></thead>
+      <tbody>
+        <tr><td>A</td><td>Lexicografía académica y corpus</td><td><em>Diccionario de americanismos</em> (ASALE), DLE, VARILEX, CORPES XXI</td></tr>
+        <tr><td>B</td><td>Wiki lexicográfica con marcas regionales</td><td>Wikcionario en español</td></tr>
+        <tr><td>C</td><td>Divulgación y medios</td><td>Marca Chile, CiberCuba, blogs de lingüística</td></tr>
+        <tr><td>D</td><td>Diccionarios colaborativos y sitios comerciales</td><td>jergozo.com, diccionariolibre.com, guías de turismo</td></tr>
+      </tbody>
+    </table>
+    <p>Una variante aparece como <strong>verificada</strong> cuando una fuente de nivel A o B la registra con esa acepción en ese país. Si sólo la recogen fuentes C o D, se marca <strong>en revisión</strong>.</p>
+
+    <h2>Limitaciones</h2>
+    <ul>
+      <li>La cantidad de palabras documentadas por país refleja la actividad de quienes editan las fuentes, no la riqueza léxica real. Argentina y Chile están mucho mejor documentados que Panamá o Paraguay.</li>
+      <li>«País» es una simplificación: dentro de cada país hay variación regional, social y generacional.</li>
+      <li>Que una palabra se registre no significa que sea la más frecuente. La frecuencia (CORPES XXI) se añadirá en una fase posterior.</li>
+    </ul>
+
+    <h2>Datos y licencias</h2>
+    <p>Los datos léxicos derivados del Wikcionario se publican bajo CC BY-SA 4.0. De las fuentes web sólo se guardan las palabras encabezado y el enlace a la fuente original, nunca sus definiciones. La geometría procede de Natural Earth (dominio público). El código está en <a href="https://github.com/mck-makes-stuff/latam-linguistica">GitHub</a>.</p>
+
+    <h2>Cita sugerida</h2>
+    <p class="cita">[Apellido, Inicial]. (2026). <em>Un concepto, muchas palabras: mapa léxico del español en América Latina</em>. https://mck-makes-stuff.github.io/latam-linguistica/</p>
+  </main>
+</body>
+</html>

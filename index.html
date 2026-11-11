@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa léxico del español</title>
+  <meta name="description" content="Mapa interactivo de la variación léxica del español en América Latina: un mismo concepto, muchas palabras.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div>
+      <h1>Un concepto, muchas palabras</h1>
+      <p>Mapa de la variación léxica del español en los diecinueve países hispanohablantes de América Latina.</p>
+    </div>
+    <nav aria-label="Secciones">
+      <a href="index.html" aria-current="page">Mapa</a>
+      <a href="acerca.html">Metodología y fuentes</a>
+    </nav>
+  </header>
+
+  <main class="diseno">
+    <section class="tarjeta" aria-label="Mapa">
+      <div class="controles">
+        <label>Concepto
+          <select id="selector-concepto"></select>
+        </label>
+        <label>Buscar una palabra
+          <input id="buscador" type="search" placeholder="p. ej. chévere, pibe, guagua" autocomplete="off">
+        </label>
+      </div>
+      <div class="mapa-contenedor">
+        <svg id="mapa" role="img" aria-labelledby="titulo-mapa"><title id="titulo-mapa">Mapa de América Latina</title></svg>
+        <div class="info-flotante" id="info-flotante"></div>
+      </div>
+      <div class="leyenda" id="leyenda"></div>
+    </section>
+
+    <aside class="tarjeta panel" id="panel" aria-live="polite">
+      <h2>Selecciona un concepto</h2>
+      <p class="meta">Elige un concepto o haz clic en un país para ver qué palabras se registran allí.</p>
+    </aside>
+  </main>
+
+  <footer class="pie">
+    Datos léxicos: <a href="https://es.wiktionary.org/">Wikcionario</a> (CC BY-SA 4.0), revisados manualmente.
+    Geometría: Natural Earth vía <a href="https://github.com/topojson/world-atlas">world-atlas</a> (dominio público).
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

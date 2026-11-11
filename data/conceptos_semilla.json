@@ -1,0 +1,119 @@
+{
+  "_nota": "Lista curada de conceptos (enfoque onomasiológico: de la idea a las palabras). 'variantes' son CANDIDATAS: scripts/procesar.py busca en el Wikcionario en qué países cada forma está marcada con ESTE sentido (usando 'glosas' para reconocer la acepción). Lo que no se pueda verificar queda 'en revisión'. Editar a mano; no la genera ningún script.",
+  "conceptos": [
+    {"id": "palomitas", "concepto": "palomitas de maíz", "campo": "comida",
+     "definicion": "Granos de maíz que revientan al calentarse.",
+     "glosas": ["maíz", "palomita", "rosetas", "reventad", "tostad"],
+     "variantes": ["palomita", "pochoclo", "pororó", "cabrita", "cotufa", "canchita", "cancha", "crispeta", "poporopo", "rosetas de maíz", "rosita de maíz", "cocaleca", "pop", "pipoca", "maíz pira", "canguil", "millo"]},
+
+    {"id": "pajita", "concepto": "pajita para beber", "campo": "objetos cotidianos",
+     "definicion": "Tubo delgado para sorber líquidos.",
+     "glosas": ["sorber", "beber", "tubo", "succionar", "pajita", "líquido"],
+     "variantes": ["pajita", "popote", "pitillo", "bombilla", "pajilla", "sorbete", "calimete", "absorbente", "carrizo", "sorbeto"]},
+
+    {"id": "autobus", "concepto": "autobús urbano", "campo": "transporte",
+     "definicion": "Vehículo de transporte colectivo de pasajeros.",
+     "glosas": ["autobús", "ómnibus", "transporte público", "pasajeros", "colectivo"],
+     "variantes": ["camión", "guagua", "colectivo", "micro", "bondi", "buseta", "ómnibus", "chiva", "camioneta", "bus", "microbús", "rutero"]},
+
+    {"id": "nino", "concepto": "niño, niña", "campo": "personas",
+     "definicion": "Persona de corta edad.",
+     "glosas": ["niño", "muchacho", "chico", "infante", "corta edad", "criatura"],
+     "variantes": ["chamaco", "escuincle", "chavo", "patojo", "cipote", "güirro", "chigüín", "carajito", "chamo", "pelado", "guagua", "pibe", "gurí", "botija", "cabro", "chiquillo", "chato", "chiquito", "huerco", "güila", "chacho", "bicho"]},
+
+    {"id": "dinero", "concepto": "dinero (coloquial)", "campo": "economía",
+     "definicion": "Moneda o medios económicos, en registro coloquial.",
+     "glosas": ["dinero", "plata", "moneda"],
+     "variantes": ["lana", "guita", "pisto", "feria", "varo", "biyuya", "mosca", "chavos", "billete", "luca", "real", "reales", "marmaja", "pasta", "chirola", "money"]},
+
+    {"id": "genial", "concepto": "excelente, estupendo (coloquial)", "campo": "valoración",
+     "definicion": "Adjetivo de valoración positiva en registro coloquial.",
+     "glosas": ["excelente", "estupendo", "bueno", "magnífico", "agradable", "bonito", "genial", "admirable"],
+     "variantes": ["chévere", "padre", "chido", "bacán", "macanudo", "tuanis", "chilero", "chivo", "bárbaro", "chimba", "cachimbón", "nítido", "brutal", "bravazo", "pichudo", "cheto", "regio", "bacano", "chulo", "jevi", "tuani", "pulento"]},
+
+    {"id": "amigo", "concepto": "amigo, compañero (coloquial)", "campo": "personas",
+     "definicion": "Forma de referirse a un amigo o de dirigirse a él.",
+     "glosas": ["amigo", "compañero", "camarada", "compinche"],
+     "variantes": ["cuate", "carnal", "pana", "parcero", "parce", "chero", "mae", "compa", "causa", "pata", "asere", "acere", "broder", "chamo", "cumpa", "socio", "loco", "boludo", "huevón", "weón", "compadre", "hermano", "vale", "man"]},
+
+    {"id": "trabajo", "concepto": "trabajo (coloquial)", "campo": "economía",
+     "definicion": "Empleo u ocupación remunerada, en registro coloquial.",
+     "glosas": ["trabajo", "empleo", "ocupación", "tarea"],
+     "variantes": ["chamba", "laburo", "pega", "camello", "brete", "chance", "jale", "chambita", "biznes"]},
+
+    {"id": "fiesta", "concepto": "fiesta (coloquial)", "campo": "ocio",
+     "definicion": "Reunión festiva, en registro coloquial.",
+     "glosas": ["fiesta", "reunión", "celebración", "jolgorio", "baile"],
+     "variantes": ["pachanga", "carrete", "joda", "rumba", "bonche", "parranda", "reventón", "pachanguita", "jarana", "tambo", "vacilón", "guateque", "bailanta", "jolgorio", "fiestón", "pari"]},
+
+    {"id": "frijol", "concepto": "frijol", "campo": "comida",
+     "definicion": "Semilla comestible de Phaseolus vulgaris.",
+     "glosas": ["phaseolus", "legumin", "semilla", "judía", "frijol", "fríjol"],
+     "variantes": ["frijol", "fríjol", "poroto", "caraota", "habichuela", "frejol", "fréjol", "judía", "alubia", "habilla"]},
+
+    {"id": "aguacate", "concepto": "aguacate", "campo": "comida",
+     "definicion": "Fruto de Persea americana.",
+     "glosas": ["persea", "aguacate", "fruto"],
+     "variantes": ["aguacate", "palta", "cura", "avocado"]},
+
+    {"id": "cacahuete", "concepto": "cacahuete", "campo": "comida",
+     "definicion": "Semilla de Arachis hypogaea.",
+     "glosas": ["arachis", "cacahuete", "maní", "cacahuate"],
+     "variantes": ["cacahuate", "maní", "cacahuete", "manises"]},
+
+    {"id": "banana", "concepto": "banana", "campo": "comida",
+     "definicion": "Fruto de Musa paradisiaca que se come crudo.",
+     "glosas": ["musa", "banana", "plátano", "banano"],
+     "variantes": ["banana", "banano", "guineo", "cambur", "plátano", "mínimo", "topocho", "orito"]},
+
+    {"id": "fresa", "concepto": "fresa", "campo": "comida",
+     "definicion": "Fruto de Fragaria.",
+     "glosas": ["fragaria", "fresa", "frutilla"],
+     "variantes": ["fresa", "frutilla"]},
+
+    {"id": "elote", "concepto": "mazorca de maíz tierno", "campo": "comida",
+     "definicion": "Espiga de maíz con granos tiernos.",
+     "glosas": ["mazorca", "maíz", "espiga"],
+     "variantes": ["elote", "choclo", "jojoto", "mazorca", "chilote", "marlo"]},
+
+    {"id": "calabaza", "concepto": "calabaza", "campo": "comida",
+     "definicion": "Fruto de Cucurbita.",
+     "glosas": ["cucurbita", "calabaza"],
+     "variantes": ["calabaza", "zapallo", "ayote", "auyama", "ahuyama", "joco", "zapallito"]},
+
+    {"id": "boligrafo", "concepto": "bolígrafo", "campo": "objetos cotidianos",
+     "definicion": "Instrumento para escribir con tinta y una bolita en la punta.",
+     "glosas": ["bolígrafo", "escribir", "tinta"],
+     "variantes": ["bolígrafo", "pluma", "birome", "lapicero", "esfero", "esferográfico", "lápiz de pasta", "lápiz pasta", "lapicera", "boli"]},
+
+    {"id": "chaqueta", "concepto": "chaqueta", "campo": "ropa",
+     "definicion": "Prenda de abrigo que cubre el torso.",
+     "glosas": ["chaqueta", "prenda", "abrigo", "cazadora"],
+     "variantes": ["chamarra", "campera", "chompa", "casaca", "chumpa", "chaqueta", "chamarro", "saco", "jacket", "chaquetón"]},
+
+    {"id": "camiseta", "concepto": "camiseta", "campo": "ropa",
+     "definicion": "Prenda interior o exterior de manga corta, sin cuello.",
+     "glosas": ["camiseta", "prenda", "manga"],
+     "variantes": ["playera", "remera", "polera", "franela", "camiseta", "polo", "pulóver", "poloche", "t-shirt", "chomba"]},
+
+    {"id": "piscina", "concepto": "piscina", "campo": "ocio",
+     "definicion": "Estanque artificial para nadar.",
+     "glosas": ["piscina", "nadar", "estanque", "bañarse"],
+     "variantes": ["piscina", "alberca", "pileta"]},
+
+    {"id": "coche", "concepto": "automóvil", "campo": "transporte",
+     "definicion": "Vehículo automóvil de uso particular.",
+     "glosas": ["automóvil", "coche", "vehículo"],
+     "variantes": ["carro", "auto", "coche", "máquina", "nave", "ranfla", "carcacha"]},
+
+    {"id": "guisante", "concepto": "guisante", "campo": "comida",
+     "definicion": "Semilla de Pisum sativum.",
+     "glosas": ["pisum", "guisante", "arveja", "chícharo"],
+     "variantes": ["arveja", "chícharo", "petit pois", "guisante", "alverja", "alverjita"]},
+
+    {"id": "enojarse", "concepto": "enojarse (coloquial)", "campo": "emociones",
+     "definicion": "Enfadarse, en registro coloquial.",
+     "glosas": ["enojar", "enfadar", "irritar", "molestar"],
+     "variantes": ["calentarse", "emputarse", "encabronarse", "enchilarse", "picarse", "arrecharse", "empelotarse", "chivarse", "achararse", "enchincharse", "rayarse", "embroncarse", "cabrearse"]}
+  ]
+}

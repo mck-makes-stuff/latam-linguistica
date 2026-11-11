@@ -1,0 +1,163 @@
+{
+ "consultado": "2026-11-11",
+ "licencia": "CC BY-SA 4.0 (Wikcionario)",
+ "categorias": {
+  "ARG": {
+   "nombre": "Argentina",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AArgentina",
+   "n": 3533
+  },
+  "BOL": {
+   "nombre": "Bolivia",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3ABolivia",
+   "n": 853
+  },
+  "CHL": {
+   "nombre": "Chile",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AChile",
+   "n": 3112
+  },
+  "COL": {
+   "nombre": "Colombia",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AColombia",
+   "n": 1593
+  },
+  "CRI": {
+   "nombre": "Costa Rica",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3ACosta_Rica",
+   "n": 545
+  },
+  "CUB": {
+   "nombre": "Cuba",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3ACuba",
+   "n": 937
+  },
+  "DOM": {
+   "nombre": "República Dominicana",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3ARep%C3%BAblica_Dominicana",
+   "n": 443
+  },
+  "ECU": {
+   "nombre": "Ecuador",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AEcuador",
+   "n": 758
+  },
+  "SLV": {
+   "nombre": "El Salvador",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AEl_Salvador",
+   "n": 853
+  },
+  "GTM": {
+   "nombre": "Guatemala",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AGuatemala",
+   "n": 492
+  },
+  "HND": {
+   "nombre": "Honduras",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AHonduras",
+   "n": 982
+  },
+  "MEX": {
+   "nombre": "México",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AM%C3%A9xico",
+   "n": 2203
+  },
+  "NIC": {
+   "nombre": "Nicaragua",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3ANicaragua",
+   "n": 741
+  },
+  "PAN": {
+   "nombre": "Panamá",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3APanam%C3%A1",
+   "n": 315
+  },
+  "PRY": {
+   "nombre": "Paraguay",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AParaguay",
+   "n": 451
+  },
+  "PER": {
+   "nombre": "Perú",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3APer%C3%BA",
+   "n": 938
+  },
+  "PRI": {
+   "nombre": "Puerto Rico",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3APuerto_Rico",
+   "n": 523
+  },
+  "URY": {
+   "nombre": "Uruguay",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AUruguay",
+   "n": 1726
+  },
+  "VEN": {
+   "nombre": "Venezuela",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AVenezuela",
+   "n": 1742
+  },
+  "ESP": {
+   "nombre": "España",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AEspa%C3%B1a",
+   "n": 2992
+  },
+  "USA": {
+   "nombre": "Estados Unidos",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AEstados_Unidos",
+   "n": 67
+  },
+  "GNQ": {
+   "nombre": "Guinea Ecuatorial",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AGuinea_Ecuatorial",
+   "n": 10
+  },
+  "RIO_PLATA": {
+   "nombre": "Río de la Plata",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3AR%C3%ADo_de_la_Plata",
+   "n": 796
+  },
+  "CARIBE": {
+   "nombre": "Caribe",
+   "url": "https://es.wiktionary.org/wiki/Categor%C3%ADa%3AES%3ACaribe",
+   "n": 1549
+  }
+ },
+ "apendices": {
+  "Nicaraguanismos": {
+   "titulo": "Apéndice:Nicaraguanismos",
+   "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice%3ANicaraguanismos",
+   "n_enlaces": 1
+  },
+  "Costarriqueñismos": {
+   "titulo": "Apéndice:Costarriqueñismos",
+   "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice%3ACostarrique%C3%B1ismos",
+   "n_enlaces": 34
+  },
+  "Panameñismos": {
+   "titulo": "Apéndice:Panameñismos",
+   "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice%3APaname%C3%B1ismos",
+   "n_enlaces": 11
+  },
+  "Salvadoreñismos": {
+   "titulo": "Apéndice:Salvadoreñismos",
+   "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice%3ASalvadore%C3%B1ismos",
+   "n_enlaces": 13
+  },
+  "Colombianismos": {
+   "titulo": "Apéndice:Colombianismos",
+   "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice%3AColombianismos",
+   "n_enlaces": 5
+  },
+  "Modismos_de_la_Amazonia_peruana": {
+   "titulo": "Apéndice:Modismos de la Amazonia peruana",
+   "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice%3AModismos_de_la_Amazonia_peruana",
+   "n_enlaces": 249
+  },
+  "Referencia_Variantes_regionales": {
+   "titulo": "Apéndice:ES:Referencia/Variantes regionales",
+   "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice%3AES%3AReferencia/Variantes_regionales",
+   "n_enlaces": 0
+  }
+ }
+}

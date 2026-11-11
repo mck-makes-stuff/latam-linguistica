@@ -1,0 +1,360 @@
+{
+ "_nota": "Fuentes web por país aportadas por la autora (2026-11-11). 'tipo' clasifica la fiabilidad para un público académico: lexicografica (diccionario/wiki con revisión), divulgativa (blog/medio), comercial (turismo/cursos), colaborativa (diccionario de usuarios sin revisión). Brasil y Haití se retiraron (2026-11-11) y se sustituyeron por Puerto Rico y España (punto de comparación).",
+ "fuentes": [
+  {
+   "pais": "ARG",
+   "url": "https://tango.blue/en/lunfardo/",
+   "tipo": "divulgativa",
+   "lengua": "es",
+   "nota": "Lunfardo (jerga porteña); en inglés."
+  },
+  {
+   "pais": "BOL",
+   "url": "https://www.fluentu.com/blog/spanish/bolivian-spanish/",
+   "tipo": "comercial",
+   "lengua": "es",
+   "nota": "Blog de una plataforma de idiomas; en inglés."
+  },
+  {
+   "pais": "CHL",
+   "url": "https://www.marcachile.cl/modismos-chilenos-de-la-a-a-la-z/",
+   "tipo": "divulgativa",
+   "lengua": "es",
+   "nota": "Marca Chile (organismo oficial de imagen país)."
+  },
+  {
+   "pais": "COL",
+   "url": "https://quillbot.com/es/blog/vocabulario/palabras-de-colombia/",
+   "tipo": "divulgativa",
+   "lengua": "es",
+   "nota": "Bloquea descargas automáticas (403): texto obtenido con el navegador."
+  },
+  {
+   "pais": "CRI",
+   "url": "https://www.nadaincluido.com/diccionario-de-costa-rica/",
+   "tipo": "comercial",
+   "lengua": "es"
+  },
+  {
+   "pais": "CUB",
+   "url": "https://visitcuba.com/es/cuba-de-cerca/palabras-frases-jerga-cubana/",
+   "tipo": "comercial",
+   "lengua": "es"
+  },
+  {
+   "pais": "CUB",
+   "url": "https://www.cibercuba.com/lecturas/2018-01-20-u196555-e196506-s27315-te-presentamos-primer-diccionario-palabras-exclusivamente",
+   "tipo": "divulgativa",
+   "lengua": "es",
+   "nota": "Reseña de un diccionario de cubanismos."
+  },
+  {
+   "pais": "DOM",
+   "url": "https://www.colonialtours.com/diccionario.htm",
+   "tipo": "comercial",
+   "lengua": "es"
+  },
+  {
+   "pais": "ECU",
+   "url": "https://lingualinkup.com/ecuadorian-spanish/",
+   "tipo": "comercial",
+   "lengua": "es",
+   "nota": "En inglés."
+  },
+  {
+   "pais": "SLV",
+   "url": "https://jergozo.com/diccionario-salvadore%C3%B1o",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-salvadore%C3%B1o/pagina-{n}",
+    "hasta": "auto"
+   },
+   "serie": "jergozo"
+  },
+  {
+   "pais": "GTM",
+   "url": "https://chapinisima.com/hechoenca/blog-hecho-en-c-a",
+   "tipo": "divulgativa",
+   "lengua": "es",
+   "nota": "Índice de blog, no es una lista de palabras: no se extraen lemas."
+  },
+  {
+   "pais": "HND",
+   "url": "https://www.scribd.com/document/480105987/Hondurenismos",
+   "tipo": "divulgativa",
+   "lengua": "es",
+   "nota": "Scribd sólo sirve el texto con sesión iniciada: no se extraen lemas."
+  },
+  {
+   "pais": "MEX",
+   "url": "https://visionlinguistica.wordpress.com/2019/05/30/regionalismos-y-diferencias-lexicas-en-el-norte-centro-y-sur-de-mexico/",
+   "tipo": "divulgativa",
+   "lengua": "es",
+   "nota": "Variación interna (norte, centro, sur)."
+  },
+  {
+   "pais": "NIC",
+   "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice:Nicaraguanismos",
+   "tipo": "lexicografica",
+   "lengua": "es"
+  },
+  {
+   "pais": "PAN",
+   "url": "https://en.wiktionary.org/wiki/Appendix:Glossary_of_Panamanian_Spanish",
+   "tipo": "lexicografica",
+   "lengua": "es",
+   "nota": "Wikcionario en inglés."
+  },
+  {
+   "pais": "PRY",
+   "url": "https://diccionariolibre.com/pais/paraguay",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "paginacion": {
+    "plantilla": "https://diccionariolibre.com/pais/paraguay/{n}",
+    "hasta": 60,
+    "parar_si_vacia": true
+   }
+  },
+  {
+   "pais": "PER",
+   "url": "https://psicologiaymente.com/reflexiones/palabras-expresiones-peruanas",
+   "tipo": "divulgativa",
+   "lengua": "es"
+  },
+  {
+   "pais": "URY",
+   "url": "https://jergozo.com/diccionario-uruguayo",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-uruguayo/pagina-{n}",
+    "hasta": "auto"
+   },
+   "serie": "jergozo"
+  },
+  {
+   "pais": "VEN",
+   "url": "https://psicologiaymente.com/reflexiones/palabras-expresiones-venezolanas",
+   "tipo": "divulgativa",
+   "lengua": "es"
+  },
+  {
+   "pais": "ARG",
+   "url": "https://jergozo.com/diccionario-argentino",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-argentino/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "BOL",
+   "url": "https://jergozo.com/diccionario-boliviano",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-boliviano/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "CHL",
+   "url": "https://jergozo.com/diccionario-chileno",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-chileno/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "COL",
+   "url": "https://jergozo.com/diccionario-colombiano",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-colombiano/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "CRI",
+   "url": "https://jergozo.com/diccionario-costaricense",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-costaricense/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "CUB",
+   "url": "https://jergozo.com/diccionario-cubano",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-cubano/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "DOM",
+   "url": "https://jergozo.com/diccionario-dominicano",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-dominicano/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "ECU",
+   "url": "https://jergozo.com/diccionario-ecuatoriano",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-ecuatoriano/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "GTM",
+   "url": "https://jergozo.com/diccionario-guatemalteco",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-guatemalteco/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "HND",
+   "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-hondure%C3%B1o/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "MEX",
+   "url": "https://jergozo.com/diccionario-mexicano",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-mexicano/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "NIC",
+   "url": "https://jergozo.com/diccionario-nicaraguense",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-nicaraguense/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "PAN",
+   "url": "https://jergozo.com/diccionario-panamense",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-panamense/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "PRY",
+   "url": "https://jergozo.com/diccionario-paraguayo",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-paraguayo/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "PER",
+   "url": "https://jergozo.com/diccionario-peruano",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-peruano/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "PRI",
+   "url": "https://jergozo.com/diccionario-puertoricense",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-puertoricense/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "VEN",
+   "url": "https://jergozo.com/diccionario-venezolano",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-venezolano/pagina-{n}",
+    "hasta": "auto"
+   }
+  },
+  {
+   "pais": "ESP",
+   "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
+   "tipo": "colaborativa",
+   "lengua": "es",
+   "serie": "jergozo",
+   "nota": "Serie uniforme de jergozo.com (añadida por Claude para comparar todos los países con el mismo método).",
+   "paginacion": {
+    "plantilla": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a/pagina-{n}",
+    "hasta": "auto"
+   }
+  }
+ ]
+}

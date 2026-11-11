@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+# El atlas mundial completo sólo se usa para generar americas.topo.json
+data/geo/fuente/
+data/crudo/web/
