@@ -48,15 +48,15 @@ Generado por `scripts/analizar.py` el 2026-11-11. Niveles: A = lexicografía aca
 | País | Nivel | Palabras extraídas | Método | Enlace |
 |---|:---:|---:|---|---|
 | Argentina | C | 114 | regla r_tango | https://tango.blue/en/lunfardo/ |
-| Argentina | D | 11545 | regla r_jergozo | https://jergozo.com/diccionario-argentino |
+| Argentina | D | 19214 | regla r_jergozo | https://jergozo.com/diccionario-argentino |
 | Bolivia | D | 44 | regla r_fluentu | https://www.fluentu.com/blog/spanish/bolivian-spanish/ |
-| Bolivia | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-boliviano |
+| Bolivia | D | 1260 | regla r_jergozo | https://jergozo.com/diccionario-boliviano |
 | Chile | C | 145 | regla r_marcachile | https://www.marcachile.cl/modismos-chilenos-de-la-a-a-la-z/ |
-| Chile | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-chileno |
+| Chile | D | 15083 | regla r_jergozo | https://jergozo.com/diccionario-chileno |
 | Colombia | C | 97 | manual (navegador) | https://quillbot.com/es/blog/vocabulario/palabras-de-colombia/ |
-| Colombia | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-colombiano |
+| Colombia | D | 5343 | regla r_jergozo | https://jergozo.com/diccionario-colombiano |
 | Costa Rica | D | 223 | regla r_nadaincluido | https://www.nadaincluido.com/diccionario-de-costa-rica/ |
-| Costa Rica | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-costaricense |
+| Costa Rica | D | 1891 | regla r_jergozo | https://jergozo.com/diccionario-costaricense |
 | Cuba | D | 10 | regla r_visitcuba | https://visitcuba.com/es/cuba-de-cerca/palabras-frases-jerga-cubana/ |
 | Cuba | C | 77 | regla r_cibercuba | https://www.cibercuba.com/lecturas/2018-01-20-u196555-e196506-s27315-te-presentamos-primer-diccionario-palabras-exclusivamente |
 | Cuba | D | 0 | sin lista extraíble | https://jergozo.com/diccionario-cubano |

@@ -161,7 +161,17 @@ Campos previstos para las fases siguientes: `frecuencia` (CORPES XXI, por país)
 4. **Modo palabra:** el buscador normaliza la consulta (sin tildes ni mayúsculas), la busca en `lemas.json` y resalta los países.
 5. **Clic en un país:** abre su ficha con las variantes y los enlaces a las fuentes.
 
-### 2.6 Funciones previstas
+### 2.6 Versión 1 (publicada)
+
+- 14 conceptos (campo `publicar` en la semilla), seleccionables con botones.
+- Cada país se colorea con su palabra más extendida (5 tonos tostados más «otras»); los países sin registro aparecen rayados.
+- Leyenda interactiva: al pulsar una palabra se resaltan sus países y el panel muestra la acepción y las fuentes.
+- Clic en un país: sus palabras y el enlace a la evidencia.
+- Buscador de palabras con España incluida.
+- Tabla de datos desplegable (accesible y citable), sección «Cómo leer el mapa» y página de metodología.
+- Publicación con GitHub Actions (`.github/workflows/pages.yml`), que sólo publica los archivos del sitio.
+
+### 2.7 Funciones previstas
 
 | Prioridad | Función |
 |---|---|
@@ -169,10 +179,10 @@ Campos previstos para las fases siguientes: `frecuencia` (CORPES XXI, por país)
 | Media | Modo «¿cómo lo dices tú?» · capa de etimología · falsos amigos · comparar dos países |
 | Baja | Zonas dialectales · exportar datos (CSV) · versión en inglés |
 
-### 2.7 Calidad y publicación
+### 2.8 Calidad y publicación
 
 - `scripts/validar.py` (pendiente) comprobará que cada variante del mapa tenga evidencia y una URL válida, y que no haya códigos de país desconocidos.
-- **Publicación:** Settings → Pages → *Deploy from a branch* → `main` / raíz. La URL será https://mck-makes-stuff.github.io/latam-linguistica/.
+- **Publicación:** automática en cada push a `main` mediante GitHub Actions. URL: https://mck-makes-stuff.github.io/latam-linguistica/.
 - **Para ver el sitio en local:** `python3 -m http.server 8766`.
 - **Accesibilidad:** el SVG lleva título, el panel usa `aria-live` y el contraste de la paleta cumple WCAG AA. En la fase 2, el color no debe ser el único canal: las etiquetas de texto se mantienen.
 

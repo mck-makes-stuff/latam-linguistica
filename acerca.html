@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Metodología y fuentes</title>
+  <meta name="description" content="Método, fuentes y limitaciones del mapa léxico del español en América Latina.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilo.css">
   <style>
-    .texto { max-width: 72ch; margin: 0 auto; padding: 32px clamp(16px, 4vw, 48px) 48px; }
+    .texto { max-width: 76ch; padding: 8px var(--margen) 48px; }
     .texto h2 { margin-top: 2rem; }
     table { border-collapse: collapse; width: 100%; font-size: .9rem; }
     th, td { text-align: left; padding: 8px; border-bottom: 1px solid var(--linea); vertical-align: top; }
@@ -19,15 +20,17 @@
 </head>
 <body>
   <header class="encabezado">
-    <div>
-      <h1>Metodología y fuentes</h1>
-      <p>Cómo se construyen los datos del mapa y qué límites tienen.</p>
-    </div>
+    <a class="marca" href="index.html">Un concepto, <em>muchas palabras</em></a>
     <nav aria-label="Secciones">
       <a href="index.html">Mapa</a>
       <a href="acerca.html" aria-current="page">Metodología y fuentes</a>
     </nav>
   </header>
+
+  <section class="intro">
+    <h1>Metodología y fuentes</h1>
+    <p>Cómo se construyen los datos del mapa y qué límites tienen.</p>
+  </section>
 
   <main class="texto">
     <h2>Enfoque</h2>
@@ -48,6 +51,9 @@
     </table>
     <p>Una variante aparece como <strong>verificada</strong> cuando una fuente de nivel A o B la registra con esa acepción en ese país. Si sólo la recogen fuentes C o D, se marca <strong>en revisión</strong>.</p>
 
+    <h2>Qué muestra esta versión</h2>
+    <p>Esta primera versión incluye catorce conceptos de uso cotidiano, elegidos porque la mayoría de los países tiene para ellos una palabra propia y documentada. Cada país se colorea con la palabra más extendida de las que se registran allí; la tabla bajo el mapa muestra todas. Algunas asignaciones automáticas se corrigieron a mano cuando la palabra significa otra cosa en ese país (por ejemplo, <em>polera</em> es una camiseta en Chile, pero un jersey de cuello alto en el Río de la Plata).</p>
+
     <h2>Limitaciones</h2>
     <ul>
       <li>La cantidad de palabras documentadas por país refleja la actividad de quienes editan las fuentes, no la riqueza léxica real. Argentina y Chile están mucho mejor documentados que Panamá o Paraguay.</li>
@@ -58,8 +64,11 @@
     <h2>Datos y licencias</h2>
     <p>Los datos léxicos derivados del Wikcionario se publican bajo CC BY-SA 4.0. De las fuentes web sólo se guardan las palabras encabezado y el enlace a la fuente original, nunca sus definiciones. La geometría procede de Natural Earth (dominio público). El código está en <a href="https://github.com/mck-makes-stuff/latam-linguistica">GitHub</a>.</p>
 
+    <h2>Equipo</h2>
+    <p>Proyecto de un equipo de cuatro estudiantes. Los nombres se añadirán más adelante.</p>
+
     <h2>Cita sugerida</h2>
-    <p class="cita">[Apellido, Inicial]. (2026). <em>Un concepto, muchas palabras: mapa léxico del español en América Latina</em>. https://mck-makes-stuff.github.io/latam-linguistica/</p>
+    <p class="cita">Equipo de <em>Un concepto, muchas palabras</em> (2026). <em>Un concepto, muchas palabras: mapa léxico del español en América Latina</em>. https://mck-makes-stuff.github.io/latam-linguistica/</p>
   </main>
 </body>
 </html>

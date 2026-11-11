@@ -56,7 +56,7 @@ Véase la tabla completa en [`FUENTES.md`](FUENTES.md). Valoración por fuente:
 | Perú · Venezuela | Psicología y Mente | C | 122 y 127 expresiones. Divulgación; sobre todo fraseología. |
 | Uruguay | jergozo | D | Unas 1000 entradas. |
 | Puerto Rico · España | jergozo | D | Añadidos al retirar Brasil y Haití. **Falta una fuente C o A para Puerto Rico:** el *Tesoro lexicográfico del español de Puerto Rico* (Academia Puertorriqueña de la Lengua Española) sería la ideal. |
-| Todos | jergozo (serie uniforme) | D | Se descargó el diccionario de cada uno de los 20 países con el mismo método, para comparar con un criterio homogéneo. Es colaborativo: sólo vale como indicio. |
+| Todos | jergozo (serie uniforme) | D | Diccionario de cada uno de los 20 países, descargado con el mismo método para comparar con un criterio homogéneo. Es colaborativo: sólo vale como indicio. **Descarga en curso:** a 11 de noviembre están completos El Salvador, Uruguay, Argentina, Bolivia, Chile, Colombia y Costa Rica; las tablas del análisis se actualizarán al terminar. |
 
 **Derechos de autor:** de las fuentes C y D sólo se guardan las palabras encabezado y el enlace. Las páginas descargadas no se suben al repositorio.
 
@@ -99,7 +99,19 @@ Son los más **identificables**, buenos para un modo de adivinanza («¿de dónd
 
 ---
 
-## 3. Próximos pasos de investigación (en orden)
+## 3. Versión publicada (v1)
+
+Esta primera versión del sitio muestra **14 conceptos**: amigo, autobús, bolígrafo, camiseta, coche, dinero, ¡genial!, fiesta, frijol, mazorca tierna, niño, pajita, palomitas y trabajo. Se eligieron los que tienen la mayor cobertura y al menos tres variantes verificadas (véase §2.1). Quedan fuera por ahora aguacate, fresa, banana, calabaza, chaqueta, piscina, cacahuete, guisante y enojarse: la forma general no lleva marca regional y el mapa saldría casi vacío.
+
+Correcciones manuales (campo `excluir` en `data/conceptos_semilla.json`):
+
+- *polera* no es «camiseta» en Argentina, Uruguay ni Paraguay, donde es un jersey de cuello alto. Tampoco lo son *pulóver* ni *chomba*.
+- *colectivo* no es «autobús» en Chile, donde es un taxi compartido.
+- *millo* significa «maíz», no «palomitas».
+- *luca* es una unidad monetaria concreta, no el dinero en general.
+- *chompa* es un jersey, no una chaqueta.
+
+## 4. Próximos pasos de investigación (en orden)
 
 1. **Revisar a mano** las variantes «en revisión» y «sin datos» de los 23 conceptos (`data/procesado/conceptos.json`) y añadir las **sugerencias** que el script encontró entre los sinónimos (p. ej. *canguil* y *chulpi* para las palomitas).
 2. **Verificar con VARILEX-R** los conceptos de §2.1, empezando por los huecos de *aguacate*, *cacahuete*, *piscina* y *guisante*.

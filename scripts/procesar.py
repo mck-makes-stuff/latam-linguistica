@@ -199,10 +199,16 @@ def main():
                     secundarios.add(f["pais"])
                     evidencia.append({"pais": f["pais"], "forma": forma, "fuente": urllib.parse.urlparse(f["url"]).netloc,
                                       "url": f["url"], "tipo": f["tipo"], "sentido": ""})
+            # Correcciones manuales de la semilla (acepción equivocada en ese país)
+            excluidos = set(c.get("excluir", {}).get(forma, []))
+            paises -= excluidos
+            secundarios -= excluidos
+            evidencia = [e for e in evidencia if e["pais"] not in excluidos]
             estado = ("verificado" if paises else "americano" if americano else "general" if general
                       else "parcial" if secundarios else "sin_datos")
             variantes.append({"forma": forma, "paises": sorted(paises) if paises else sorted(secundarios) if estado == "parcial" else [],
                               "paises_web": sorted(secundarios - paises), "general": general, "americano": americano,
+                              "excluidos": sorted(excluidos),
                               "estado": estado, "evidencia": evidencia})
         # Métricas para elegir los mejores conceptos para el mapa
         verif = [v for v in variantes if v["estado"] == "verificado"]
@@ -212,6 +218,7 @@ def main():
                     "media_por_pais": round(sum(por_pais) / len(por_pais), 2) if por_pais else 0,
                     "sin_cubrir": sorted(set(TODOS_LATAM) - cubiertos)}
         conceptos.append({k: c[k] for k in ("id", "concepto", "campo", "definicion")}
+                         | {"corto": c.get("corto", c["concepto"]), "publicar": c.get("publicar", False), "motivos": c.get("motivos", "")}
                          | {"metricas": metricas, "variantes": variantes, "sugerencias": sorted(sugerencias)})
         resumen = {e: sum(v["estado"] == e for v in variantes) for e in ("verificado", "americano", "general", "parcial", "sin_datos")}
         print(f"{c['id']:12} {resumen}", flush=True)

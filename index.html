@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mapa léxico del español</title>
+  <title>Un concepto, muchas palabras</title>
   <meta name="description" content="Mapa interactivo de la variación léxica del español en América Latina: un mismo concepto, muchas palabras.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,42 +12,66 @@
 </head>
 <body>
   <header class="encabezado">
-    <div>
-      <h1>Un concepto, muchas palabras</h1>
-      <p>Mapa de la variación léxica del español en los diecinueve países hispanohablantes de América Latina.</p>
-    </div>
+    <a class="marca" href="index.html">Un concepto, <em>muchas palabras</em></a>
     <nav aria-label="Secciones">
       <a href="index.html" aria-current="page">Mapa</a>
       <a href="acerca.html">Metodología y fuentes</a>
     </nav>
   </header>
 
+  <section class="intro">
+    <h1>¿Cómo se dice <span id="titular-concepto">palomitas</span> en tu país?</h1>
+    <p>El español es la lengua oficial de veinte países y cada uno ha hecho suyo el idioma. Este mapa muestra qué palabras se registran para un mismo concepto en los diecinueve países hispanohablantes de América Latina, con España como punto de comparación. Ninguna es más correcta que otra: todas son español.</p>
+  </section>
+
+  <nav class="conceptos" id="conceptos" aria-label="Conceptos"></nav>
+
   <main class="diseno">
-    <section class="tarjeta" aria-label="Mapa">
-      <div class="controles">
-        <label>Concepto
-          <select id="selector-concepto"></select>
+    <section class="tarjeta mapa-tarjeta" aria-label="Mapa">
+      <div class="barra">
+        <label class="buscador">
+          <span class="visualmente-oculto">Buscar una palabra</span>
+          <input id="buscador" type="search" placeholder="Buscar una palabra: chévere, pibe, guagua…" autocomplete="off" spellcheck="false">
         </label>
-        <label>Buscar una palabra
-          <input id="buscador" type="search" placeholder="p. ej. chévere, pibe, guagua" autocomplete="off">
-        </label>
+        <button class="boton-texto" id="limpiar" type="button" hidden>Volver al concepto</button>
       </div>
       <div class="mapa-contenedor">
-        <svg id="mapa" role="img" aria-labelledby="titulo-mapa"><title id="titulo-mapa">Mapa de América Latina</title></svg>
-        <div class="info-flotante" id="info-flotante"></div>
+        <svg id="mapa" role="img" aria-labelledby="titulo-mapa"><title id="titulo-mapa">Mapa de América Latina y España</title></svg>
+        <div class="info-flotante" id="info-flotante" role="tooltip"></div>
       </div>
-      <div class="leyenda" id="leyenda"></div>
+      <div class="leyenda" id="leyenda" aria-label="Leyenda"></div>
     </section>
 
-    <aside class="tarjeta panel" id="panel" aria-live="polite">
-      <h2>Selecciona un concepto</h2>
-      <p class="meta">Elige un concepto o haz clic en un país para ver qué palabras se registran allí.</p>
-    </aside>
+    <aside class="tarjeta panel" id="panel" aria-live="polite"></aside>
   </main>
 
+  <section class="seccion">
+    <details class="tarjeta tabla-datos">
+      <summary>Ver los datos de este concepto en una tabla</summary>
+      <div id="tabla"></div>
+    </details>
+  </section>
+
+  <section class="seccion como-leer">
+    <h2>Cómo leer el mapa</h2>
+    <div class="tres">
+      <div>
+        <h3>Un tono, una palabra</h3>
+        <p>Cada país se colorea con la palabra más extendida de las que se registran allí. Las etiquetas muestran hasta dos. Haz clic en una palabra de la leyenda para ver todos los países donde aparece.</p>
+      </div>
+      <div>
+        <h3>Verificado por acepción</h3>
+        <p>Una variante sólo aparece en el mapa si una fuente lexicográfica la registra <em>con ese significado</em> en ese país. Las demás se listan «en revisión».</p>
+      </div>
+      <div>
+        <h3>Un país en blanco no está vacío</h3>
+        <p>Si un país aparece rayado, allí se usa probablemente la forma general (<em>palomitas</em>, <em>autobús</em>), que los diccionarios no marcan como regional. Aún no lo hemos verificado.</p>
+      </div>
+    </div>
+  </section>
+
   <footer class="pie">
-    Datos léxicos: <a href="https://es.wiktionary.org/">Wikcionario</a> (CC BY-SA 4.0), revisados manualmente.
-    Geometría: Natural Earth vía <a href="https://github.com/topojson/world-atlas">world-atlas</a> (dominio público).
+    <p>Datos léxicos: <a href="https://es.wiktionary.org/">Wikcionario</a> (CC BY-SA 4.0), verificados por acepción y revisados a mano. Geometría: Natural Earth vía <a href="https://github.com/topojson/world-atlas">world-atlas</a>. <a href="acerca.html">Metodología y fuentes</a> · <a href="https://github.com/mck-makes-stuff/latam-linguistica">Código</a></p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>

@@ -1,108 +1,148 @@
 /* ==========================================================================
-   Mapa léxico del español en América Latina — hoja de estilo
-   Fase 1: paleta neutra (blanco, crema, tostado). Los colores de datos se
-   añadirán en la fase 2 cambiando sólo las variables --dato-*.
+   Un concepto, muchas palabras — hoja de estilo
+   Fase 1: paleta neutra (blanco, crema, tostado). En la fase 2 sólo cambian
+   las variables --var-* (un color por variante).
    ========================================================================== */
 
 :root {
   /* Superficies */
   --blanco: #ffffff;
   --crema: #f8f3ea;          /* fondo de página */
-  --crema-2: #f0e7d8;        /* tarjetas, paneles */
-  --arena: #e4d5bc;          /* países sin dato / bordes suaves */
-  --tostado: #c9ad84;        /* acento principal */
-  --tostado-2: #a2845b;      /* acento fuerte, hover */
+  --crema-2: #f0e7d8;        /* paneles, chips */
+  --arena: #e4d5bc;
+  --tostado: #c9ad84;        /* acento */
+  --tostado-2: #9a7a50;      /* enlaces, foco (AA sobre crema) */
   --tinta: #3a3029;          /* texto */
   --tinta-suave: #6f6257;    /* texto secundario */
-  --linea: #d8c9ae;          /* fronteras, divisores */
+  --linea: #ddd0b8;          /* fronteras, divisores */
 
-  /* Escala de datos provisional (monocroma, tostado) */
-  --dato-0: #efe5d3;
-  --dato-1: #e1cfae;
-  --dato-2: #cfb38a;
-  --dato-3: #b59466;
-  --dato-4: #8f7148;
-  --contexto: #f3eee6;       /* países no hispanohablantes */
+  /* Tonos por variante (fase 1: gama tostada). Orden = variante más extendida primero */
+  --var-1: #7a5c3a;
+  --var-2: #b08a5a;
+  --var-3: #d6bc8f;
+  --var-4: #9c8f6e;
+  --var-5: #c79f86;
+  --var-otras: #e6d9c2;
+  --sin-dato: #f6f1e8;       /* base del rayado «sin registro» */
+  --contexto: #f1ece3;       /* países no hispanohablantes */
 
-  --radio: 10px;
-  --sombra: 0 1px 2px rgb(58 48 41 / .06), 0 6px 24px rgb(58 48 41 / .06);
+  --radio: 12px;
+  --sombra: 0 1px 2px rgb(58 48 41 / .05), 0 8px 28px rgb(58 48 41 / .06);
   --fuente-titulo: "Fraunces", Georgia, serif;
   --fuente-texto: "Inter", system-ui, -apple-system, sans-serif;
+  --margen: clamp(16px, 4vw, 48px);
 }
 
 * { box-sizing: border-box; }
-
 html, body { margin: 0; }
-
-body {
-  background: var(--crema);
-  color: var(--tinta);
-  font: 16px/1.55 var(--fuente-texto);
-}
+body { background: var(--crema); color: var(--tinta); font: 16px/1.55 var(--fuente-texto); }
 
 h1, h2, h3 { font-family: var(--fuente-titulo); font-weight: 600; line-height: 1.15; margin: 0 0 .4em; }
-h1 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
 a { color: var(--tostado-2); }
+:focus-visible { outline: 2px solid var(--tostado-2); outline-offset: 2px; }
+.visualmente-oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* --- Encabezado ------------------------------------------------------- */
 .encabezado {
-  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
-  gap: .5rem 2rem; padding: 1.25rem clamp(16px, 4vw, 48px);
-  border-bottom: 1px solid var(--linea); background: var(--blanco);
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 2rem;
+  padding: 14px var(--margen); background: var(--blanco); border-bottom: 1px solid var(--linea);
 }
-.encabezado p { margin: 0; color: var(--tinta-suave); max-width: 60ch; }
-.encabezado nav a { margin-left: 1rem; text-decoration: none; font-weight: 500; }
+.marca { font: 600 1.15rem var(--fuente-titulo); color: var(--tinta); text-decoration: none; }
+.marca em { color: var(--tostado-2); }
+.encabezado nav a { margin-left: 1.25rem; text-decoration: none; font-weight: 500; font-size: .95rem; }
+.encabezado nav a:first-child { margin-left: 0; }
+.encabezado nav a[aria-current="page"] { color: var(--tinta); }
+
+/* --- Introducción ----------------------------------------------------- */
+.intro { padding: 36px var(--margen) 8px; max-width: 980px; }
+.intro h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+.intro h1 span { color: var(--tostado-2); font-style: italic; }
+.intro p { color: var(--tinta-suave); max-width: 68ch; margin: .6rem 0 0; }
+
+/* --- Selector de conceptos -------------------------------------------- */
+.conceptos { display: flex; flex-wrap: wrap; gap: 8px; padding: 20px var(--margen) 4px; }
+.concepto-boton {
+  font: 500 .9rem var(--fuente-texto); color: var(--tinta); cursor: pointer;
+  padding: 7px 14px; border-radius: 999px; border: 1px solid var(--linea); background: var(--blanco);
+  transition: background .15s, border-color .15s;
+}
+.concepto-boton:hover { border-color: var(--tostado); }
+.concepto-boton[aria-pressed="true"] { background: var(--tinta); border-color: var(--tinta); color: var(--crema); }
 
 /* --- Diseño principal ------------------------------------------------- */
-.diseno {
-  display: grid; grid-template-columns: minmax(0, 1fr) 360px;
-  gap: 24px; padding: 24px clamp(16px, 4vw, 48px);
-}
+.diseno { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 24px; padding: 20px var(--margen); }
 @media (max-width: 900px) { .diseno { grid-template-columns: 1fr; } }
-
 .tarjeta { background: var(--blanco); border: 1px solid var(--linea); border-radius: var(--radio); box-shadow: var(--sombra); }
 
-/* --- Controles -------------------------------------------------------- */
-.controles { display: flex; flex-wrap: wrap; gap: 12px; padding: 14px 16px; border-bottom: 1px solid var(--linea); }
-.controles label { font-size: .8rem; color: var(--tinta-suave); display: grid; gap: 4px; }
-.controles select, .controles input {
-  font: inherit; padding: 8px 10px; border: 1px solid var(--linea); border-radius: 8px;
-  background: var(--crema); color: var(--tinta); min-width: 220px;
+.barra { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; padding: 12px 14px; border-bottom: 1px solid var(--linea); }
+.buscador { flex: 1 1 240px; }
+.buscador input {
+  width: 100%; font: inherit; padding: 9px 12px; border: 1px solid var(--linea); border-radius: 8px;
+  background: var(--crema); color: var(--tinta);
 }
+.boton-texto { font: 500 .9rem var(--fuente-texto); background: none; border: 0; color: var(--tostado-2); cursor: pointer; padding: 6px; }
 
 /* --- Mapa ------------------------------------------------------------- */
 .mapa-contenedor { position: relative; }
-#mapa { display: block; width: 100%; height: auto; background: var(--blanco); border-radius: 0 0 var(--radio) var(--radio); }
-.pais { stroke: var(--blanco); stroke-width: .6; transition: fill .25s ease; }
-.pais.hispano { fill: var(--arena); cursor: pointer; }
+#mapa { display: block; width: 100%; height: auto; }
+.pais { stroke: var(--blanco); stroke-width: .7; transition: fill .3s ease, opacity .2s ease; }
+.pais.hispano { fill: url(#rayado); cursor: pointer; }
 .pais.contexto { fill: var(--contexto); pointer-events: none; }
-.pais.hispano:hover, .pais.activo { stroke: var(--tinta); stroke-width: 1.2; }
+.pais.hispano:hover, .pais.activo { stroke: var(--tinta); stroke-width: 1.4; }
+.pais.atenuado { opacity: .28; }
+.pais.resaltado { stroke: var(--tinta); stroke-width: 1.4; }
 .etiqueta-variante {
-  font: 600 11px var(--fuente-texto); fill: var(--tinta); text-anchor: middle;
-  paint-order: stroke; stroke: var(--blanco); stroke-width: 3px; pointer-events: none;
+  font: 600 11px var(--fuente-texto); fill: var(--tinta); text-anchor: middle; dominant-baseline: middle;
+  paint-order: stroke; stroke: var(--blanco); stroke-width: 3px; stroke-linejoin: round; pointer-events: none;
 }
-
 .recuadro-fondo { fill: var(--crema); stroke: var(--linea); }
 .recuadro-titulo { font: 600 10px var(--fuente-texto); fill: var(--tinta-suave); letter-spacing: .02em; }
 
-.leyenda { display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 12px 16px; font-size: .85rem; }
-.leyenda span { display: inline-flex; align-items: center; gap: 6px; }
-.leyenda i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
-
 .info-flotante {
-  position: absolute; pointer-events: none; background: var(--tinta); color: var(--crema);
+  position: absolute; pointer-events: none; background: var(--tinta); color: var(--crema); max-width: 240px;
   padding: 6px 10px; border-radius: 6px; font-size: .85rem; opacity: 0; transition: opacity .15s;
 }
 
+/* --- Leyenda ---------------------------------------------------------- */
+.leyenda { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 14px; border-top: 1px solid var(--linea); }
+.leyenda-item {
+  display: inline-flex; align-items: center; gap: 7px; font: 500 .85rem var(--fuente-texto); color: var(--tinta);
+  padding: 4px 10px 4px 6px; border: 1px solid transparent; border-radius: 999px; background: none; cursor: pointer;
+}
+.leyenda-item:hover { border-color: var(--linea); }
+.leyenda-item[aria-pressed="true"] { border-color: var(--tinta); background: var(--crema); }
+.leyenda-item small { color: var(--tinta-suave); font-weight: 400; }
+.muestra { width: 14px; height: 14px; border-radius: 4px; display: inline-block; border: 1px solid rgb(58 48 41 / .12); }
+.muestra.rayada { background: repeating-linear-gradient(45deg, var(--sin-dato) 0 3px, var(--arena) 3px 4px); }
+.leyenda-nota { font-size: .8rem; color: var(--tinta-suave); display: inline-flex; align-items: center; gap: 7px; padding: 4px 6px; }
+
 /* --- Panel lateral ---------------------------------------------------- */
-.panel { padding: 20px; align-self: start; position: sticky; top: 16px; }
-.panel h2 { font-size: 1.4rem; }
-.panel .meta { color: var(--tinta-suave); font-size: .85rem; }
-.panel ul { padding-left: 1.1rem; }
+.panel { padding: 22px; align-self: start; position: sticky; top: 16px; }
+.panel h2 { font-size: 1.5rem; }
+.panel h3 { font-size: 1rem; margin-top: 1.2rem; }
+.panel .meta { color: var(--tinta-suave); font-size: .85rem; margin: 0 0 .3rem; }
+.panel ul { padding-left: 0; list-style: none; margin: .4rem 0; }
+.panel li { padding: 6px 0; border-bottom: 1px solid var(--crema-2); }
+.panel li:last-child { border-bottom: 0; }
+.panel .paises { color: var(--tinta-suave); font-size: .9rem; }
 .chip {
   display: inline-block; padding: 2px 10px; margin: 2px 4px 2px 0; border-radius: 999px;
   background: var(--crema-2); border: 1px solid var(--linea); font-size: .85rem;
 }
-.aviso { background: var(--crema-2); border-left: 3px solid var(--tostado); padding: 8px 12px; font-size: .85rem; border-radius: 4px; }
+.aviso { background: var(--crema); border-left: 3px solid var(--tostado); padding: 8px 12px; font-size: .85rem; border-radius: 4px; }
+.fuente { font-size: .85rem; color: var(--tinta-suave); }
 
-.pie { padding: 24px clamp(16px, 4vw, 48px) 40px; color: var(--tinta-suave); font-size: .85rem; }
+/* --- Secciones inferiores --------------------------------------------- */
+.seccion { padding: 8px var(--margen) 20px; }
+.tabla-datos summary { cursor: pointer; padding: 14px 18px; font-weight: 500; }
+.tabla-datos[open] summary { border-bottom: 1px solid var(--linea); }
+#tabla { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+th, td { text-align: left; padding: 8px 18px; border-bottom: 1px solid var(--crema-2); vertical-align: top; }
+th { font-weight: 600; background: var(--crema); }
+.como-leer h2 { font-size: 1.5rem; margin-top: 12px; }
+.tres { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px 32px; }
+.tres h3 { font-size: 1.05rem; }
+.tres p { color: var(--tinta-suave); margin: 0; font-size: .95rem; }
+
+.pie { padding: 24px var(--margen) 40px; color: var(--tinta-suave); font-size: .85rem; border-top: 1px solid var(--linea); margin-top: 24px; }

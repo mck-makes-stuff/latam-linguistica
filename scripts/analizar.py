@@ -69,14 +69,16 @@ def main():
 
     # Índice para el buscador del sitio (países directos + extensión de macrorregiones)
     indice = {}
-    for l in sorted(set(directos) | set(macro)):
-        paises = set(directos[l])
-        for m in macro[l]:
+    for l in sorted(set(directos) | set(macro) | espana):
+        paises = set(directos.get(l, ()))
+        for m in macro.get(l, ()):
             paises |= set(MACRO[m])
+        if l in espana:  # España como punto de comparación en el buscador
+            paises.add("ESP")
         indice[l] = sorted(paises)
     (PROC / "lemas.json").write_text(json.dumps(
         {"generado": datetime.date.today().isoformat(),
-         "nota": "Palabra -> países donde el Wikcionario la marca como regional (incluye Río de la Plata -> ARG+URY y Caribe -> CUB+DOM+PRI).",
+         "nota": "Palabra -> países donde el Wikcionario la marca como regional (incluye Río de la Plata -> ARG+URY, Caribe -> CUB+DOM+PRI y España -> ESP).",
          "lemas": indice}, ensure_ascii=False, separators=(",", ":")))
 
     # Matriz palabra x país
@@ -85,7 +87,7 @@ def main():
         w.writerow(["lema", "n_paises"] + LATAM + ["RIO_PLATA", "CARIBE", "ESP"])
         directos = dict(directos)
         for l in sorted(set(directos) | set(macro)):
-            w.writerow([l, len(directos.get(l, ()))] + [int(c in directos[l]) for c in LATAM]
+            w.writerow([l, len(directos.get(l, ()))] + [int(c in directos.get(l, ())) for c in LATAM]
                        + [int("RIO_PLATA" in macro[l]), int("CARIBE" in macro[l]), int(l in espana)])
 
     # Distribución por difusión
