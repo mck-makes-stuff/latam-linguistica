@@ -28,9 +28,9 @@ const porForma = new Map(vista.variantes.map((v) => [v.forma, v]));
 const color = (forma) => colorTono(porForma.get(forma)?.tono);
 
 // --- Apertura: la palabra cambia de país en país ----------------------------------
-const giro = [["palomitas", "ESP", "var(--var-otras)"], ...[["pochoclo", "ARG"], ["pororó", "PRY"], ["cancha", "PER"], ["canguil", "ECU"],
-  ["crispeta", "COL"], ["cotufa", "VEN"], ["poporopo", "GTM"], ["cabrita", "CHL"], ["pipoca", "BOL"]]
-  .filter(([f, iso]) => porForma.get(f)?.paises.includes(iso)).map(([f, iso]) => [f, iso, color(f)])];
+const giro = [...[["cabrita", "CHL"], ["pochoclo", "ARG"], ["pororó", "PRY"], ["cancha", "PER"], ["canguil", "ECU"],
+  ["crispeta", "COL"], ["cotufa", "VEN"], ["poporopo", "GTM"], ["pipoca", "BOL"]]
+  .filter(([f, iso]) => porForma.get(f)?.paises.includes(iso)).map(([f, iso]) => [f, iso, color(f)]), ["palomitas", "ESP", "var(--var-otras)"]];
 const caja = document.querySelector(".apertura-palabra");
 const palabra = document.getElementById("palabra-giratoria");
 const pais = document.getElementById("pais-giratorio");
@@ -46,7 +46,10 @@ function siguientePalabra() {
     caja.classList.remove("cambiando");
   }, 260);
 }
-pais.textContent = nombres.ESP;
+const bajar = document.querySelector(".apertura-bajar");
+palabra.textContent = giro[0][0];
+pais.textContent = nombres[giro[0][1]];
+caja.style.setProperty("--c", giro[0][2]);
 
 // Mapa tenue detrás de la pregunta: se ilumina el país de cada palabra
 const mapaApertura = crearMapa(paises, { svg: "#mapa-apertura", info: "#info-apertura", contenedor: "#apertura", id: "a" });
@@ -58,14 +61,18 @@ const iluminar = () => {
 };
 mapaApertura.pintar({ relleno: () => "var(--crema-2)", etiqueta: () => null });
 
-// Primero la pregunta sola: unos segundos para pensar la respuesta propia
-const PAUSA = 5200, INTERVALO = 1600;
+// La pregunta termina de aparecer a los ~2,3 s; luego 2 s para pensar la respuesta propia
+const PAUSA = 4300, INTERVALO = 1500;
 if (!reducido) {
   let reloj = null;
   setTimeout(() => {
     caja.classList.remove("esperando");
     iluminar();
-    reloj = setInterval(() => { siguientePalabra(); setTimeout(iluminar, 260); }, INTERVALO);
+    reloj = setInterval(() => {
+      siguientePalabra();
+      setTimeout(iluminar, 260);
+      bajar.classList.add("visible"); // «Descúbrelo» aparece tras el primer cambio de palabra
+    }, INTERVALO);
   }, Math.max(0, PAUSA - performance.now()));
   // Si la persona no se ha movido, la página «rebota» para sugerir que hay más abajo (sin desplazarse sola)
   let tocado = false;
@@ -86,6 +93,7 @@ if (!reducido) {
   addEventListener("scroll", () => { if (scrollY > innerHeight) clearInterval(reloj); }, { passive: true });
 } else {
   caja.classList.remove("esperando");
+  bajar.classList.add("visible");
   iluminar();
 }
 
