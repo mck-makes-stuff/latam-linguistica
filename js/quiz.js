@@ -187,15 +187,27 @@ function simular() {
     const rank = [...pesos(m)].sort((a, b) => b[1] - a[1]);
     return { acierta: rank[0][0] === iso, segundo: rank[0][0] === iso ? rank[1] : rank[0], p: pesos(m).get(iso) };
   };
-  const filas = PAISES.map((iso) => ({ iso, corto: jugar(iso, MAX_PREGUNTAS), largo: jugar(iso, conceptos.length) }));
-  const n8 = filas.filter((f) => f.corto.acierta).length, nT = filas.filter((f) => f.largo.acierta).length;
-  const celda = (r) => `${r.acierta ? "Sí" : "No"} <span class="fuente">(${Math.round(r.p * 100)} %; luego ${esc(nombres[r.segundo[0]])}, ${Math.round(r.segundo[1] * 100)} %)</span>`;
+  const filas = PAISES.map((iso) => ({ iso, ...jugar(iso, MAX_PREGUNTAS) }));
+  const aciertos = filas.filter((f) => f.acierta).length;
+  // Parejas que el juego confunde un poco: el segundo país se lleva al menos un 4 %
+  const parejas = new Map();
+  for (const f of filas) {
+    if (f.segundo[1] < 0.04) continue;
+    const clave = [f.iso, f.segundo[0]].sort().join("-");
+    if (!parejas.has(clave)) parejas.set(clave, { a: f.iso, b: f.segundo[0], comunes: parecidos(f.iso).find((x) => x.pais === f.segundo[0])?.comunes || [] });
+  }
+  const dudosos = new Set([...parejas.values()].flatMap((x) => [x.a, x.b]));
+  const claros = filas.filter((f) => f.acierta && !dudosos.has(f.iso)).map((f) => f.iso);
   document.getElementById("simulacion").innerHTML = `
-    <p>Simulamos a una persona de cada país que responde con todas las palabras registradas para su país. Con las ${MAX_PREGUNTAS} preguntas del juego acertamos <strong>${n8} de ${PAISES.length}</strong> países; con las ${conceptos.length} preguntas, <strong>${nT} de ${PAISES.length}</strong>.</p>
-    <table class="identificables"><thead><tr><th>País</th><th>Con ${MAX_PREGUNTAS} preguntas</th><th>Con ${conceptos.length}</th></tr></thead><tbody>
-    ${filas.map((f) => `<tr><th scope="row">${esc(nombres[f.iso])}</th><td>${celda(f.corto)}</td><td>${celda(f.largo)}</td></tr>`).join("")}
-    </tbody></table>
-    <p class="fuente">Ojo: es un caso ideal. La persona simulada usa exactamente las palabras registradas, así que el resultado mide sobre todo cuánto vocabulario propio hemos documentado para cada país. Una persona real mezcla palabras generales, de su región y de los medios. Los segundos puestos suelen ser vecinos (Argentina y Uruguay comparten el español rioplatense; Centroamérica comparte muchas voces). En la vida real, la pronunciación y la gramática (el voseo, por ejemplo) ayudan a desempatar.</p>`;
+    <p><strong>La prueba:</strong> imaginamos a una persona de cada uno de los 20 países que juega las ${MAX_PREGUNTAS} preguntas contestando con las palabras que nuestros datos registran para su país. ¿Adivina el juego de dónde es?</p>
+    <p><strong>Resultado:</strong> ${aciertos === PAISES.length ? "sí, acierta los 20" : `acierta ${aciertos} de 20`}. Pero no todos son igual de fáciles:</p>
+    <h3 style="font-size:1.05rem;margin-top:1rem">Fáciles de reconocer (${claros.length})</h3>
+    <p>${lista(claros)}. Sus palabras son tan propias que casi ningún otro país las comparte.</p>
+    ${parejas.size ? `<h3 style="font-size:1.05rem;margin-top:1rem">Se parecen a un vecino (${dudosos.size})</h3>
+    <p>El juego acierta, pero duda entre:</p>
+    <ul>${[...parejas.values()].map((x) => `<li><strong>${esc(nombres[x.a])} y ${esc(nombres[x.b])}</strong>${x.comunes.length ? `: comparten palabras como ${x.comunes.slice(0, 4).map((w) => `<em>${esc(w)}</em>`).join(", ")}` : ""}</li>`).join("")}</ul>
+    <p>Son países vecinos o con historia compartida (el Caribe hispano, Centroamérica, el Río de la Plata), así que usan muchas palabras iguales.</p>` : ""}
+    <p class="fuente">Ojo: es un caso ideal. Una persona real mezcla palabras generales, de su región y de la tele, y nuestros datos no recogen todas las palabras de cada país. En la vida real, la pronunciación y la gramática (por ejemplo, el voseo) ayudan a desempatar.</p>`;
 }
 
 simular();
