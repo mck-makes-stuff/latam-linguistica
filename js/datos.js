@@ -25,13 +25,13 @@ export async function cargarTodo() {
 
 /**
  * Vista de un concepto lista para pintar:
- *  - variantes: verificadas, ordenadas de más a menos países, con su número de tono
+ *  - variantes: verificadas en el Wikcionario o catalogadas por el equipo, ordenadas de más a menos países, con su número de tono
  *  - porPais: país -> variantes verificadas (la primera es la principal)
  *  - revision: variantes sólo con evidencia secundaria · generales: sin marca de país
  */
 export function vistaConcepto(concepto) {
   const variantes = concepto.variantes
-    .filter((v) => v.estado === "verificado" && v.paises.length)
+    .filter((v) => ["verificado", "equipo"].includes(v.estado) && v.paises.length)
     .map((v, i) => ({ ...v, orden: i }))
     .sort((a, b) => b.paises.length - a.paises.length || a.orden - b.orden)
     .map((v, i) => ({ ...v, tono: i < TONOS ? i + 1 : null }));

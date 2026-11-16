@@ -632,12 +632,17 @@
   },
   {
    "id": "enojarse",
-   "concepto": "enojarse (coloquial)",
+   "concepto": "enojado, enojarse (coloquial)",
    "campo": "emociones",
-   "definicion": "Enfadarse, en registro coloquial.",
+   "definicion": "Estar enfadado o enfadarse, en registro coloquial.",
    "glosas": [
-    "enojar",
+    "colérico",
+    "enfadado",
     "enfadar",
+    "enojado",
+    "enojar",
+    "furioso",
+    "ira",
     "irritar",
     "molestar"
    ],
@@ -654,9 +659,86 @@
     "enchincharse",
     "rayarse",
     "embroncarse",
-    "cabrearse"
+    "cabrearse",
+    "asado",
+    "arrecho"
    ],
-   "publicar": false
+   "publicar": true,
+   "corto": "enojado"
+  },
+  {
+   "id": "cerveza",
+   "concepto": "cerveza (coloquial)",
+   "corto": "cerveza",
+   "campo": "bebida",
+   "definicion": "Bebida alcohólica de cebada fermentada, en registro coloquial.",
+   "glosas": [
+    "cerveza"
+   ],
+   "variantes": [
+    "birra",
+    "chela",
+    "laguer",
+    "biela",
+    "fría",
+    "rubia",
+    "birria",
+    "pola",
+    "guaro",
+    "guari",
+    "caña"
+   ],
+   "publicar": true
+  },
+  {
+   "id": "mentiroso",
+   "concepto": "mentiroso (coloquial)",
+   "corto": "mentiroso",
+   "campo": "personas",
+   "definicion": "Persona que miente o exagera, en registro coloquial.",
+   "glosas": [
+    "mentiroso",
+    "miente",
+    "mentira",
+    "embustero",
+    "exagera",
+    "engaña"
+   ],
+   "variantes": [
+    "boletero",
+    "garca",
+    "atorrante",
+    "florero",
+    "palero",
+    "cuentista",
+    "embustero",
+    "cobero",
+    "paquero",
+    "bolero",
+    "chivero"
+   ],
+   "publicar": true
+  },
+  {
+   "id": "beber",
+   "concepto": "beber alcohol (coloquial)",
+   "corto": "beber",
+   "campo": "bebida",
+   "definicion": "Tomar bebidas alcohólicas, en registro coloquial.",
+   "glosas": [
+    "beber",
+    "bebida",
+    "alcohol",
+    "emborrachar"
+   ],
+   "variantes": [
+    "escabiar",
+    "chupar",
+    "pistear",
+    "jumarse",
+    "palomear"
+   ],
+   "publicar": true
   }
  ]
 }

@@ -1,0 +1,66 @@
+{
+  "_nota": "Palabras catalogadas por el equipo al revisar las fuentes web de cada país. Editar a mano. Cada registro: concepto (id de data/conceptos_semilla.json), pais (código ISO de tres letras), forma (en minúsculas, singular, con tildes). scripts/procesar.py las añade al mapa con la fuente «Registro del equipo».",
+  "registros": [
+    {"concepto": "cerveza", "pais": "CRI", "forma": "birra"},
+    {"concepto": "cerveza", "pais": "SLV", "forma": "chela"},
+    {"concepto": "cerveza", "pais": "CUB", "forma": "laguer"},
+    {"concepto": "cerveza", "pais": "ECU", "forma": "biela"},
+    {"concepto": "cerveza", "pais": "DOM", "forma": "fría"},
+    {"concepto": "cerveza", "pais": "PER", "forma": "chela"},
+    {"concepto": "cerveza", "pais": "PER", "forma": "rubia"},
+    {"concepto": "cerveza", "pais": "VEN", "forma": "birria"},
+    {"concepto": "cerveza", "pais": "PAN", "forma": "guaro"},
+    {"concepto": "cerveza", "pais": "PRY", "forma": "guari"},
+    {"concepto": "cerveza", "pais": "PRY", "forma": "caña"},
+
+    {"concepto": "amigo", "pais": "CRI", "forma": "compa"},
+    {"concepto": "amigo", "pais": "DOM", "forma": "pana"},
+    {"concepto": "amigo", "pais": "DOM", "forma": "panito"},
+    {"concepto": "amigo", "pais": "ECU", "forma": "veci"},
+    {"concepto": "amigo", "pais": "SLV", "forma": "chero"},
+    {"concepto": "amigo", "pais": "PER", "forma": "pata"},
+    {"concepto": "amigo", "pais": "PER", "forma": "causa"},
+    {"concepto": "amigo", "pais": "VEN", "forma": "pana"},
+    {"concepto": "amigo", "pais": "PAN", "forma": "fren"},
+    {"concepto": "amigo", "pais": "PAN", "forma": "garra"},
+    {"concepto": "amigo", "pais": "PRY", "forma": "che kape"},
+    {"concepto": "amigo", "pais": "PRY", "forma": "kape"},
+    {"concepto": "amigo", "pais": "PRI", "forma": "broki"},
+    {"concepto": "amigo", "pais": "PRI", "forma": "mano"},
+    {"concepto": "amigo", "pais": "BOL", "forma": "cuate"},
+    {"concepto": "amigo", "pais": "CHL", "forma": "gancho"},
+
+    {"concepto": "nino", "pais": "CRI", "forma": "carajillo"},
+    {"concepto": "nino", "pais": "CUB", "forma": "chama"},
+    {"concepto": "nino", "pais": "DOM", "forma": "carajito"},
+    {"concepto": "nino", "pais": "DOM", "forma": "chamaquito"},
+    {"concepto": "nino", "pais": "ECU", "forma": "guambra"},
+    {"concepto": "nino", "pais": "SLV", "forma": "cipote"},
+
+    {"concepto": "genial", "pais": "CRI", "forma": "chiva"},
+    {"concepto": "genial", "pais": "CUB", "forma": "bacán"},
+
+    {"concepto": "beber", "pais": "ARG", "forma": "escabiar"},
+
+    {"concepto": "mentiroso", "pais": "PRY", "forma": "boletero"},
+    {"concepto": "mentiroso", "pais": "PRY", "forma": "garca"},
+    {"concepto": "mentiroso", "pais": "PRY", "forma": "atorrante"},
+    {"concepto": "mentiroso", "pais": "PER", "forma": "florero"},
+    {"concepto": "mentiroso", "pais": "PER", "forma": "palero"},
+    {"concepto": "mentiroso", "pais": "PER", "forma": "cuentista"},
+    {"concepto": "mentiroso", "pais": "VEN", "forma": "embustero"},
+    {"concepto": "mentiroso", "pais": "VEN", "forma": "cobero"},
+    {"concepto": "mentiroso", "pais": "PAN", "forma": "cuentista"},
+    {"concepto": "mentiroso", "pais": "PAN", "forma": "paquero"},
+
+    {"concepto": "trabajo", "pais": "PER", "forma": "chamba"},
+    {"concepto": "trabajo", "pais": "VEN", "forma": "chamba"},
+    {"concepto": "trabajo", "pais": "PRY", "forma": "rebusque"},
+    {"concepto": "trabajo", "pais": "PAN", "forma": "camarón"},
+
+    {"concepto": "enojarse", "pais": "PER", "forma": "asado"},
+    {"concepto": "enojarse", "pais": "PAN", "forma": "arrecho"},
+    {"concepto": "enojarse", "pais": "VEN", "forma": "arrecho"},
+    {"concepto": "enojarse", "pais": "PRY", "forma": "nde ra kóre"}
+  ]
+}

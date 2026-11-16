@@ -8,9 +8,12 @@ Para cada concepto de data/conceptos_semilla.json y cada variante candidata:
      del concepto (así «guagua» = autobús no se confunde con «guagua» = bebé).
   3. Lee la plantilla {{ámbito|...}} de esas acepciones -> países.
   4. Añade como evidencia secundaria las listas web (data/procesado/lemas_web.json).
+  5. Añade los registros del equipo (data/registro_equipo.json): cuentan para el mapa
+     y se citan como «Registro del equipo».
 
 Estados de cada variante:
   verificado  -> acepción con ámbito en el Wikcionario
+  equipo      -> sin ámbito en el Wikcionario, pero catalogada por el equipo en algún país
   americano   -> acepción marcada para «América» en general, sin países concretos
   general     -> acepción sin marca regional (uso general / estándar)
   parcial     -> sólo aparece en listas web (sin confirmar la acepción)
@@ -170,6 +173,13 @@ def main():
         for l in f["lemas"]:
             indice_web.setdefault(norm(l), []).append(f)
 
+    equipo = {}
+    f_equipo = RAIZ / "data/registro_equipo.json"
+    for r in (json.loads(f_equipo.read_text())["registros"] if f_equipo.exists() else []):
+        equipo.setdefault(r["concepto"], {}).setdefault(r["forma"], set()).add(r["pais"])
+    for c in semilla:  # las formas del equipo también son candidatas
+        c["variantes"] = list(dict.fromkeys(c["variantes"] + list(equipo.get(c["id"], {}))))
+
     precargar([v for c in semilla for v in c["variantes"]])
     conceptos = []
     for c in semilla:
@@ -204,14 +214,20 @@ def main():
             paises -= excluidos
             secundarios -= excluidos
             evidencia = [e for e in evidencia if e["pais"] not in excluidos]
-            estado = ("verificado" if paises else "americano" if americano else "general" if general
+            del_equipo = equipo.get(c["id"], {}).get(forma, set())
+            for iso in sorted(del_equipo):
+                evidencia.append({"pais": iso, "forma": forma, "fuente": "Registro del equipo", "url": "", "sentido": ""})
+            verificados = set(paises)
+            paises |= del_equipo
+            secundarios -= paises
+            estado = ("verificado" if verificados else "equipo" if del_equipo else "americano" if americano else "general" if general
                       else "parcial" if secundarios else "sin_datos")
             variantes.append({"forma": forma, "paises": sorted(paises) if paises else sorted(secundarios) if estado == "parcial" else [],
-                              "paises_web": sorted(secundarios - paises), "general": general, "americano": americano,
+                              "paises_web": sorted(secundarios - paises), "paises_equipo": sorted(del_equipo - verificados), "general": general, "americano": americano,
                               "excluidos": sorted(excluidos),
                               "estado": estado, "evidencia": evidencia})
         # Métricas para elegir los mejores conceptos para el mapa
-        verif = [v for v in variantes if v["estado"] == "verificado"]
+        verif = [v for v in variantes if v["estado"] in ("verificado", "equipo")]
         cubiertos = {p for v in verif for p in v["paises"] if p != "ESP"}
         por_pais = [sum(p in v["paises"] for v in verif) for p in cubiertos]
         metricas = {"cobertura": len(cubiertos), "variantes_verificadas": len(verif),
@@ -220,7 +236,7 @@ def main():
         conceptos.append({k: c[k] for k in ("id", "concepto", "campo", "definicion")}
                          | {"corto": c.get("corto", c["concepto"]), "publicar": c.get("publicar", False), "motivos": c.get("motivos", "")}
                          | {"metricas": metricas, "variantes": variantes, "sugerencias": sorted(sugerencias)})
-        resumen = {e: sum(v["estado"] == e for v in variantes) for e in ("verificado", "americano", "general", "parcial", "sin_datos")}
+        resumen = {e: sum(v["estado"] == e for v in variantes) for e in ("verificado", "equipo", "americano", "general", "parcial", "sin_datos")}
         print(f"{c['id']:12} {resumen}", flush=True)
 
     # Orden: primero los conceptos con más países cubiertos y más variantes distintas

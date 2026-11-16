@@ -47,7 +47,7 @@ iniciarMapa(paises, { alHacerClic: (iso) => actualizar({ pais: estado.pais === i
 definirInfo(({ iso3, nombre }) => {
   if (estado.modo === "palabra") return esc(nombre);
   const vs = vistas.get(estado.concepto).porPais.get(iso3) || [];
-  return `<strong>${esc(nombre)}</strong><br>${vs.map((v) => esc(v.forma)).join(", ") || "sin registro verificado"}`;
+  return `<strong>${esc(nombre)}</strong><br>${vs.map((v) => esc(v.forma)).join(", ") || "sin registro"}`;
 });
 
 function render() {
@@ -87,7 +87,7 @@ function render() {
   leyenda.innerHTML = vista.variantes.map((v) =>
     `<button class="leyenda-item" type="button" data-variante="${esc(v.forma)}" aria-pressed="${v === variante}">
        <span class="muestra" style="background:${colorTono(v.tono)}"></span>${esc(v.forma)} <small>${v.paises.length}</small></button>`).join("")
-    + `<span class="leyenda-nota"><span class="muestra rayada"></span>sin registro verificado</span>`;
+    + `<span class="leyenda-nota"><span class="muestra rayada"></span>sin registro</span>`;
 
   tablaConcepto(vista, nombres, ORDEN_PAISES);
   if (variante) fichaVariante(concepto, variante, nombres);
