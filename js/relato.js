@@ -47,8 +47,26 @@ function siguientePalabra() {
   }, 260);
 }
 pais.textContent = nombres.ESP;
+
+// Mapa tenue detrás de la pregunta: se ilumina el país de cada palabra
+const mapaApertura = crearMapa(paises, { svg: "#mapa-apertura", info: "#info-apertura", contenedor: "#apertura", id: "a" });
+const iluminar = () => {
+  const [f, iso, c] = giro[indice];
+  const v = porForma.get(f);
+  const lugares = new Set(f === "palomitas" ? ["ESP"] : v ? [iso] : []);
+  mapaApertura.pintar({ relleno: (p) => (lugares.has(p) ? c : "var(--crema-2)"), etiqueta: () => null, recuadroDestacado: lugares.has("ESP") });
+};
+mapaApertura.pintar({ relleno: () => "var(--crema-2)", etiqueta: () => null });
+
+// Primero la pregunta sola: unos segundos para pensar la respuesta propia
+const PAUSA = 5200, INTERVALO = 1600;
 if (!reducido) {
-  const reloj = setInterval(siguientePalabra, 1100);
+  let reloj = null;
+  setTimeout(() => {
+    caja.classList.remove("esperando");
+    iluminar();
+    reloj = setInterval(() => { siguientePalabra(); setTimeout(iluminar, 260); }, INTERVALO);
+  }, Math.max(0, PAUSA - performance.now()));
   // Tras unas cuantas palabras, si la persona no se ha movido, bajamos solos al relato
   let tocado = false;
   for (const ev of ["wheel", "touchstart", "keydown", "mousedown"]) addEventListener(ev, () => { tocado = true; }, { once: true, passive: true });
@@ -56,8 +74,11 @@ if (!reducido) {
     if (!tocado && scrollY < 40 && !document.body.classList.contains("sin-apertura")) {
       document.getElementById("relato").scrollIntoView({ behavior: "smooth" });
     }
-  }, 2400 + 1100 * 4);
+  }, Math.max(0, PAUSA - performance.now()) + INTERVALO * 6);
   addEventListener("scroll", () => { if (scrollY > innerHeight) clearInterval(reloj); }, { passive: true });
+} else {
+  caja.classList.remove("esperando");
+  iluminar();
 }
 
 // --- Relato -------------------------------------------------------------------
