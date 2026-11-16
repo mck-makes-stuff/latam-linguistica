@@ -52,7 +52,20 @@ export function crearMapa(paises, { svg: selSvg, info: selInfo, contenedor: selC
   const proyeccion = d3.geoConicEqualArea().parallels([-20, 20]).rotate([75, 0])
     .fitExtent([[16, 16], [ANCHO - 16, ALTO - 16]], hispanos);
   const ruta = d3.geoPath(proyeccion);
-  dibujarPaises(svg.append("g"), paises.filter((f) => !EUROPA.has(f.properties.iso3)), ruta);
+  // Los países vecinos (Brasil, EE. UU.…) se salen del encuadre: se desvanecen hacia los bordes en vez de cortarse
+  const degradado = (nombre, x2, y2) => {
+    const g = defs.append("linearGradient").attr("id", `${nombre}-${id}`).attr("x1", 0).attr("y1", 0).attr("x2", x2).attr("y2", y2);
+    [[0, 0], [0.12, 1], [0.82, 1], [1, 0]].forEach(([o, a]) => g.append("stop").attr("offset", o).attr("stop-color", "#fff").attr("stop-opacity", a));
+    defs.append("mask").attr("id", `mascara-${nombre}-${id}`).attr("maskUnits", "userSpaceOnUse")
+      .attr("x", 0).attr("y", 0).attr("width", ANCHO).attr("height", ALTO)
+      .append("rect").attr("width", ANCHO).attr("height", ALTO).attr("fill", `url(#${nombre}-${id})`);
+  };
+  degradado("horizontal", 1, 0);
+  degradado("vertical", 0, 1);
+  const americas = paises.filter((f) => !EUROPA.has(f.properties.iso3));
+  dibujarPaises(svg.append("g").attr("mask", `url(#mascara-horizontal-${id})`).append("g").attr("mask", `url(#mascara-vertical-${id})`),
+    americas.filter((f) => !f.properties.hispano), ruta);
+  dibujarPaises(svg.append("g"), americas.filter((f) => f.properties.hispano), ruta);
 
   // Recuadro de España, arriba a la derecha, sobre el Atlántico
   const R = { x: ANCHO - 204, y: 18, w: 186, h: 146 };
