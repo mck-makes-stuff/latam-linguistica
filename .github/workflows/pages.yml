@@ -33,6 +33,11 @@ jobs:
           cp -r data/procesado data/geo _site/data/
           cp data/fuentes_web.json _site/data/
           rm -rf _site/data/geo/fuente
+          # Versión en cada URL para que el navegador no use archivos de un despliegue anterior
+          V="${GITHUB_SHA::7}"
+          sed -i -E "s#(href|src)=\"(css/[a-z]+\.css|js/[a-z]+\.js)\"#\1=\"\2?v=$V\"#g" _site/*.html
+          sed -i -E "s#from \"\./([a-z]+)\.js\"#from \"./\1.js?v=$V\"#g" _site/js/*.js
+          sed -i -E "s#(data/[a-z_/.]+\.json)\"#\1?v=$V\"#g" _site/js/datos.js
           find _site -type f | sort
 
       - uses: actions/configure-pages@v5

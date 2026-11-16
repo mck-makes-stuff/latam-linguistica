@@ -79,7 +79,7 @@ export function fichaConcepto(concepto, vista) {
     <p class="meta">Concepto · ${esc(concepto.campo)}</p>
     <h2>${esc(concepto.concepto)}</h2>
     <p>${esc(concepto.definicion)}</p>
-    <p class="fuente">Poder para distinguir países: <strong>${nivel}/100</strong>.</p>
+    <p class="fuente">Poder para distinguir países: <strong>${nivel}/100</strong> · <a href="acerca.html#poder-distintivo">cómo se calcula</a></p>
     ${ctx.vista === "origen" ? historia(vista, true) : ""}
     <h3>${vista.variantes.length} palabras registradas</h3>
     <ul>${filas || "<li>Sin datos todavía.</li>"}</ul>

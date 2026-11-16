@@ -20,46 +20,34 @@ else {
   requestAnimationFrame(() => document.getElementById("explorar").scrollIntoView());
 }
 
-const { paises, conceptos } = await cargarTodo();
-const nombres = Object.fromEntries(paises.map((f) => [f.properties.iso3, f.properties.nombre]));
-const concepto = conceptos.find((c) => c.id === "palomitas");
-const vista = vistaConcepto(concepto);
-const porForma = new Map(vista.variantes.map((v) => [v.forma, v]));
-const color = (forma) => colorTono(porForma.get(forma)?.tono);
-
 // --- Apertura: la palabra cambia de país en país ----------------------------------
-const giro = [...[["cabrita", "CHL"], ["pochoclo", "ARG"], ["pororó", "PRY"], ["cancha", "PER"], ["canguil", "ECU"],
-  ["crispeta", "COL"], ["cotufa", "VEN"], ["poporopo", "GTM"], ["pipoca", "BOL"]]
-  .filter(([f, iso]) => porForma.get(f)?.paises.includes(iso)).map(([f, iso]) => [f, iso, color(f)]), ["palomitas", "ESP", "var(--var-otras)"]];
+// No depende de los datos: las palabras salen a su hora aunque el mapa tarde en descargarse.
+const giro = [["cabrita", "CHL", "Chile"], ["pochoclo", "ARG", "Argentina"], ["pororó", "PRY", "Paraguay"], ["cancha", "PER", "Perú"],
+  ["canguil", "ECU", "Ecuador"], ["crispeta", "COL", "Colombia"], ["cotufa", "VEN", "Venezuela"], ["poporopo", "GTM", "Guatemala"],
+  ["pipoca", "BOL", "Bolivia"], ["palomitas", "ESP", "España"]];
+let color = () => "var(--var-otras)"; // se completa cuando llegan los datos
+let iluminar = () => {};
 const caja = document.querySelector(".apertura-palabra");
 const palabra = document.getElementById("palabra-giratoria");
 const pais = document.getElementById("pais-giratorio");
+const bajar = document.querySelector(".apertura-bajar");
 let indice = 0;
+const mostrar = () => {
+  const [f, , nombre] = giro[indice];
+  palabra.textContent = f;
+  pais.textContent = nombre;
+  caja.style.setProperty("--c", color(f));
+};
 function siguientePalabra() {
   caja.classList.add("cambiando");
   setTimeout(() => {
     indice = (indice + 1) % giro.length;
-    const [f, iso, c] = giro[indice];
-    palabra.textContent = f;
-    pais.textContent = nombres[iso] || iso;
-    caja.style.setProperty("--c", c);
+    mostrar();
     caja.classList.remove("cambiando");
+    iluminar();
   }, 260);
 }
-const bajar = document.querySelector(".apertura-bajar");
-palabra.textContent = giro[0][0];
-pais.textContent = nombres[giro[0][1]];
-caja.style.setProperty("--c", giro[0][2]);
-
-// Mapa tenue detrás de la pregunta: se ilumina el país de cada palabra
-const mapaApertura = crearMapa(paises, { svg: "#mapa-apertura", info: "#info-apertura", contenedor: "#apertura", id: "a" });
-const iluminar = () => {
-  const [f, iso, c] = giro[indice];
-  const v = porForma.get(f);
-  const lugares = new Set(f === "palomitas" ? ["ESP"] : v ? [iso] : []);
-  mapaApertura.pintar({ relleno: (p) => (lugares.has(p) ? c : "var(--crema-2)"), etiqueta: () => null, recuadroDestacado: lugares.has("ESP") });
-};
-mapaApertura.pintar({ relleno: () => "var(--crema-2)", etiqueta: () => null });
+mostrar();
 
 // La pregunta termina de aparecer a los ~2,3 s; luego 2 s para pensar la respuesta propia
 const PAUSA = 4300, INTERVALO = 1500;
@@ -70,7 +58,6 @@ if (!reducido) {
     iluminar();
     reloj = setInterval(() => {
       siguientePalabra();
-      setTimeout(iluminar, 260);
       bajar.classList.add("visible"); // «Descúbrelo» aparece tras el primer cambio de palabra
     }, INTERVALO);
   }, Math.max(0, PAUSA - performance.now()));
@@ -94,8 +81,25 @@ if (!reducido) {
 } else {
   caja.classList.remove("esperando");
   bajar.classList.add("visible");
-  iluminar();
 }
+
+// --- Datos: colores de las palabras y mapa tenue detrás de la pregunta ---------------
+const { paises, conceptos } = await cargarTodo();
+const concepto = conceptos.find((c) => c.id === "palomitas");
+const vista = vistaConcepto(concepto);
+const porForma = new Map(vista.variantes.map((v) => [v.forma, v]));
+color = (forma) => (porForma.has(forma) ? colorTono(porForma.get(forma).tono) : "var(--var-otras)");
+caja.style.setProperty("--c", color(giro[indice][0]));
+
+const mapaApertura = crearMapa(paises, { svg: "#mapa-apertura", info: "#info-apertura", contenedor: "#apertura", id: "a" });
+mapaApertura.pintar({ relleno: () => "var(--crema-2)", etiqueta: () => null });
+iluminar = () => {
+  if (caja.classList.contains("esperando")) return;
+  const [f, iso] = giro[indice];
+  const lugares = new Set([iso]);
+  mapaApertura.pintar({ relleno: (p) => (lugares.has(p) ? color(f) : "var(--crema-2)"), etiqueta: () => null, recuadroDestacado: iso === "ESP" });
+};
+iluminar();
 
 // --- Relato -------------------------------------------------------------------
 document.querySelectorAll(".palabra-marcada").forEach((s) => s.style.setProperty("--c", color(s.dataset.forma)));

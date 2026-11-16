@@ -125,7 +125,7 @@ a:hover { text-decoration-color: var(--tinta); }
 
 /* --- Mapa ------------------------------------------------------------- */
 .mapa-contenedor { position: relative; }
-#mapa { display: block; width: 100%; height: auto; }
+#mapa { display: block; width: 100%; height: auto; max-height: calc(100svh - var(--alto-encabezado, 70px) - 240px); min-height: 300px; }
 .pais { stroke: var(--blanco); stroke-width: .7; transition: fill .3s ease, opacity .2s ease; }
 .pais.hispano { fill: var(--rayado); cursor: pointer; }
 .pais.contexto { fill: var(--contexto); pointer-events: none; }
@@ -305,3 +305,32 @@ th { font-weight: 600; background: var(--crema); }
 html { scroll-behavior: smooth; }
 .marca { display: inline-flex; flex-direction: column; line-height: 1.15; }
 .marca .subtitulo { font: 400 .85rem var(--fuente-texto); font-stretch: 100%; color: var(--tinta-suave); letter-spacing: 0; margin-top: 2px; }
+
+/* --- Documento de metodología: índice fijo + texto a todo el ancho ----- */
+.documento { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 0 clamp(24px, 4vw, 64px); padding: 32px var(--margen) 64px; }
+.indice { position: sticky; top: calc(var(--alto-encabezado, 70px) + 24px); align-self: start; font-size: .95rem; }
+.indice ol { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--linea); }
+.indice a { display: block; padding: 5px 0 5px 14px; color: var(--tinta-suave); text-decoration: none; }
+.indice a:hover { color: var(--tinta); }
+.texto h1 { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.025em; }
+.texto section { padding-top: 12px; scroll-margin-top: calc(var(--alto-encabezado, 70px) + 16px); }
+.texto h2 { font-size: 1.6rem; margin-top: 2.4rem; letter-spacing: -.015em; }
+.texto h3 { font-size: 1.1rem; margin-top: 1.6rem; }
+.texto p, .texto li { line-height: 1.65; }
+.texto code { font-size: .88em; background: var(--crema-2); padding: 1px 5px; border-radius: 3px; }
+.formula { background: var(--blanco); border: 1px solid var(--linea); border-radius: 4px; padding: 18px; margin: 1rem 0; overflow-x: auto; font-size: 1.2rem; }
+table.datos { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0 1.2rem; background: var(--blanco); }
+table.datos th, table.datos td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--linea); vertical-align: top; }
+table.datos th { background: var(--crema-2); font-weight: 600; }
+.cuadricula { list-style: none; padding: 0; margin: .8rem 0 1.2rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 0 24px; }
+.cuadricula li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px solid var(--linea); font-variant-numeric: tabular-nums; }
+.cita { background: var(--blanco); border: 1px solid var(--linea); border-radius: var(--radio); padding: 12px 16px; }
+@media (min-width: 1300px) { .biblio { columns: 2; column-gap: 48px; } .biblio li { break-inside: avoid; } }
+@media (max-width: 860px) {
+  .documento { grid-template-columns: 1fr; }
+  .indice { position: static; margin-bottom: 1rem; }
+  .indice ol { columns: 2; border-left: 0; }
+}
+/* El mapa del explorador no se estira con el panel y queda a la vista al recorrerlo */
+.mapa-tarjeta { align-self: start; position: sticky; top: calc(var(--alto-encabezado, 70px) + 12px); }
+@media (max-width: 900px) { .mapa-tarjeta { position: static; } }
