@@ -67,14 +67,22 @@ if (!reducido) {
     iluminar();
     reloj = setInterval(() => { siguientePalabra(); setTimeout(iluminar, 260); }, INTERVALO);
   }, Math.max(0, PAUSA - performance.now()));
-  // Tras unas cuantas palabras, si la persona no se ha movido, bajamos solos al relato
+  // Si la persona no se ha movido, la página «rebota» para sugerir que hay más abajo (sin desplazarse sola)
   let tocado = false;
-  for (const ev of ["wheel", "touchstart", "keydown", "mousedown"]) addEventListener(ev, () => { tocado = true; }, { once: true, passive: true });
-  setTimeout(() => {
-    if (!tocado && scrollY < 40 && !document.body.classList.contains("sin-apertura")) {
-      document.getElementById("relato").scrollIntoView({ behavior: "smooth" });
-    }
-  }, Math.max(0, PAUSA - performance.now()) + INTERVALO * 6);
+  for (const ev of ["wheel", "touchstart", "keydown", "mousedown", "scroll"]) addEventListener(ev, () => { tocado = true; }, { once: true, passive: true });
+  const rebotar = () => {
+    if (tocado || scrollY > 40 || document.body.classList.contains("sin-apertura")) return;
+    document.body.animate([
+      { transform: "translateY(0)" },
+      { transform: "translateY(-56px)", offset: 0.35 },
+      { transform: "translateY(0)", offset: 0.7 },
+      { transform: "translateY(-16px)", offset: 0.85 },
+      { transform: "translateY(0)" },
+    ], { duration: 1300, easing: "ease-in-out" });
+  };
+  const primerRebote = Math.max(0, PAUSA - performance.now()) + INTERVALO * 3;
+  setTimeout(rebotar, primerRebote);
+  setTimeout(rebotar, primerRebote + 9000);
   addEventListener("scroll", () => { if (scrollY > innerHeight) clearInterval(reloj); }, { passive: true });
 } else {
   caja.classList.remove("esperando");
