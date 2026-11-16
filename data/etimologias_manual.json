@@ -1,0 +1,108 @@
+{
+  "_nota": "Etimologías escritas a mano para formas que el Wikcionario no explica con el sentido del mapa. Prevalecen sobre el Wikcionario (sirven también para corregir etimologías de otra acepción). 'grupo': indigena, italiano, ingles, africano, europeo, herencia, formacion o incierto. 'fuente': cítese la obra consultada; mientras diga «Nota editorial (por verificar)», el sitio la muestra como provisional.",
+  "etimologias": {
+    "mano": {
+      "texto": "Acortamiento de «hermano».",
+      "grupo": "formacion",
+      "lengua": "",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "panito": {
+      "texto": "Diminutivo de «pana».",
+      "grupo": "formacion",
+      "lengua": "",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "veci": {
+      "texto": "Acortamiento de «vecino».",
+      "grupo": "formacion",
+      "lengua": "",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "compa": {
+      "texto": "Acortamiento de «compadre» o «compañero».",
+      "grupo": "formacion",
+      "lengua": "",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "fren": {
+      "texto": "Del inglés friend («amigo»).",
+      "grupo": "ingles",
+      "lengua": "inglés",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "broki": {
+      "texto": "Del inglés bro, acortamiento de brother («hermano»).",
+      "grupo": "ingles",
+      "lengua": "inglés",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "laguer": {
+      "texto": "Del inglés lager, y este del alemán Lagerbier («cerveza de almacén»).",
+      "grupo": "ingles",
+      "lengua": "inglés",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "birria": {
+      "texto": "Variante de «birra», del italiano birra («cerveza»).",
+      "grupo": "italiano",
+      "lengua": "italiano",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "fría": {
+      "texto": "Adjetivo sustantivado: la cerveza que se pide «bien fría».",
+      "grupo": "formacion",
+      "lengua": "",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "rubia": {
+      "texto": "Por el color de la cerveza clara.",
+      "grupo": "formacion",
+      "lengua": "",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "guambra": {
+      "texto": "Del quechua wambra («muchacho, niño»).",
+      "grupo": "indigena",
+      "lengua": "quechua",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "carajito": {
+      "texto": "Diminutivo formado sobre «carajo».",
+      "grupo": "formacion",
+      "lengua": "",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "che kape": {
+      "texto": "Expresión del español paraguayo con elementos del guaraní (che, «mi»).",
+      "grupo": "indigena",
+      "lengua": "guaraní",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "nde ra kóre": {
+      "texto": "Expresión en guaraní usada dentro del español paraguayo (jopara).",
+      "grupo": "indigena",
+      "lengua": "guaraní",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "chamo": {
+      "texto": "Origen discutido: quizá del inglés chum («compañero») o acortamiento de «chamaco» (del náhuatl chamahuac, «rollizo»).",
+      "grupo": "incierto",
+      "lengua": "",
+      "fuente": "Wikcionario, resumido",
+      "url": "https://es.wiktionary.org/wiki/chamo#Etimología"
+    },
+    "camarón": {
+      "texto": "Uso figurado de «camarón». En Panamá circula la explicación popular de que viene del inglés come around, de la época de la Zona del Canal, pero no está documentada.",
+      "grupo": "incierto",
+      "lengua": "",
+      "fuente": "Nota editorial (por verificar)"
+    },
+    "birome": {
+      "texto": "De los apellidos de sus inventores, László Bíró y Juan Jorge Meyne, que comercializaron el bolígrafo en Argentina con la marca Birome.",
+      "grupo": "formacion",
+      "lengua": "",
+      "fuente": "Nota editorial (por verificar)"
+    }
+  }
+}

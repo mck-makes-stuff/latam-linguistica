@@ -1,7 +1,7 @@
 /* ==========================================================================
    Un concepto, muchas palabras — hoja de estilo
-   Fase 1: paleta neutra (blanco, crema, tostado). En la fase 2 sólo cambian
-   las variables --var-* (un color por variante).
+   Base crema y tostada; las palabras usan una gama apagada de tonos DISTINTOS
+   (no una escala), para que ningún color parezca «más» que otro.
    ========================================================================== */
 
 :root {
@@ -16,13 +16,26 @@
   --tinta-suave: #6f6257;    /* texto secundario */
   --linea: #ddd0b8;          /* fronteras, divisores */
 
-  /* Tonos por variante (fase 1: gama tostada). Orden = variante más extendida primero */
-  --var-1: #7a5c3a;
-  --var-2: #b08a5a;
-  --var-3: #d6bc8f;
-  --var-4: #9c8f6e;
-  --var-5: #c79f86;
-  --var-otras: #e6d9c2;
+  /* Tonos por variante: categorías discretas, misma luminosidad aproximada */
+  --var-1: #b86f50;   /* terracota */
+  --var-2: #7d9a68;   /* salvia */
+  --var-3: #6787a0;   /* azul pizarra */
+  --var-4: #cfa04a;   /* ocre */
+  --var-5: #96739a;   /* ciruela */
+  --var-6: #5f9690;   /* verde azulado */
+  --var-7: #c98f80;   /* arcilla rosada */
+  --var-8: #98944f;   /* oliva */
+  --var-otras: #d8c9ad;
+
+  /* Grupos de origen (modo «Origen») */
+  --or-indigena: #7d9a68;
+  --or-herencia: #a88a62;
+  --or-formacion: #cfa04a;
+  --or-italiano: #b86f50;
+  --or-ingles: #6787a0;
+  --or-europeo: #96739a;
+  --or-africano: #5f9690;
+  --or-incierto: #d8c9ad;
   --sin-dato: #f6f1e8;       /* base del rayado «sin registro» */
   --contexto: #f1ece3;       /* países no hispanohablantes */
 
@@ -54,13 +67,30 @@ a { color: var(--tostado-2); }
 .encabezado nav a[aria-current="page"] { color: var(--tinta); }
 
 /* --- Introducción ----------------------------------------------------- */
-.intro { padding: 36px var(--margen) 8px; max-width: 980px; }
+.intro { padding: 32px var(--margen) 8px; max-width: 1040px; }
+.objetivo { font: 600 clamp(1.25rem, 2.4vw, 1.6rem)/1.3 var(--fuente-titulo); color: var(--tinta); max-width: 40ch; margin: 0 0 .9rem; }
+.objetivo + p { margin-top: 0; }
+.etiqueta-intro { font: 600 .75rem var(--fuente-texto); letter-spacing: .08em; text-transform: uppercase; color: var(--tostado-2); margin: 0 0 .5rem; }
+.acciones { display: flex; flex-wrap: wrap; gap: 10px; margin: 1.1rem 0 .4rem; }
+.accion { display: inline-flex; flex-direction: column; gap: 2px; padding: 10px 14px; border-radius: 10px; background: var(--blanco);
+  border: 1px solid var(--linea); text-decoration: none; color: var(--tinta); min-width: 180px; }
+.accion strong { font-size: .95rem; }
+.accion span { font-size: .8rem; color: var(--tinta-suave); }
+.accion:hover { border-color: var(--tostado); }
+.titulo-mapa { padding: 18px var(--margen) 0; }
+.titulo-mapa h1 { font-size: clamp(1.6rem, 3.4vw, 2.4rem); margin: 0; }
+.titulo-mapa h1 span { color: var(--tostado-2); font-style: italic; }
 .intro h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
 .intro h1 span { color: var(--tostado-2); font-style: italic; }
 .intro p { color: var(--tinta-suave); max-width: 68ch; margin: .6rem 0 0; }
 
 /* --- Selector de conceptos -------------------------------------------- */
-.conceptos { display: flex; flex-wrap: wrap; gap: 8px; padding: 20px var(--margen) 4px; }
+.conceptos { display: grid; gap: 8px; padding: 14px var(--margen) 4px; }
+.nivel { display: grid; grid-template-columns: 150px 1fr; gap: 8px 12px; align-items: start; }
+@media (max-width: 640px) { .nivel { grid-template-columns: 1fr; } }
+.nivel-titulo { font-size: .8rem; color: var(--tinta-suave); padding-top: 8px; line-height: 1.3; }
+.nivel-titulo strong { display: block; color: var(--tinta); font-size: .85rem; }
+.nivel-botones { display: flex; flex-wrap: wrap; gap: 6px; }
 .concepto-boton {
   font: 500 .9rem var(--fuente-texto); color: var(--tinta); cursor: pointer;
   padding: 7px 14px; border-radius: 999px; border: 1px solid var(--linea); background: var(--blanco);
@@ -68,6 +98,15 @@ a { color: var(--tostado-2); }
 }
 .concepto-boton:hover { border-color: var(--tostado); }
 .concepto-boton[aria-pressed="true"] { background: var(--tinta); border-color: var(--tinta); color: var(--crema); }
+.concepto-boton .barras { display: inline-flex; gap: 2px; margin-left: 6px; vertical-align: middle; }
+.concepto-boton .barras i { width: 3px; height: 9px; border-radius: 1px; background: var(--arena); }
+.concepto-boton .barras i.on { background: var(--tostado-2); }
+.concepto-boton[aria-pressed="true"] .barras i.on { background: var(--crema); }
+
+/* --- Selector de vista (Palabras / Origen) ---------------------------- */
+.vistas { display: inline-flex; border: 1px solid var(--linea); border-radius: 999px; padding: 2px; background: var(--crema); }
+.vistas button { font: 500 .85rem var(--fuente-texto); border: 0; background: none; padding: 6px 12px; border-radius: 999px; cursor: pointer; color: var(--tinta-suave); }
+.vistas button[aria-pressed="true"] { background: var(--blanco); color: var(--tinta); box-shadow: 0 1px 2px rgb(58 48 41 / .12); }
 
 /* --- Diseño principal ------------------------------------------------- */
 .diseno { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 24px; padding: 20px var(--margen); }
@@ -99,7 +138,7 @@ a { color: var(--tostado-2); }
 .recuadro-titulo { font: 600 10px var(--fuente-texto); fill: var(--tinta-suave); letter-spacing: .02em; }
 
 .info-flotante {
-  position: absolute; pointer-events: none; background: var(--tinta); color: var(--crema); max-width: 240px;
+  position: absolute; pointer-events: none; background: var(--tinta); color: var(--crema); max-width: 300px; line-height: 1.4;
   padding: 6px 10px; border-radius: 6px; font-size: .85rem; opacity: 0; transition: opacity .15s;
 }
 
@@ -131,10 +170,21 @@ a { color: var(--tostado-2); }
 }
 .aviso { background: var(--crema); border-left: 3px solid var(--tostado); padding: 8px 12px; font-size: .85rem; border-radius: 4px; }
 .fuente { font-size: .85rem; color: var(--tinta-suave); }
+.info-flotante .origen { display: block; font-size: .78rem; opacity: .85; }
+.etimologia { background: var(--crema); border-radius: 8px; padding: 10px 12px; font-size: .9rem; margin: .6rem 0; }
+.etimologia .grupo { display: inline-flex; align-items: center; gap: 6px; font-size: .78rem; font-weight: 600; color: var(--tinta-suave); text-transform: uppercase; letter-spacing: .04em; }
+.provisional { color: #9a5a2f; font-size: .78rem; }
+.citas { padding-left: 1.2rem !important; list-style: decimal !important; font-size: .82rem; color: var(--tinta-suave); }
+.citas li { border: 0 !important; padding: 3px 0 !important; }
+.historia h3 { display: flex; align-items: center; gap: 8px; }
+.historia p { font-size: .9rem; margin: .2rem 0 .6rem; }
+td .ref { font-size: .8rem; color: var(--tinta-suave); display: block; }
+td .muestra { vertical-align: -2px; margin-right: 4px; }
 
 /* --- Secciones inferiores --------------------------------------------- */
 .seccion { padding: 8px var(--margen) 20px; }
-.tabla-datos summary { cursor: pointer; padding: 14px 18px; font-weight: 500; }
+.tabla-datos summary { cursor: pointer; padding: 14px 18px; font-weight: 600; font-family: var(--fuente-titulo); font-size: 1.1rem; }
+.tabla-datos .nota-tabla { padding: 10px 18px 0; margin: 0; font-size: .85rem; color: var(--tinta-suave); }
 .tabla-datos[open] summary { border-bottom: 1px solid var(--linea); }
 #tabla { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; font-size: .9rem; }

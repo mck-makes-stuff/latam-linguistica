@@ -23,6 +23,7 @@
     <a class="marca" href="index.html">Un concepto, <em>muchas palabras</em></a>
     <nav aria-label="Secciones">
       <a href="index.html">Mapa</a>
+      <a href="quiz.html">¿De dónde eres?</a>
       <a href="acerca.html" aria-current="page">Metodología y fuentes</a>
     </nav>
   </header>
@@ -52,8 +53,14 @@
     <p>Una variante aparece como <strong>verificada</strong> cuando una fuente de nivel A o B la registra con esa acepción en ese país. Si sólo la recogen fuentes C o D, se marca <strong>en revisión</strong>.</p>
     <p>Además, el equipo revisó las fuentes web de cada país y catalogó las palabras que se repetían. Esas formas aparecen en el mapa con la indicación <strong>registro del equipo</strong> cuando el Wikcionario no las confirma para ese país.</p>
 
+    <h2>Orígenes de las palabras</h2>
+    <p>La etimología de cada palabra se toma de la sección «Etimología» del Wikcionario que corresponde a la acepción del mapa (una palabra con varias etimologías puede tener orígenes distintos según su significado). Cuando el Wikcionario no la da o la da para otra acepción, el equipo escribe una nota en <code>data/etimologias_manual.json</code>; mientras no tenga una fuente publicada, el sitio la marca como <strong>provisional</strong>. Cada palabra se clasifica en un grupo de origen (lenguas indígenas, herencia latina y peninsular, creación dentro del español, italiano, inglés, otras lenguas europeas, lenguas africanas u origen incierto), y el modo «Origen» del mapa colorea los países según ese grupo. Los textos de contexto histórico son resúmenes generales; para ampliar, véanse Lipski (1994), Moreno de Alba (1988), el <em>Diccionario de americanismos</em> (ASALE, 2010) y, para el lunfardo, Conde (1998).</p>
+
+    <h2>Poder distintivo y cuestionario</h2>
+    <p>Los conceptos se ordenan según cuánto separan a los países: se calcula la entropía de la partición «país → palabra principal» sobre los veinte países (los países sin registro cuentan juntos como «forma general») y se divide por la máxima posible. El cuestionario <a href="quiz.html">¿De dónde eres?</a> elige en cada paso el concepto que mejor separa a los países que siguen en juego y suma puntos a los países donde se registran las palabras elegidas.</p>
+
     <h2>Qué muestra esta versión</h2>
-    <p>Esta primera versión incluye catorce conceptos de uso cotidiano, elegidos porque la mayoría de los países tiene para ellos una palabra propia y documentada. Cada país se colorea con la palabra más extendida de las que se registran allí; la tabla bajo el mapa muestra todas. Algunas asignaciones automáticas se corrigieron a mano cuando la palabra significa otra cosa en ese país (por ejemplo, <em>polera</em> es una camiseta en Chile, pero un jersey de cuello alto en el Río de la Plata).</p>
+    <p>Esta versión incluye conceptos de uso cotidiano, elegidos porque la mayoría de los países tiene para ellos una palabra propia y documentada. Cada país se colorea con la palabra más extendida de las que se registran allí; la tabla bajo el mapa muestra todas. Algunas asignaciones automáticas se corrigieron a mano cuando la palabra significa otra cosa en ese país (por ejemplo, <em>polera</em> es una camiseta en Chile, pero un jersey de cuello alto en el Río de la Plata).</p>
 
     <h2>Limitaciones</h2>
     <ul>

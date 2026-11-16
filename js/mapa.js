@@ -26,7 +26,7 @@ export function iniciarMapa(paises, { alHacerClic }) {
   ruta = d3.geoPath(proyeccion);
   dibujarPaises(svg.append("g"), paises.filter((f) => !EUROPA.has(f.properties.iso3)), ruta, alHacerClic);
 
-  // Recuadro de España (comparación), arriba a la derecha, sobre el Atlántico
+  // Recuadro de España, arriba a la derecha, sobre el Atlántico
   const R = { x: ANCHO - 204, y: 18, w: 186, h: 146 };
   const peninsula = mayorPoligono(paises.find((f) => f.properties.iso3 === "ESP"));
   const proyEsp = d3.geoConicEqualArea().parallels([36, 43]).rotate([3.7, 0])
@@ -40,7 +40,7 @@ export function iniciarMapa(paises, { alHacerClic }) {
   dibujarPaises(grupoEsp.append("g").attr("clip-path", "url(#recorte-esp)"),
     paises.filter((f) => EUROPA.has(f.properties.iso3) || f.properties.iso3 === "FRA"), rutaEsp, alHacerClic);
   grupoEsp.append("text").attr("class", "recuadro-titulo").attr("x", R.x + 10).attr("y", R.y + 16)
-    .text("ESPAÑA · COMPARACIÓN");
+    .text("ESPAÑA");
 
   capaPaises = svg.selectAll("path.pais.hispano");
   capaEtiquetas = svg.append("g");

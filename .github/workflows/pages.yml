@@ -28,9 +28,10 @@ jobs:
       - name: Reunir los archivos del sitio
         run: |
           mkdir -p _site/data
-          cp index.html acerca.html .nojekyll _site/
+          cp index.html acerca.html quiz.html .nojekyll _site/
           cp -r css js _site/
           cp -r data/procesado data/geo _site/data/
+          cp data/fuentes_web.json _site/data/
           rm -rf _site/data/geo/fuente
           find _site -type f | sort
 

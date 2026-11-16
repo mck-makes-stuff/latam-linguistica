@@ -23,6 +23,7 @@ También recoge los {{sinónimos}} de las acepciones encontradas como
 «sugerencias» de variantes que aún no están en la semilla.
 Uso:  python3 scripts/procesar.py
 """
+import etimologia
 import json, pathlib, re, time, datetime, unicodedata, urllib.parse, urllib.request, urllib.error
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
@@ -136,11 +137,15 @@ def acepciones(texto):
         return []
     j = texto.find("\n== ", i + 10)
     seccion = texto[i: j if j > 0 else None]
-    salida, actual = [], None
+    salida, actual, etim = [], None, None
     for linea in seccion.splitlines():
+        if linea.startswith("=== Etimología"):
+            etim = None
+        elif linea.startswith("{{etimología"):
+            etim = etimologia.leer(linea)
         m = re.match(r"^;\s*\d+\s*(.*?):\s*(.*)$", linea)
         if m:
-            actual = {"definicion": limpiar_def(m.group(2)), "regiones": [], "sinonimos": []}
+            actual = {"definicion": limpiar_def(m.group(2)), "regiones": [], "sinonimos": [], "etimologia": etim}
             # formato antiguo: la región va en {{csem|...}} o en la cabecera
             for c in re.findall(r"\{\{(?:csem|uso)\|([^}]*)\}\}", m.group(1)):
                 actual["regiones"] += [a for a in args_plantilla(c) if a in PAISES or a in REGIONES]
@@ -180,17 +185,23 @@ def main():
     for c in semilla:  # las formas del equipo también son candidatas
         c["variantes"] = list(dict.fromkeys(c["variantes"] + list(equipo.get(c["id"], {}))))
 
+    f_manual = RAIZ / "data/etimologias_manual.json"
+    manual = json.loads(f_manual.read_text())["etimologias"] if f_manual.exists() else {}
+
     precargar([v for c in semilla for v in c["variantes"]])
     conceptos = []
     for c in semilla:
         glosas = [norm(g) for g in c["glosas"]]
         variantes, sugerencias = [], set()
         for forma in dict.fromkeys(c["variantes"]):
-            evidencia, paises, general, americano = [], set(), False, False
+            evidencia, paises, general, americano, etim = [], set(), False, False, None
             propias = [g for g in glosas if g != norm(forma)]  # «fresa» no sirve para reconocer «fresa»
             for a in acepciones(wikitexto(forma)):
                 if not any(g in norm(a["definicion"]) for g in propias):
                     continue
+                if a["etimologia"] and (etim is None or (a_paises(a["regiones"]) and not etim.get("_con_pais"))):
+                    etim = dict(a["etimologia"], fuente="Wikcionario", url=url_wikt(forma) + "#Etimología",
+                                _con_pais=bool(a_paises(a["regiones"])))
                 if PANAMERICANAS & set(a["regiones"]):
                     americano = True
                 p = a_paises(a["regiones"])
@@ -222,7 +233,11 @@ def main():
             secundarios -= paises
             estado = ("verificado" if verificados else "equipo" if del_equipo else "americano" if americano else "general" if general
                       else "parcial" if secundarios else "sin_datos")
-            variantes.append({"forma": forma, "paises": sorted(paises) if paises else sorted(secundarios) if estado == "parcial" else [],
+            if forma in manual:  # la etimología escrita a mano prevalece (corrige acepciones mal emparejadas)
+                etim = dict(manual[forma], url=manual[forma].get("url", ""))
+            if etim:
+                etim.pop("_con_pais", None)
+            variantes.append({"forma": forma, "etimologia": etim, "paises": sorted(paises) if paises else sorted(secundarios) if estado == "parcial" else [],
                               "paises_web": sorted(secundarios - paises), "paises_equipo": sorted(del_equipo - verificados), "general": general, "americano": americano,
                               "excluidos": sorted(excluidos),
                               "estado": estado, "evidencia": evidencia})

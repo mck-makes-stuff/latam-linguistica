@@ -1,28 +1,46 @@
 // Punto de entrada: conecta datos, estado, mapa y panel.
-import { cargarTodo, vistaConcepto, colorTono, normalizar } from "./datos.js";
+import { cargarTodo, vistaConcepto, colorTono, colorOrigen, grupoDe, normalizar, similitudes, ORIGENES, PAISES } from "./datos.js";
 import { estado, actualizar, suscribir, leerURL } from "./estado.js";
 import { iniciarMapa, pintar, definirInfo } from "./mapa.js";
-import { esc, fichaConcepto, fichaVariante, fichaPais, fichaPalabra, tablaConcepto } from "./panel.js";
+import { esc, configurarPanel, fichaConcepto, fichaVariante, fichaPais, fichaPalabra, tablaConcepto } from "./panel.js";
 
 const PORTADA = "palomitas";
-const ORDEN_PAISES = ["MEX", "GTM", "SLV", "HND", "NIC", "CRI", "PAN", "CUB", "DOM", "PRI",
-  "VEN", "COL", "ECU", "PER", "BOL", "CHL", "PRY", "ARG", "URY", "ESP"];
 
-const { paises, conceptos, lemas } = await cargarTodo();
+const { paises, conceptos, lemas, generado, fuentesWeb } = await cargarTodo();
 const nombres = Object.fromEntries(paises.map((f) => [f.properties.iso3, f.properties.nombre]));
 const porId = new Map(conceptos.map((c) => [c.id, c]));
 const indiceLemas = new Map(Object.entries(lemas).map(([l, p]) => [normalizar(l), { lema: l, paises: p }]));
 const vistas = new Map(conceptos.map((c) => [c.id, vistaConcepto(c)]));
+const parecidos = similitudes(vistas);
+configurarPanel({ nombres, generado, fuentesWeb });
 
-// --- Botones de concepto -------------------------------------------------
+// --- Botones de concepto, agrupados por cuánto distinguen a los países ------
+const NIVELES = [
+  { min: 0.5, titulo: "Distinguen mucho", nota: "casi cada país tiene su palabra" },
+  { min: 0.38, titulo: "Distinguen bastante", nota: "bloques regionales" },
+  { min: 0, titulo: "Distinguen poco", nota: "una forma domina" },
+];
+const barras = (d) => `<span class="barras" aria-hidden="true">${[0.25, 0.35, 0.45, 0.55].map((u) => `<i class="${d >= u ? "on" : ""}"></i>`).join("")}</span>`;
 const barraConceptos = document.getElementById("conceptos");
-barraConceptos.innerHTML = conceptos
-  .slice().sort((a, b) => a.corto.replace("¡", "").localeCompare(b.corto.replace("¡", ""), "es"))
-  .map((c) => `<button class="concepto-boton" type="button" data-concepto="${c.id}" aria-pressed="false" title="${esc(c.concepto)}">${esc(c.corto)}</button>`)
-  .join("");
+const ordenados = conceptos.slice().sort((a, b) => vistas.get(b.id).distincion - vistas.get(a.id).distincion);
+barraConceptos.innerHTML = NIVELES.map((n, i) => {
+  const max = i ? NIVELES[i - 1].min : Infinity;
+  const grupo = ordenados.filter((c) => { const d = vistas.get(c.id).distincion; return d >= n.min && d < max; });
+  if (!grupo.length) return "";
+  return `<div class="nivel"><div class="nivel-titulo"><strong>${n.titulo}</strong>${n.nota}</div>
+    <div class="nivel-botones">${grupo.map((c) => `<button class="concepto-boton" type="button" data-concepto="${c.id}" aria-pressed="false"
+      title="${esc(c.concepto)}: poder distintivo ${Math.round(vistas.get(c.id).distincion * 100)}/100">${esc(c.corto)}${barras(vistas.get(c.id).distincion)}</button>`).join("")}</div></div>`;
+}).join("");
 barraConceptos.addEventListener("click", (ev) => {
   const b = ev.target.closest("[data-concepto]");
   if (b) actualizar({ modo: "concepto", concepto: b.dataset.concepto, variante: null, pais: null, palabra: null });
+});
+
+// --- Selector de vista ------------------------------------------------------
+const selectorVista = document.getElementById("vistas");
+selectorVista.addEventListener("click", (ev) => {
+  const b = ev.target.closest("[data-vista]");
+  if (b) actualizar({ vista: b.dataset.vista, modo: "concepto", variante: null });
 });
 
 // --- Buscador ------------------------------------------------------------
@@ -47,12 +65,17 @@ iniciarMapa(paises, { alHacerClic: (iso) => actualizar({ pais: estado.pais === i
 definirInfo(({ iso3, nombre }) => {
   if (estado.modo === "palabra") return esc(nombre);
   const vs = vistas.get(estado.concepto).porPais.get(iso3) || [];
-  return `<strong>${esc(nombre)}</strong><br>${vs.map((v) => esc(v.forma)).join(", ") || "sin registro"}`;
+  if (!vs.length) return `<strong>${esc(nombre)}</strong><br>sin registro: probablemente la forma general`;
+  return `<strong>${esc(nombre)}</strong>` + vs.map((v) =>
+    `<br>${esc(v.forma)}<span class="origen">${esc(v.etimologia?.texto || "Origen sin documentar.")}</span>`).join("");
 });
 
 function render() {
   const leyenda = document.getElementById("leyenda");
+  const origen = estado.vista === "origen";
+  configurarPanel({ vista: estado.vista });
   limpiar.hidden = estado.modo !== "palabra";
+  selectorVista.querySelectorAll("[data-vista]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.vista === estado.vista)));
   barraConceptos.querySelectorAll("[data-concepto]").forEach((b) =>
     b.setAttribute("aria-pressed", String(estado.modo === "concepto" && b.dataset.concepto === estado.concepto)));
 
@@ -60,9 +83,9 @@ function render() {
     const hallado = indiceLemas.get(normalizar(estado.palabra));
     const marcados = new Set(hallado?.paises || []);
     document.getElementById("titular-concepto").textContent = estado.palabra;
-    pintar({ relleno: (iso) => (marcados.has(iso) ? colorTono(2) : null), etiqueta: () => null, activo: estado.pais, resaltados: null });
-    fichaPalabra(hallado?.lema || estado.palabra, hallado?.paises, nombres);
-    leyenda.innerHTML = `<span class="leyenda-nota"><span class="muestra" style="background:${colorTono(2)}"></span>marcada como regional</span>
+    pintar({ relleno: (iso) => (marcados.has(iso) ? colorTono(1) : null), etiqueta: () => null, activo: estado.pais, resaltados: null });
+    fichaPalabra(hallado?.lema || estado.palabra, hallado?.paises);
+    leyenda.innerHTML = `<span class="leyenda-nota"><span class="muestra" style="background:${colorTono(1)}"></span>marcada como regional</span>
       <span class="leyenda-nota"><span class="muestra rayada"></span>sin marca</span>`;
     return;
   }
@@ -73,7 +96,11 @@ function render() {
   const variante = vista.variantes.find((v) => v.forma === estado.variante);
 
   pintar({
-    relleno: (iso) => { const vs = vista.porPais.get(iso); return vs ? colorTono(vs[0].tono) : null; },
+    relleno: (iso) => {
+      const vs = vista.porPais.get(iso);
+      if (!vs) return null;
+      return origen ? colorOrigen(grupoDe(vs[0])) : colorTono(vs[0].tono);
+    },
     etiqueta: (iso) => {
       const vs = vista.porPais.get(iso);
       if (!vs) return null;
@@ -84,15 +111,21 @@ function render() {
     resaltados: variante ? new Set(variante.paises) : null,
   });
 
-  leyenda.innerHTML = vista.variantes.map((v) =>
-    `<button class="leyenda-item" type="button" data-variante="${esc(v.forma)}" aria-pressed="${v === variante}">
-       <span class="muestra" style="background:${colorTono(v.tono)}"></span>${esc(v.forma)} <small>${v.paises.length}</small></button>`).join("")
-    + `<span class="leyenda-nota"><span class="muestra rayada"></span>sin registro</span>`;
+  if (origen) {
+    const presentes = Object.keys(ORIGENES).filter((g) => vista.variantes.some((v) => grupoDe(v) === g));
+    leyenda.innerHTML = presentes.map((g) => `<span class="leyenda-nota" title="${esc(ORIGENES[g].contexto)}"><span class="muestra" style="background:${colorOrigen(g)}"></span>${esc(ORIGENES[g].nombre)}</span>`).join("")
+      + `<span class="leyenda-nota"><span class="muestra rayada"></span>sin registro</span>`;
+  } else {
+    leyenda.innerHTML = vista.variantes.map((v) =>
+      `<button class="leyenda-item" type="button" data-variante="${esc(v.forma)}" aria-pressed="${v === variante}" title="${esc(v.etimologia?.texto || "")}">
+         <span class="muestra" style="background:${colorTono(v.tono)}"></span>${esc(v.forma)} <small>${v.paises.length}</small></button>`).join("")
+      + `<span class="leyenda-nota"><span class="muestra rayada"></span>sin registro</span>`;
+  }
 
-  tablaConcepto(vista, nombres, ORDEN_PAISES);
-  if (variante) fichaVariante(concepto, variante, nombres);
-  else if (estado.pais) fichaPais(estado.pais, nombres, vista, concepto);
-  else fichaConcepto(concepto, vista, nombres);
+  tablaConcepto(vista, PAISES);
+  if (variante) fichaVariante(concepto, variante);
+  else if (estado.pais) fichaPais(estado.pais, vista, concepto, parecidos);
+  else fichaConcepto(concepto, vista);
 }
 
 suscribir(render);

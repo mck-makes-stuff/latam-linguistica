@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿De dónde eres?</title>
+  <meta name="description" content="Responde cómo dices cada cosa y descubre si tus palabras bastan para saber de qué país eres.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <style>
+    .pregunta { padding: 22px; }
+    .pregunta .numero { color: var(--tinta-suave); font-size: .85rem; margin: 0 0 .3rem; }
+    .pregunta h2 { font-size: 1.6rem; }
+    .definicion { color: var(--tinta-suave); margin: 0 0 1rem; }
+    .opciones { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 1rem; }
+    .opcion { font: 500 .95rem var(--fuente-texto); padding: 8px 14px; border-radius: 999px; border: 1px solid var(--linea);
+      background: var(--blanco); color: var(--tinta); cursor: pointer; }
+    .opcion:hover { border-color: var(--tostado); }
+    .opcion[aria-pressed="true"] { background: var(--tinta); color: var(--crema); border-color: var(--tinta); }
+    .opcion.ninguna { font-style: italic; }
+    .boton { font: 600 .95rem var(--fuente-texto); padding: 10px 18px; border-radius: 10px; border: 0; cursor: pointer;
+      background: var(--tostado-2); color: var(--blanco); }
+    .boton:disabled { opacity: .4; cursor: default; }
+    .boton.secundario { background: none; color: var(--tostado-2); border: 1px solid var(--linea); }
+    .respuesta { margin-top: 1rem; }
+    .respuesta li { padding: 8px 0; border-bottom: 1px solid var(--crema-2); list-style: none; }
+    .respuesta ul { padding: 0; }
+    .ranking { list-style: none; padding: 0; margin: .4rem 0; }
+    .ranking li { display: grid; grid-template-columns: 1fr 60px; align-items: center; gap: 8px; padding: 4px 0; font-size: .92rem; }
+    .ranking .barra-p { height: 6px; border-radius: 3px; background: var(--crema-2); grid-column: 1 / -1; overflow: hidden; }
+    .ranking .barra-p i { display: block; height: 100%; background: var(--tostado-2); }
+    .ranking .pct { text-align: right; color: var(--tinta-suave); font-size: .85rem; }
+    .escala { display: flex; align-items: center; gap: 8px; font-size: .8rem; color: var(--tinta-suave); padding: 12px 14px; border-top: 1px solid var(--linea); }
+    .escala .degradado { width: 140px; height: 10px; border-radius: 3px; background: linear-gradient(90deg, #f0e7d8, #7a5c3a); }
+    .resultado h2 { font-size: 1.8rem; }
+    .identificables td, .identificables th { padding: 6px 12px; }
+  </style>
+</head>
+<body>
+  <header class="encabezado">
+    <a class="marca" href="index.html">Un concepto, <em>muchas palabras</em></a>
+    <nav aria-label="Secciones">
+      <a href="index.html">Mapa</a>
+      <a href="quiz.html" aria-current="page">¿De dónde eres?</a>
+      <a href="acerca.html">Metodología y fuentes</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <p class="etiqueta-intro">Ponte a prueba</p>
+    <p class="objetivo">¿Bastan tus palabras para saber de dónde eres?</p>
+    <p>Te damos una definición y eliges cómo lo dices tú (puedes marcar varias). Con cada respuesta, el mapa se oscurece en los países donde se registran esas palabras. Las preguntas se eligen para separar lo más posible a los países que siguen en juego. Al final verás si tu combinación de palabras apunta a un país, a una región o a varias.</p>
+  </section>
+
+  <main class="diseno">
+    <section class="tarjeta mapa-tarjeta" aria-label="Mapa de coincidencias">
+      <div class="mapa-contenedor">
+        <svg id="mapa" role="img" aria-labelledby="titulo-mapa"><title id="titulo-mapa">Mapa de coincidencias por país</title></svg>
+        <div class="info-flotante" id="info-flotante" role="tooltip"></div>
+      </div>
+      <div class="escala"><span>menos coincidencias</span><span class="degradado"></span><span>más coincidencias</span></div>
+    </section>
+
+    <aside class="tarjeta panel pregunta" id="pregunta" aria-live="polite"></aside>
+  </main>
+
+  <section class="seccion">
+    <details class="tarjeta tabla-datos">
+      <summary>¿Se puede adivinar de verdad el país?</summary>
+      <div id="simulacion" style="padding: 0 18px 18px"></div>
+    </details>
+  </section>
+
+  <footer class="pie">
+    <p>Datos: los mismos del <a href="index.html">mapa</a> (Wikcionario, CC BY-SA 4.0, y registro del equipo). <a href="acerca.html">Metodología y fuentes</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script type="module" src="js/quiz.js"></script>
+</body>
+</html>
