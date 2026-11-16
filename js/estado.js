@@ -7,9 +7,9 @@ export const estado = { modo: "concepto", vista: "palabras", concepto: null, var
 
 export function suscribir(fn) { oyentes.add(fn); }
 
-export function actualizar(cambios) {
+export function actualizar(cambios, { sinURL = false } = {}) {
   Object.assign(estado, cambios);
-  escribirURL();
+  if (!sinURL) escribirURL();
   oyentes.forEach((fn) => fn(estado));
 }
 

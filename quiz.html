@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>¿De dónde eres?</title>
+  <title>¿De dónde eres? · En otras palabras</title>
   <meta name="description" content="Responde cómo dices cada cosa y descubre si tus palabras bastan para saber de qué país eres.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%227%22 height=%2216%22 fill=%22%23b86f50%22/%3E%3Crect x=%229%22 width=%227%22 height=%2216%22 fill=%22%237d9a68%22/%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/estilo.css">
   <style>
     .pregunta { padding: 22px; }
@@ -15,12 +16,12 @@
     .pregunta h2 { font-size: 1.6rem; }
     .definicion { color: var(--tinta-suave); margin: 0 0 1rem; }
     .opciones { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 1rem; }
-    .opcion { font: 500 .95rem var(--fuente-texto); padding: 8px 14px; border-radius: 999px; border: 1px solid var(--linea);
+    .opcion { font: 500 .95rem var(--fuente-texto); padding: 8px 14px; border-radius: 3px; border: 1px solid var(--linea);
       background: var(--blanco); color: var(--tinta); cursor: pointer; }
     .opcion:hover { border-color: var(--tostado); }
     .opcion[aria-pressed="true"] { background: var(--tinta); color: var(--crema); border-color: var(--tinta); }
-    .opcion.ninguna { font-style: italic; }
-    .boton { font: 600 .95rem var(--fuente-texto); padding: 10px 18px; border-radius: 10px; border: 0; cursor: pointer;
+    .opcion.ninguna { color: var(--tinta-suave); }
+    .boton { font: 600 .95rem var(--fuente-texto); padding: 10px 18px; border-radius: 4px; border: 0; cursor: pointer;
       background: var(--tostado-2); color: var(--blanco); }
     .boton:disabled { opacity: .4; cursor: default; }
     .boton.secundario { background: none; color: var(--tostado-2); border: 1px solid var(--linea); }
@@ -36,11 +37,12 @@
     .escala .degradado { width: 140px; height: 10px; border-radius: 3px; background: linear-gradient(90deg, #f0e7d8, #7a5c3a); }
     .resultado h2 { font-size: 1.8rem; }
     .identificables td, .identificables th { padding: 6px 12px; }
+    @media (max-width: 900px) { .pregunta { order: -1; } }
   </style>
 </head>
 <body>
   <header class="encabezado">
-    <a class="marca" href="index.html">Un concepto, <em>muchas palabras</em></a>
+    <a class="marca" href="index.html">En otras palabras<span class="subtitulo">Un mapa de las diferencias léxicas en el mundo hispanohablante</span></a>
     <nav aria-label="Secciones">
       <a href="index.html">Mapa</a>
       <a href="quiz.html" aria-current="page">¿De dónde eres?</a>
@@ -49,9 +51,7 @@
   </header>
 
   <section class="intro">
-    <p class="etiqueta-intro">Ponte a prueba</p>
-    <p class="objetivo">¿Bastan tus palabras para saber de dónde eres?</p>
-    <p>Te damos una definición y eliges cómo lo dices tú (puedes marcar varias). Con cada respuesta, el mapa se oscurece en los países donde se registran esas palabras. Las preguntas se eligen para separar lo más posible a los países que siguen en juego. Al final verás si tu combinación de palabras apunta a un país, a una región o a varias.</p>
+    <h1 class="objetivo">¿Bastan tus palabras para saber de dónde eres?</h1>
   </section>
 
   <main class="diseno">

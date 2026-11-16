@@ -79,14 +79,13 @@ export function fichaConcepto(concepto, vista) {
     <p class="meta">Concepto · ${esc(concepto.campo)}</p>
     <h2>${esc(concepto.concepto)}</h2>
     <p>${esc(concepto.definicion)}</p>
-    <p class="fuente">Poder para distinguir países: <strong>${nivel}/100</strong> (cuanto más alto, más dice de dónde es alguien).</p>
+    <p class="fuente">Poder para distinguir países: <strong>${nivel}/100</strong>.</p>
     ${ctx.vista === "origen" ? historia(vista, true) : ""}
     <h3>${vista.variantes.length} palabras registradas</h3>
     <ul>${filas || "<li>Sin datos todavía.</li>"}</ul>
     ${vista.generales.length ? `<p class="fuente">Formas generales, sin marca de país: ${vista.generales.map((v) => `<em>${esc(v.forma)}</em>`).join(", ")}.</p>` : ""}
     ${vista.revision.length ? `<p class="aviso"><strong>En revisión</strong> (sólo en listas no académicas): ${vista.revision.map((v) => `${esc(v.forma)} (${lista(v.paises, nombres)})`).join("; ")}.</p>` : ""}
-    ${ctx.vista === "origen" ? "" : historia(vista, false)}
-    <p class="fuente">Haz clic en un país o en una palabra para ver su origen y sus fuentes.</p>`;
+    ${ctx.vista === "origen" ? "" : historia(vista, false)}`;
 }
 
 const marcaEquipo = (v) => {

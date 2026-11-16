@@ -131,7 +131,7 @@ export const ORIGENES = {
 export const LECTURAS = [
   "Lipski, John M. (1994). Latin American Spanish. Londres: Longman.",
   "Moreno de Alba, José G. (1988). El español en América. México: Fondo de Cultura Económica.",
-  "Asociación de Academias de la Lengua Española (2010). Diccionario de americanismos. Lima: Santillana.",
+  "Asociación de Academias de la Lengua Española (2010). Diccionario de americanismos. Madrid: Santillana.",
   "Conde, Oscar (1998). Diccionario etimológico del lunfardo. Buenos Aires: Libros Perfil.",
 ];
 export const colorOrigen = (grupo) => `var(--or-${grupo || "incierto"})`;

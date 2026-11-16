@@ -91,6 +91,7 @@ function mostrarPregunta() {
   caja.innerHTML = `
     <p class="numero">Pregunta ${hechas.length + 1} de ${MAX_PREGUNTAS}</p>
     <h2>¿Cómo lo dices tú?</h2>
+    <p class="fuente">Puedes marcar varias.</p>
     <p class="definicion"><strong>${esc(c.definicion)}</strong></p>
     <div class="opciones">${formas.map((f) => `<button type="button" class="opcion" data-forma="${esc(f)}" aria-pressed="false">${esc(f)}</button>`).join("")}
       <button type="button" class="opcion ninguna" data-forma="${NINGUNA}" aria-pressed="false">ninguna de estas</button></div>
@@ -207,7 +208,7 @@ function simular() {
     <p>El juego acierta, pero duda entre:</p>
     <ul>${[...parejas.values()].map((x) => `<li><strong>${esc(nombres[x.a])} y ${esc(nombres[x.b])}</strong>${x.comunes.length ? `: comparten palabras como ${x.comunes.slice(0, 4).map((w) => `<em>${esc(w)}</em>`).join(", ")}` : ""}</li>`).join("")}</ul>
     <p>Son países vecinos o con historia compartida (el Caribe hispano, Centroamérica, el Río de la Plata), así que usan muchas palabras iguales.</p>` : ""}
-    <p class="fuente">Ojo: es un caso ideal. Una persona real mezcla palabras generales, de su región y de la tele, y nuestros datos no recogen todas las palabras de cada país. En la vida real, la pronunciación y la gramática (por ejemplo, el voseo) ayudan a desempatar.</p>`;
+    <p class="fuente">Es un caso ideal: una persona real mezcla palabras generales y de otras regiones, y los datos no recogen todas las palabras de cada país. La pronunciación y la gramática (el voseo, por ejemplo) también ayudan a desempatar.</p>`;
 }
 
 simular();

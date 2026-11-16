@@ -1,4 +1,6 @@
-# Un concepto, muchas palabras
+# En otras palabras
+
+Un mapa de las diferencias léxicas en el mundo hispanohablante.
 
 Mapa interactivo de la variación léxica del español en los diecinueve países hispanohablantes de América Latina (más Puerto Rico). Todo el sitio está en español.
 

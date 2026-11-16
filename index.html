@@ -3,16 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Un concepto, muchas palabras</title>
+  <title>En otras palabras · Un mapa de las diferencias léxicas en el mundo hispanohablante</title>
   <meta name="description" content="Mapa interactivo de la variación léxica del español en América Latina: un mismo concepto, muchas palabras.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%227%22 height=%2216%22 fill=%22%23b86f50%22/%3E%3Crect x=%229%22 width=%227%22 height=%2216%22 fill=%22%237d9a68%22/%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/estilo.css">
 </head>
-<body>
+<body class="con-apertura">
+  <!-- 1. Apertura: la pantalla se abre desde el centro y deja una pregunta -->
+  <section class="apertura" id="apertura" aria-label="Presentación">
+    <div class="cortina izquierda" aria-hidden="true"></div>
+    <div class="cortina derecha" aria-hidden="true"></div>
+    <div class="apertura-centro">
+      <h1 class="apertura-pregunta">¿Cómo le dices a esto?</h1>
+      <p class="apertura-definicion">Granos de maíz que revientan al calentarse.</p>
+      <p class="apertura-palabra" aria-live="polite"><span id="palabra-giratoria">palomitas</span><small id="pais-giratorio">España</small></p>
+      <a class="apertura-bajar" href="#relato">Descúbrelo <span aria-hidden="true">↓</span></a>
+    </div>
+  </section>
+
   <header class="encabezado">
-    <a class="marca" href="index.html">Un concepto, <em>muchas palabras</em></a>
+    <a class="marca" href="index.html">En otras palabras<span class="subtitulo">Un mapa de las diferencias léxicas en el mundo hispanohablante</span></a>
     <nav aria-label="Secciones">
       <a href="index.html" aria-current="page">Mapa</a>
       <a href="quiz.html">¿De dónde eres?</a>
@@ -20,19 +33,58 @@
     </nav>
   </header>
 
-  <section class="intro">
-    <p class="etiqueta-intro">Proyecto educativo · variación léxica del español</p>
-    <p class="objetivo">Entender por qué una misma idea se dice con palabras distintas en cada país hispanohablante, y de dónde vienen esas palabras.</p>
-    <p>El español es la lengua oficial de veinte países y cada uno ha hecho suyo el idioma. Aquí comparamos las palabras que se registran para un mismo concepto en los diecinueve países de América Latina y en España, y explicamos su origen: lenguas indígenas, migraciones, contacto con el inglés o creaciones propias. Ninguna es más correcta que otra: todas son español.</p>
-    <div class="acciones">
-      <a class="accion" href="#mapa-seccion"><strong>Explora el mapa</strong><span>qué palabra usa cada país</span></a>
-      <a class="accion" href="#vista=origen"><strong>Descubre los orígenes</strong><span>por qué se dicen distinto</span></a>
-      <a class="accion" href="quiz.html"><strong>Ponte a prueba</strong><span>¿tus palabras revelan de dónde eres?</span></a>
+  <!-- 2. Relato: una palabra, luego todas, luego su origen -->
+  <section class="relato" id="relato" aria-label="Cómo leer el mapa, paso a paso">
+    <div class="relato-mapa">
+      <div class="mapa-contenedor" id="relato-caja">
+        <svg id="mapa-relato" role="img" aria-label="Mapa del relato: palabras para «palomitas» en cada país"></svg>
+        <div class="info-flotante" id="info-relato" role="tooltip"></div>
+      </div>
+      <div class="relato-leyenda" id="relato-leyenda" aria-live="polite"></div>
+    </div>
+    <div class="relato-pasos">
+      <article class="paso" data-paso="0">
+        <p class="paso-num">1 / 6</p>
+        <h2>Una misma idea, muchas palabras</h2>
+        <p>El español es la lengua oficial de veinte países, y cada uno lo ha hecho suyo. Este proyecto muestra <strong>qué palabra usa cada país para la misma cosa</strong>, y <strong>de dónde viene</strong> cada una.</p>
+        <p>Los diecinueve países hispanohablantes de América, y España en el recuadro.</p>
+      </article>
+      <article class="paso" data-paso="1">
+        <p class="paso-num">2 / 6</p>
+        <h2>Empecemos por una sola palabra</h2>
+        <p>En Argentina y Uruguay, las palomitas son <span class="palabra-marcada" data-forma="pochoclo">pochoclo</span>.</p>
+
+      </article>
+      <article class="paso" data-paso="2">
+        <p class="paso-num">3 / 6</p>
+        <h2>Cruza una frontera y la palabra cambia</h2>
+        <p><span class="palabra-marcada" data-forma="cancha">cancha</span> en Perú, <span class="palabra-marcada" data-forma="canguil">canguil</span> en Ecuador, <span class="palabra-marcada" data-forma="crispeta">crispeta</span> en Colombia, <span class="palabra-marcada" data-forma="cotufa">cotufa</span> en Venezuela.</p>
+        <p><strong>Cada color es una palabra distinta.</strong> No es una escala: ningún color vale más que otro.</p>
+      </article>
+      <article class="paso" data-paso="3">
+        <p class="paso-num">4 / 6</p>
+        <h2>Todas las palabras registradas</h2>
+        <p>Algunos países tienen varias: «+1» es una palabra más.</p>
+        <p>Las <span class="muestra rayada"></span> <strong>rayas</strong> no significan que no se diga nada: ahí ninguna fuente marca una palabra regional, así que probablemente se usa la general, <i>palomitas</i>.</p>
+      </article>
+      <article class="paso" data-paso="4">
+        <p class="paso-num">5 / 6</p>
+        <h2>¿Por qué tantas palabras?</h2>
+        <p>Ahora el color indica el <strong>origen</strong>. <i>Pororó</i> viene del guaraní; <i>cancha</i> y <i>canguil</i>, del quechua. Se dicen justo donde se hablaban esas lenguas antes de que llegara el español.</p>
+        <p><i>Pipoca</i> llega del portugués, por la frontera con Brasil, y <i>crispeta</i> se relaciona con el inglés <i>crisp</i>.</p>
+      </article>
+      <article class="paso" data-paso="5">
+        <p class="paso-num">6 / 6</p>
+        <h2>Palabras que cruzaron el océano</h2>
+        <p>En Canarias también se dice <span class="palabra-marcada" data-forma="cotufa">cotufa</span>, igual que en Venezuela: muchos canarios emigraron a Venezuela en los siglos XIX y XX y llevaron sus palabras.</p>
+        <a class="boton-relato" href="#explorar">Explora los 18 conceptos <span aria-hidden="true">↓</span></a>
+      </article>
     </div>
   </section>
 
-  <section class="titulo-mapa" id="mapa-seccion">
-    <h1>¿Cómo se dice <span id="titular-concepto">palomitas</span> en tu país?</h1>
+  <!-- 3. Explorador -->
+  <section class="titulo-mapa" id="explorar">
+    <h2 class="titulo-explorar">¿Cómo se dice <span id="titular-concepto">palomitas</span> en tu país?</h2>
   </section>
 
   <nav class="conceptos" id="conceptos" aria-label="Conceptos"></nav>
@@ -61,29 +113,16 @@
   </main>
 
   <section class="seccion">
-    <details class="tarjeta tabla-datos" open>
-      <summary>Datos y fuentes de este concepto</summary>
-      <p class="nota-tabla">Cada palabra lleva sus fuentes numeradas. Nivel B = lexicográfica (Wikcionario); C y D = divulgativa, comercial o colaborativa (ver <a href="acerca.html">metodología</a>).</p>
+    <details class="tarjeta tabla-datos">
+      <summary>Datos y fuentes</summary>
       <div id="tabla"></div>
     </details>
   </section>
 
-  <section class="seccion como-leer">
-    <h2>Cómo leer el mapa</h2>
-    <div class="tres">
-      <div>
-        <h3>Un color, una palabra</h3>
-        <p>Cada color es una palabra distinta, no una cantidad: ningún color vale «más» que otro. Cada país toma el color de la palabra más extendida de las que se registran allí. Con <strong>Origen</strong>, el color indica de dónde viene la palabra.</p>
-      </div>
-      <div>
-        <h3>Cada dato, citado</h3>
-        <p>Una palabra aparece en el mapa si el Wikcionario la registra <em>con ese significado</em> en ese país o si el equipo la catalogó en las fuentes del país. La tabla y el panel citan cada fuente.</p>
-      </div>
-      <div>
-        <h3>Un país en blanco no está vacío</h3>
-        <p>Si un país aparece rayado, allí se usa probablemente la forma general (<em>palomitas</em>, <em>autobús</em>), que los diccionarios no marcan como regional. Aún no lo hemos verificado.</p>
-      </div>
-    </div>
+  <section class="invitacion">
+    <h2>¿Tus palabras revelan de dónde eres?</h2>
+    <p>Responde cómo dices ocho cosas y mira si el mapa adivina tu país.</p>
+    <a class="boton-relato" href="quiz.html">Empezar el cuestionario</a>
   </section>
 
   <footer class="pie">
@@ -93,5 +132,6 @@
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
   <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/relato.js"></script>
 </body>
 </html>

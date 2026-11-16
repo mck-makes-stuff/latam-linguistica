@@ -1,0 +1,692 @@
+{
+ "carro": {
+  "titulo": "carro",
+  "revid": 6294965,
+  "fecha": "2026-08-04T15:49:58Z",
+  "falta": false
+ },
+ "caña": {
+  "titulo": "caña",
+  "revid": 6374979,
+  "fecha": "2026-09-07T18:13:20Z",
+  "falta": false
+ },
+ "auto": {
+  "titulo": "auto",
+  "revid": 6426660,
+  "fecha": "2026-10-18T00:57:52Z",
+  "falta": false
+ },
+ "cancha": {
+  "titulo": "cancha",
+  "revid": 6337917,
+  "fecha": "2026-08-17T00:33:44Z",
+  "falta": false
+ },
+ "coche": {
+  "titulo": "coche",
+  "revid": 6426695,
+  "fecha": "2026-10-18T00:58:54Z",
+  "falta": false
+ },
+ "chamo": {
+  "titulo": "chamo",
+  "revid": 6345562,
+  "fecha": "2026-08-17T18:52:19Z",
+  "falta": false
+ },
+ "birra": {
+  "titulo": "birra",
+  "revid": 6331328,
+  "fecha": "2026-08-16T21:49:52Z",
+  "falta": false
+ },
+ "bombilla": {
+  "titulo": "bombilla",
+  "revid": 6431563,
+  "fecha": "2026-11-04T18:29:03Z",
+  "falta": false
+ },
+ "chamba": {
+  "titulo": "chamba",
+  "revid": 6294633,
+  "fecha": "2026-08-03T04:05:27Z",
+  "falta": false
+ },
+ "chamaco": {
+  "titulo": "chamaco",
+  "revid": 5840502,
+  "fecha": "2025-08-07T23:08:54Z",
+  "falta": false
+ },
+ "arrecho": {
+  "titulo": "arrecho",
+  "revid": 6427523,
+  "fecha": "2026-10-18T21:50:58Z",
+  "falta": false
+ },
+ "chilote": {
+  "titulo": "chilote",
+  "revid": 6358349,
+  "fecha": "2026-08-18T02:48:02Z",
+  "falta": false
+ },
+ "bacán": {
+  "titulo": "bacán",
+  "revid": 6444877,
+  "fecha": "2026-11-14T02:58:09Z",
+  "falta": false
+ },
+ "chivo": {
+  "titulo": "chivo",
+  "revid": 6426691,
+  "fecha": "2026-10-18T00:58:47Z",
+  "falta": false
+ },
+ "chiva": {
+  "titulo": "chiva",
+  "revid": 6444940,
+  "fecha": "2026-11-14T04:58:21Z",
+  "falta": false
+ },
+ "camión": {
+  "titulo": "camión",
+  "revid": 6316681,
+  "fecha": "2026-08-16T06:31:03Z",
+  "falta": false
+ },
+ "chido": {
+  "titulo": "chido",
+  "revid": 5749871,
+  "fecha": "2025-04-29T20:25:21Z",
+  "falta": false
+ },
+ "causa": {
+  "titulo": "causa",
+  "revid": 6315023,
+  "fecha": "2026-08-16T05:32:45Z",
+  "falta": false
+ },
+ "chupar": {
+  "titulo": "chupar",
+  "revid": 6444947,
+  "fecha": "2026-11-14T05:05:17Z",
+  "falta": false
+ },
+ "camello": {
+  "titulo": "camello",
+  "revid": 6383415,
+  "fecha": "2026-09-09T01:23:15Z",
+  "falta": false
+ },
+ "birome": {
+  "titulo": "birome",
+  "revid": 6341407,
+  "fecha": "2026-08-17T02:13:37Z",
+  "falta": false
+ },
+ "chulo": {
+  "titulo": "chulo",
+  "revid": 6426692,
+  "fecha": "2026-10-18T00:58:49Z",
+  "falta": false
+ },
+ "cuate": {
+  "titulo": "cuate",
+  "revid": 6318045,
+  "fecha": "2026-08-16T07:18:07Z",
+  "falta": false
+ },
+ "chimba": {
+  "titulo": "chimba",
+  "revid": 6425257,
+  "fecha": "2026-10-16T19:39:35Z",
+  "falta": false
+ },
+ "carrete": {
+  "titulo": "carrete",
+  "revid": 6423394,
+  "fecha": "2026-10-13T19:58:53Z",
+  "falta": false
+ },
+ "bondi": {
+  "titulo": "bondi",
+  "revid": 6346129,
+  "fecha": "2026-08-17T19:10:30Z",
+  "falta": false
+ },
+ "cipote": {
+  "titulo": "cipote",
+  "revid": 6281177,
+  "fecha": "2026-07-29T20:38:07Z",
+  "falta": false
+ },
+ "alubia": {
+  "titulo": "alubia",
+  "revid": 6375242,
+  "fecha": "2026-09-07T18:20:09Z",
+  "falta": false
+ },
+ "camarón": {
+  "titulo": "camarón",
+  "revid": 6423552,
+  "fecha": "2026-10-14T07:43:21Z",
+  "falta": false
+ },
+ "chavo": {
+  "titulo": "chavo",
+  "revid": 6445055,
+  "fecha": "2026-11-14T12:30:18Z",
+  "falta": false
+ },
+ "bonche": {
+  "titulo": "bonche",
+  "revid": 6345663,
+  "fecha": "2026-08-17T18:55:43Z",
+  "falta": false
+ },
+ "buseta": {
+  "titulo": "buseta",
+  "revid": 6359027,
+  "fecha": "2026-08-18T03:05:42Z",
+  "falta": false
+ },
+ "bacano": {
+  "titulo": "bacano",
+  "revid": 6332554,
+  "fecha": "2026-08-16T22:20:12Z",
+  "falta": false
+ },
+ "carajillo": {
+  "titulo": "carajillo",
+  "revid": 6348847,
+  "fecha": "2026-08-17T21:14:22Z",
+  "falta": false
+ },
+ "crispeta": {
+  "titulo": "crispeta",
+  "revid": 6433819,
+  "fecha": "2026-11-07T04:30:18Z",
+  "falta": false
+ },
+ "cotufa": {
+  "titulo": "cotufa",
+  "revid": 5819486,
+  "fecha": "2025-06-04T19:12:17Z",
+  "falta": false
+ },
+ "chacho": {
+  "titulo": "chacho",
+  "revid": 6359270,
+  "fecha": "2026-08-18T03:11:21Z",
+  "falta": false
+ },
+ "acere": {
+  "titulo": "acere",
+  "revid": 5729164,
+  "fecha": "2025-04-29T06:51:40Z",
+  "falta": false
+ },
+ "calentarse": {
+  "titulo": "calentarse",
+  "revid": 5796488,
+  "fecha": "2025-05-04T23:02:10Z",
+  "falta": false
+ },
+ "arrecharse": {
+  "titulo": "arrecharse",
+  "revid": 6316188,
+  "fecha": "2026-08-16T06:13:23Z",
+  "falta": false
+ },
+ "botija": {
+  "titulo": "botija",
+  "revid": 6376023,
+  "fecha": "2026-09-07T18:38:19Z",
+  "falta": false
+ },
+ "caraota": {
+  "titulo": "caraota",
+  "revid": 6423722,
+  "fecha": "2026-10-14T07:49:00Z",
+  "falta": false
+ },
+ "canguil": {
+  "titulo": "canguil",
+  "revid": 6314203,
+  "fecha": "2026-08-15T23:34:20Z",
+  "falta": false
+ },
+ "chero": {
+  "titulo": "chero",
+  "revid": 6345892,
+  "fecha": "2026-08-17T19:03:03Z",
+  "falta": false
+ },
+ "chamaquito": {
+  "titulo": "chamaquito",
+  "revid": 6346552,
+  "fecha": "2026-08-17T19:23:32Z",
+  "falta": false
+ },
+ "carnal": {
+  "titulo": "carnal",
+  "revid": 5687951,
+  "fecha": "2025-01-24T19:01:42Z",
+  "falta": false
+ },
+ "asere": {
+  "titulo": "asere",
+  "revid": 5733558,
+  "fecha": "2025-04-29T08:39:38Z",
+  "falta": false
+ },
+ "bailanta": {
+  "titulo": "bailanta",
+  "revid": 5929511,
+  "fecha": "2026-03-07T04:48:06Z",
+  "falta": false
+ },
+ "cabrita": {
+  "titulo": "cabrita",
+  "revid": 6314197,
+  "fecha": "2026-08-15T23:34:09Z",
+  "falta": false
+ },
+ "brete": {
+  "titulo": "brete",
+  "revid": 6373696,
+  "fecha": "2026-09-06T20:02:43Z",
+  "falta": false
+ },
+ "padre": {
+  "titulo": "padre",
+  "revid": 6426802,
+  "fecha": "2026-10-18T01:01:56Z",
+  "falta": false
+ },
+ "lapicero": {
+  "titulo": "lapicero",
+  "revid": 6330754,
+  "fecha": "2026-08-16T21:35:28Z",
+  "falta": false
+ },
+ "huevón": {
+  "titulo": "huevón",
+  "revid": 6365557,
+  "fecha": "2026-08-23T20:14:12Z",
+  "falta": false
+ },
+ "pana": {
+  "titulo": "pana",
+  "revid": 6345434,
+  "fecha": "2026-08-17T18:48:10Z",
+  "falta": false
+ },
+ "guagua": {
+  "titulo": "guagua",
+  "revid": 6445069,
+  "fecha": "2026-11-14T13:02:58Z",
+  "falta": false
+ },
+ "escabiar": {
+  "titulo": "escabiar",
+  "revid": 6426171,
+  "fecha": "2026-10-17T06:47:34Z",
+  "falta": false
+ },
+ "esfero": {
+  "titulo": "esfero",
+  "revid": 6056052,
+  "fecha": "2026-03-18T21:05:16Z",
+  "falta": false
+ },
+ "mano": {
+  "titulo": "mano",
+  "revid": 6445157,
+  "fecha": "2026-11-14T15:08:04Z",
+  "falta": false
+ },
+ "micro": {
+  "titulo": "micro",
+  "revid": 6330133,
+  "fecha": "2026-08-16T21:18:52Z",
+  "falta": false
+ },
+ "pajita": {
+  "titulo": "pajita",
+  "revid": 6418215,
+  "fecha": "2026-10-01T19:33:38Z",
+  "falta": false
+ },
+ "pelado": {
+  "titulo": "pelado",
+  "revid": 6362619,
+  "fecha": "2026-08-18T15:49:35Z",
+  "falta": false
+ },
+ "pochoclo": {
+  "titulo": "pochoclo",
+  "revid": 5820021,
+  "fecha": "2025-06-09T20:10:18Z",
+  "falta": false
+ },
+ "feria": {
+  "titulo": "feria",
+  "revid": 6393579,
+  "fecha": "2026-09-13T09:53:42Z",
+  "falta": false
+ },
+ "escuincle": {
+  "titulo": "escuincle",
+  "revid": 5709735,
+  "fecha": "2025-04-22T16:45:02Z",
+  "falta": false
+ },
+ "pistear": {
+  "titulo": "pistear",
+  "revid": 5801812,
+  "fecha": "2025-05-08T07:37:18Z",
+  "falta": false
+ },
+ "nave": {
+  "titulo": "nave",
+  "revid": 6426793,
+  "fecha": "2026-10-18T01:01:39Z",
+  "falta": false
+ },
+ "pata": {
+  "titulo": "pata",
+  "revid": 6430850,
+  "fecha": "2026-11-01T10:08:23Z",
+  "falta": false
+ },
+ "lana": {
+  "titulo": "lana",
+  "revid": 6374980,
+  "fecha": "2026-09-07T18:13:22Z",
+  "falta": false
+ },
+ "güila": {
+  "titulo": "güila",
+  "revid": 5745770,
+  "fecha": "2025-04-29T18:06:37Z",
+  "falta": false
+ },
+ "parcero": {
+  "titulo": "parcero",
+  "revid": 6331387,
+  "fecha": "2026-08-16T21:51:25Z",
+  "falta": false
+ },
+ "máquina": {
+  "titulo": "máquina",
+  "revid": 6357304,
+  "fecha": "2026-08-18T02:19:54Z",
+  "falta": false
+ },
+ "gurí": {
+  "titulo": "gurí",
+  "revid": 6369096,
+  "fecha": "2026-09-02T05:54:11Z",
+  "falta": false
+ },
+ "guita": {
+  "titulo": "guita",
+  "revid": 5932008,
+  "fecha": "2026-03-08T22:24:03Z",
+  "falta": false
+ },
+ "pajilla": {
+  "titulo": "pajilla",
+  "revid": 6330922,
+  "fecha": "2026-08-16T21:39:34Z",
+  "falta": false
+ },
+ "mazorca": {
+  "titulo": "mazorca",
+  "revid": 6384111,
+  "fecha": "2026-09-10T12:32:24Z",
+  "falta": false
+ },
+ "pisto": {
+  "titulo": "pisto",
+  "revid": 6330570,
+  "fecha": "2026-08-16T21:30:36Z",
+  "falta": false
+ },
+ "pitillo": {
+  "titulo": "pitillo",
+  "revid": 6330691,
+  "fecha": "2026-08-16T21:33:45Z",
+  "falta": false
+ },
+ "polera": {
+  "titulo": "polera",
+  "revid": 6337271,
+  "fecha": "2026-08-17T00:15:37Z",
+  "falta": false
+ },
+ "macanudo": {
+  "titulo": "macanudo",
+  "revid": 5752115,
+  "fecha": "2025-04-29T21:06:12Z",
+  "falta": false
+ },
+ "embroncarse": {
+  "titulo": "embroncarse",
+  "revid": 6345134,
+  "fecha": "2026-08-17T18:38:33Z",
+  "falta": false
+ },
+ "embustero": {
+  "titulo": "embustero",
+  "revid": 5898766,
+  "fecha": "2025-12-06T21:22:12Z",
+  "falta": false
+ },
+ "elote": {
+  "titulo": "elote",
+  "revid": 6361798,
+  "fecha": "2026-08-18T04:49:24Z",
+  "falta": false
+ },
+ "pega": {
+  "titulo": "pega",
+  "revid": 6270467,
+  "fecha": "2026-07-29T03:04:32Z",
+  "falta": false
+ },
+ "guateque": {
+  "titulo": "guateque",
+  "revid": 6345735,
+  "fecha": "2026-08-17T18:58:04Z",
+  "falta": false
+ },
+ "patojo": {
+  "titulo": "patojo",
+  "revid": 5741453,
+  "fecha": "2025-04-29T16:03:38Z",
+  "falta": false
+ },
+ "marmaja": {
+  "titulo": "marmaja",
+  "revid": 6401481,
+  "fecha": "2026-09-14T15:07:31Z",
+  "falta": false
+ },
+ "pola": {
+  "titulo": "pola",
+  "revid": 5935143,
+  "fecha": "2026-03-10T23:19:39Z",
+  "falta": false
+ },
+ "güirro": {
+  "titulo": "güirro",
+  "revid": 5710184,
+  "fecha": "2025-04-25T04:59:47Z",
+  "falta": false
+ },
+ "fríjol": {
+  "titulo": "fríjol",
+  "revid": 6423668,
+  "fecha": "2026-10-14T07:47:22Z",
+  "falta": false
+ },
+ "emputarse": {
+  "titulo": "emputarse",
+  "revid": 6345145,
+  "fecha": "2026-08-17T18:38:53Z",
+  "falta": false
+ },
+ "franela": {
+  "titulo": "franela",
+  "revid": 6345565,
+  "fecha": "2026-08-17T18:52:25Z",
+  "falta": false
+ },
+ "judía": {
+  "titulo": "judía",
+  "revid": 6021128,
+  "fecha": "2026-03-16T06:53:23Z",
+  "falta": false
+ },
+ "jojoto": {
+  "titulo": "jojoto",
+  "revid": 5757024,
+  "fecha": "2025-04-29T23:45:31Z",
+  "falta": false
+ },
+ "frijol": {
+  "titulo": "frijol",
+  "revid": 6391489,
+  "fecha": "2026-09-11T06:29:53Z",
+  "falta": false
+ },
+ "frejol": {
+  "titulo": "frejol",
+  "revid": 6423734,
+  "fecha": "2026-10-14T07:49:23Z",
+  "falta": false
+ },
+ "playera": {
+  "titulo": "playera",
+  "revid": 5701924,
+  "fecha": "2025-03-01T23:15:44Z",
+  "falta": false
+ },
+ "guambra": {
+  "titulo": "guambra",
+  "revid": 6346190,
+  "fecha": "2026-08-17T19:12:24Z",
+  "falta": false
+ },
+ "pipoca": {
+  "titulo": "pipoca",
+  "revid": 6368333,
+  "fecha": "2026-08-31T19:25:19Z",
+  "falta": false
+ },
+ "cumpa": {
+  "titulo": "cumpa",
+  "revid": 6061095,
+  "fecha": "2026-03-24T03:31:33Z",
+  "falta": false
+ },
+ "cuentista": {
+  "titulo": "cuentista",
+  "revid": 6416219,
+  "fecha": "2026-09-24T16:03:23Z",
+  "falta": false
+ },
+ "remera": {
+  "titulo": "remera",
+  "revid": 6370039,
+  "fecha": "2026-09-03T23:55:30Z",
+  "falta": false
+ },
+ "popote": {
+  "titulo": "popote",
+  "revid": 5743576,
+  "fecha": "2025-04-29T17:27:03Z",
+  "falta": false
+ },
+ "real": {
+  "titulo": "real",
+  "revid": 6337966,
+  "fecha": "2026-08-17T00:35:20Z",
+  "falta": false
+ },
+ "vale": {
+  "titulo": "vale",
+  "revid": 6425826,
+  "fecha": "2026-10-16T22:04:45Z",
+  "falta": false
+ },
+ "pulento": {
+  "titulo": "pulento",
+  "revid": 6445287,
+  "fecha": "2026-11-14T17:52:13Z",
+  "falta": false
+ },
+ "poroto": {
+  "titulo": "poroto",
+  "revid": 6383205,
+  "fecha": "2026-09-08T04:30:42Z",
+  "falta": false
+ },
+ "polo": {
+  "titulo": "polo",
+  "revid": 6423915,
+  "fecha": "2026-10-14T14:48:27Z",
+  "falta": false
+ },
+ "pop": {
+  "titulo": "pop",
+  "revid": 6384157,
+  "fecha": "2026-09-10T14:28:50Z",
+  "falta": false
+ },
+ "varo": {
+  "titulo": "varo",
+  "revid": 6433117,
+  "fecha": "2026-11-06T05:52:33Z",
+  "falta": false
+ },
+ "rumba": {
+  "titulo": "rumba",
+  "revid": 6339890,
+  "fecha": "2026-08-17T01:36:47Z",
+  "falta": false
+ },
+ "sorbete": {
+  "titulo": "sorbete",
+  "revid": 5738462,
+  "fecha": "2025-04-29T14:57:12Z",
+  "falta": false
+ },
+ "poporopo": {
+  "titulo": "poporopo",
+  "revid": 6314360,
+  "fecha": "2026-08-15T23:39:22Z",
+  "falta": false
+ },
+ "rayarse": {
+  "titulo": "rayarse",
+  "revid": 6314368,
+  "fecha": "2026-08-15T23:39:37Z",
+  "falta": false
+ },
+ "pororó": {
+  "titulo": "pororó",
+  "revid": 6118505,
+  "fecha": "2026-06-18T21:35:01Z",
+  "falta": false
+ },
+ "rutero": {
+  "titulo": "rutero",
+  "revid": 5866660,
+  "fecha": "2025-11-05T16:10:21Z",
+  "falta": false
+ }
+}

@@ -134,7 +134,8 @@ function desdeURL() {
   const u = leerURL();
   if (!porId.has(u.concepto)) u.concepto = estado.concepto || (porId.has(PORTADA) ? PORTADA : conceptos[0].id);
   buscador.value = u.palabra || "";
-  actualizar(u);
+  // Sin hash (visita normal) no se escribe nada en la URL: la portada empieza por la apertura
+  actualizar(u, { sinURL: !/concepto=|palabra=|pais=|vista=/.test(location.hash) });
 }
 desdeURL();
 // Enlaces internos o el botón «atrás» cambian el hash sin recargar la página
