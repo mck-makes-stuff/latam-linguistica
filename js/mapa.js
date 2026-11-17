@@ -16,7 +16,7 @@ function mayorPoligono(f) {
  * paises: features de TopoJSON · svg, info, contenedor: selectores CSS
  * Devuelve { pintar, definirInfo }.
  */
-export function crearMapa(paises, { svg: selSvg, info: selInfo, contenedor: selCaja, alHacerClic = () => {}, id = "m" }) {
+export function crearMapa(paises, { svg: selSvg, info: selInfo, contenedor: selCaja, alHacerClic = () => {}, id = "m", zoom = false }) {
   const svg = d3.select(selSvg).attr("viewBox", `0 0 ${ANCHO} ${ALTO}`);
   const info = d3.select(selInfo);
   let textoInfo = () => "";
@@ -63,9 +63,11 @@ export function crearMapa(paises, { svg: selSvg, info: selInfo, contenedor: selC
   degradado("horizontal", 1, 0);
   degradado("vertical", 0, 1);
   const americas = paises.filter((f) => !EUROPA.has(f.properties.iso3));
-  dibujarPaises(svg.append("g").attr("mask", `url(#mascara-horizontal-${id})`).append("g").attr("mask", `url(#mascara-vertical-${id})`),
+  // «lienzo» es lo que se acerca y aleja con el zoom; el recuadro de España queda fijo
+  const lienzo = svg.append("g").attr("class", "lienzo");
+  dibujarPaises(lienzo.append("g").attr("mask", `url(#mascara-horizontal-${id})`).append("g").attr("mask", `url(#mascara-vertical-${id})`),
     americas.filter((f) => !f.properties.hispano), ruta);
-  dibujarPaises(svg.append("g"), americas.filter((f) => f.properties.hispano), ruta);
+  dibujarPaises(lienzo.append("g"), americas.filter((f) => f.properties.hispano), ruta);
 
   // Recuadro de España, arriba a la derecha, sobre el Atlántico
   const R = { x: ANCHO - 204, y: 18, w: 186, h: 146 };
@@ -83,8 +85,11 @@ export function crearMapa(paises, { svg: selSvg, info: selInfo, contenedor: selC
   grupoEsp.append("text").attr("class", "recuadro-titulo").attr("x", R.x + 10).attr("y", R.y + 16).text("ESPAÑA");
 
   const capaPaises = svg.selectAll("path.pais.hispano");
-  const capaEtiquetas = svg.append("g");
+  const capaEtiquetas = lienzo.append("g");
+  const capaEtiquetasEsp = svg.append("g");
   const rutaDe = (d) => (d.properties.recuadro ? rutaEsp : ruta);
+  let k = 1; // escala actual del zoom
+  let ultimo = null; // últimos argumentos de pintar(), para volver a rotular al hacer zoom
 
   /**
    * relleno(iso) -> color o null (rayado) · etiqueta(iso) -> texto o null
@@ -98,18 +103,61 @@ export function crearMapa(paises, { svg: selSvg, info: selInfo, contenedor: selC
       .classed("atenuado", (d) => !!resaltados && !resaltados.has(d.properties.iso3));
     grupoEsp.classed("destacado", recuadroDestacado);
 
-    const datos = capaPaises.data().filter((d) => {
+    ultimo = { etiqueta, resaltados };
+    rotular(true);
+  }
+
+  // Al acercarse, los países pequeños también reciben etiqueta y el texto mantiene su tamaño en pantalla
+  function rotular(animar = false) {
+    if (!ultimo) return;
+    const { etiqueta, resaltados } = ultimo;
+    // Escala de pantalla: cuántos píxeles mide una unidad del mapa (el SVG se dibuja más pequeño que su viewBox)
+    const r = svg.node().getBoundingClientRect();
+    const px = r.width ? Math.min(r.width / ANCHO, r.height / ALTO) : 1;
+    const visibles = capaPaises.data().filter((d) => {
       if (!etiqueta(d.properties.iso3)) return false;
-      return d.properties.recuadro || rutaDe(d).area(mayorPoligono(d)) >= AREA_MIN_ETIQUETA;
+      return d.properties.recuadro || rutaDe(d).area(mayorPoligono(d)) * (k * px) ** 2 >= AREA_MIN_ETIQUETA;
     });
-    capaEtiquetas.selectAll("text").data(datos, (d) => d.properties.iso3).join(
-      (entra) => entra.append("text").style("opacity", 0),
-    )
-      .attr("class", "etiqueta-variante")
-      .attr("transform", (d) => `translate(${rutaDe(d).centroid(mayorPoligono(d))})`)
-      .text((d) => etiqueta(d.properties.iso3))
-      .transition().duration(400)
-      .style("opacity", (d) => (resaltados && !resaltados.has(d.properties.iso3) ? 0.3 : 1));
+    const unir = (capa, datos, escala) => {
+      let sel = capa.selectAll("text").data(datos, (d) => d.properties.iso3).join((entra) => entra.append("text").style("opacity", 0))
+        .attr("class", "etiqueta-variante")
+        .attr("transform", (d) => `translate(${rutaDe(d).centroid(mayorPoligono(d))})`)
+        .style("font-size", `${13 / escala}px`).style("stroke-width", `${3 / escala}px`)
+        .text((d) => etiqueta(d.properties.iso3));
+      if (animar) sel = sel.transition().duration(400);
+      sel.style("opacity", (d) => (resaltados && !resaltados.has(d.properties.iso3) ? 0.3 : 1));
+    };
+    unir(capaEtiquetas, visibles.filter((d) => !d.properties.recuadro), k * px);
+    unir(capaEtiquetasEsp, visibles.filter((d) => d.properties.recuadro), px);
+  }
+
+  addEventListener("resize", () => rotular());
+
+  if (zoom) {
+    svg.classed("con-zoom", true);
+    const comportamiento = d3.zoom().scaleExtent([1, 8]).translateExtent([[0, 0], [ANCHO, ALTO]])
+      // Rueda sólo con Ctrl/⌘ (o pellizco en el trackpad) para no secuestrar el desplazamiento de la página;
+      // arrastrar sólo cuando ya hay zoom; en pantallas táctiles, dos dedos
+      .filter((ev) => {
+        if (ev.type === "wheel") return ev.ctrlKey || ev.metaKey;
+        if (ev.type === "touchstart") return ev.touches.length > 1;
+        if (ev.type === "mousedown") return k > 1 && !ev.button;
+        return !ev.button;
+      })
+      .on("zoom", (ev) => {
+        k = ev.transform.k;
+        lienzo.attr("transform", ev.transform);
+        caja.classed("ampliado", k > 1.01);
+        rotular();
+      });
+    svg.call(comportamiento).on("dblclick.zoom", null);
+    const caja = d3.select(selCaja);
+    const controles = caja.append("div").attr("class", "zoom-controles");
+    const boton = (txt, etiqueta, fn) => controles.append("button").attr("type", "button").attr("aria-label", etiqueta).attr("title", etiqueta).text(txt)
+      .on("click", fn);
+    boton("+", "Acercar", () => svg.transition().duration(300).call(comportamiento.scaleBy, 1.6));
+    boton("−", "Alejar", () => svg.transition().duration(300).call(comportamiento.scaleBy, 1 / 1.6));
+    boton("↺", "Ver el mapa completo", () => svg.transition().duration(400).call(comportamiento.transform, d3.zoomIdentity)).attr("class", "zoom-reiniciar");
   }
 
   return { pintar, definirInfo: (fn) => { textoInfo = fn; } };
@@ -118,7 +166,7 @@ export function crearMapa(paises, { svg: selSvg, info: selInfo, contenedor: selC
 // --- Instancia por defecto (#mapa), usada por el explorador y el cuestionario ----
 let principal = null;
 export function iniciarMapa(paises, { alHacerClic }) {
-  principal = crearMapa(paises, { svg: "#mapa", info: "#info-flotante", contenedor: ".mapa-contenedor", alHacerClic, id: "p" });
+  principal = crearMapa(paises, { svg: "#mapa", info: "#info-flotante", contenedor: "#mapa-caja", alHacerClic, id: "p", zoom: true });
 }
 export const pintar = (o) => principal.pintar(o);
 export const definirInfo = (fn) => principal.definirInfo(fn);

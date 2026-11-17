@@ -334,3 +334,13 @@ table.datos th { background: var(--crema-2); font-weight: 600; }
 /* El mapa del explorador no se estira con el panel y queda a la vista al recorrerlo */
 .mapa-tarjeta { align-self: start; position: sticky; top: calc(var(--alto-encabezado, 70px) + 12px); }
 @media (max-width: 900px) { .mapa-tarjeta { position: static; } }
+/* --- Zoom del mapa del explorador ------------------------------------- */
+svg.con-zoom .lienzo .pais { vector-effect: non-scaling-stroke; }
+.ampliado svg.con-zoom { cursor: grab; }
+.ampliado svg.con-zoom:active { cursor: grabbing; }
+.zoom-controles { position: absolute; left: 12px; top: 12px; display: flex; flex-direction: column; gap: 4px; z-index: 2; }
+.zoom-controles button { width: 34px; height: 34px; border: 1px solid var(--linea); border-radius: 4px; background: var(--blanco);
+  font: 600 1.15rem/1 var(--fuente-texto); color: var(--tinta); cursor: pointer; }
+.zoom-controles button:hover { border-color: var(--tinta); }
+.zoom-controles .zoom-reiniciar { display: none; }
+.ampliado .zoom-controles .zoom-reiniciar { display: block; }
