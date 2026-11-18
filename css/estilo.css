@@ -88,9 +88,9 @@ a:hover { text-decoration-color: var(--tinta); }
 
 /* --- Selector de conceptos -------------------------------------------- */
 .conceptos { display: grid; gap: 8px; padding: 14px var(--margen) 4px; }
-.nivel { display: grid; grid-template-columns: 150px 1fr; gap: 8px 12px; align-items: start; }
+.nivel { display: grid; grid-template-columns: 170px 1fr; gap: 8px 12px; align-items: start; }
 @media (max-width: 640px) { .nivel { grid-template-columns: 1fr; } }
-.nivel-titulo { font-size: .8rem; color: var(--tinta-suave); padding-top: 8px; line-height: 1.3; }
+.nivel-titulo { font-size: .8rem; color: var(--tinta-suave); padding-top: 8px; line-height: 1.3; white-space: nowrap; }
 .nivel-titulo strong { display: block; color: var(--tinta); font-size: .9rem; }
 .nivel-botones { display: flex; flex-wrap: wrap; gap: 6px; }
 .concepto-boton {
