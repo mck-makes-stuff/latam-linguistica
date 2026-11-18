@@ -25,10 +25,6 @@ export function citas(v, iso = null) {
     const sentido = wik.find((e) => e.sentido)?.sentido?.replace(/<[^>]+>/g, "");
     out.push(`«${esc(v.forma)}», en <em>Wikcionario, el diccionario libre</em>${sentido ? `, acepción «${esc(sentido)}»` : ""}; marca regional: ${lista([...new Set(wik.map((e) => e.pais))], ctx.nombres)}. Consultado el ${fecha()}. <a href="${urlWikt(v.forma)}" target="_blank" rel="noopener">es.wiktionary.org/wiki/${esc(v.forma)}</a>`);
   }
-  const equipo = ev.filter((e) => e.fuente === "Registro del equipo");
-  if (equipo.length) {
-    out.push(`Registro del equipo (2026): forma catalogada al revisar las fuentes web de ${lista([...new Set(equipo.map((e) => e.pais))], ctx.nombres)}.`);
-  }
   const web = [...new Map(ev.filter((e) => e.url && e.fuente !== "Wikcionario").map((e) => [e.url + e.pais, e])).values()];
   for (const e of web) {
     out.push(`Lista de ${esc(ctx.nombres[e.pais] || e.pais)} en ${esc(e.fuente)}. Fuente de nivel ${NIVEL[e.tipo] || esc(e.tipo || "web")}. <a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.url.replace(/^https?:\/\//, "").slice(0, 60))}</a>`);
@@ -79,7 +75,7 @@ export function fichaConcepto(concepto, vista) {
     <p class="meta">Concepto · ${esc(concepto.campo)}</p>
     <h2>${esc(concepto.concepto)}</h2>
     <p>${esc(concepto.definicion)}</p>
-    <p class="fuente">Poder para distinguir países: <strong>${nivel}/100</strong> · <a href="acerca.html#poder-distintivo">cómo se calcula</a></p>
+    <p class="fuente">Poder para distinguir países: <strong>${nivel}/100</strong> · <a href="acerca.html#funciona">cómo se calcula</a></p>
     ${ctx.vista === "origen" ? historia(vista, true) : ""}
     <h3>${vista.variantes.length} palabras registradas</h3>
     <ul>${filas || "<li>Sin datos todavía.</li>"}</ul>

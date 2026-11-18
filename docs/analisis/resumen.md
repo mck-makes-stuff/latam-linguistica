@@ -1,6 +1,6 @@
 # Análisis de las categorías regionales del Wikcionario
 
-Generado el 2026-11-16 por `scripts/analizar.py`. Fuente: categorías `Categoría:ES:<país>` del Wikcionario en español (CC BY-SA 4.0).
+Generado el 2026-11-18 por `scripts/analizar.py`. Fuente: categorías `Categoría:ES:<país>` del Wikcionario en español (CC BY-SA 4.0).
 
 > **Advertencia metodológica.** El número de palabras por país refleja la actividad de los editores del Wikcionario, no la riqueza léxica real de cada variedad. Las comparaciones deben normalizarse (proporciones, Jaccard) y contrastarse con fuentes lexicográficas (DAMER, Varilex).
 
@@ -243,63 +243,63 @@ Candidatas para conceptos «panamericanos» o para mostrar falsos amigos entre p
 
 | Palabra | Países | En España (Wikcionario/jergozo) |
 |---|---:|:---:|
-| pendejo | 19 | sí |
 | chiva | 19 | sí |
-| culiar | 18 |  |
+| pendejo | 19 | sí |
 | mamon | 18 | sí |
-| sapo | 18 | sí |
 | cachar | 18 | sí |
 | pito | 18 | sí |
 | maleta | 18 | sí |
+| culiar | 18 |  |
+| sapo | 18 | sí |
 | epa | 17 |  |
-| bicho | 17 | sí |
-| jalar | 17 | sí |
-| goma | 17 | sí |
-| torta | 17 | sí |
-| pico | 17 | sí |
-| tusa | 17 | sí |
 | chance | 17 |  |
 | fregar | 17 | sí |
+| tusa | 17 | sí |
+| pico | 17 | sí |
+| bicho | 17 | sí |
+| jalar | 17 | sí |
+| torta | 17 | sí |
 | llanta | 17 | sí |
-| barrilete | 16 |  |
-| bola | 16 | sí |
-| pina | 16 | sí |
-| paila | 16 |  |
-| jefe | 16 | sí |
-| canilla | 16 | sí |
-| bollo | 16 | sí |
-| jodido | 16 | sí |
-| te falta calle | 16 | sí |
-| paja | 16 | sí |
-| mamadera | 16 |  |
-| chapa | 16 | sí |
-| pana | 16 | sí |
+| goma | 17 | sí |
 | baboso | 16 | sí |
-| chota | 16 | sí |
-| tortillera | 16 | sí |
-| garchar | 16 | sí |
-| pinga | 16 | sí |
+| te falta calle | 16 | sí |
+| canilla | 16 | sí |
 | gallo | 16 | sí |
-| cabron | 16 | sí |
-| china | 16 | sí |
-| fresco | 16 | sí |
+| jodido | 16 | sí |
 | concha | 16 | sí |
+| bola | 16 | sí |
+| paila | 16 |  |
+| fresco | 16 | sí |
+| chota | 16 | sí |
+| paja | 16 | sí |
+| bollo | 16 | sí |
+| barrilete | 16 |  |
+| china | 16 | sí |
+| jefe | 16 | sí |
+| chapa | 16 | sí |
+| pinga | 16 | sí |
+| pina | 16 | sí |
+| garchar | 16 | sí |
 | chichi | 16 | sí |
+| pana | 16 | sí |
 | pinta | 16 | sí |
+| cabron | 16 | sí |
+| tortillera | 16 | sí |
+| mamadera | 16 |  |
 | despelote | 16 | sí |
-| carajo | 15 | sí |
 | gancho | 15 | sí |
-| burro | 15 | sí |
-| tirar | 15 | sí |
-| pelado | 15 | sí |
-| jeta | 15 | sí |
-| ronda | 15 |  |
-| roblox | 15 | sí |
-| culero | 15 | sí |
-| sobaco | 15 | sí |
-| bichota | 15 |  |
-| perro | 15 | sí |
-| chino | 15 | sí |
-| ahi viene tu mejor amigo | 15 | sí |
-| maricon | 15 | sí |
+| mamerto | 15 |  |
+| lagarto | 15 | sí |
 | nana | 15 | sí |
+| lechero | 15 |  |
+| chivo | 15 |  |
+| bagre | 15 | sí |
+| carajo | 15 | sí |
+| paloma | 15 | sí |
+| roblox | 15 | sí |
+| perro | 15 | sí |
+| nalgasprontas | 15 | sí |
+| gato | 15 | sí |
+| ronda | 15 |  |
+| desbarrancar | 15 |  |
+| punto 40 | 15 | sí |

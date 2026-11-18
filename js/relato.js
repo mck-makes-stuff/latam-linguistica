@@ -2,6 +2,7 @@
 import { cargarTodo, vistaConcepto, colorTono, colorOrigen, grupoDe, ORIGENES } from "./datos.js";
 import { crearMapa } from "./mapa.js";
 import { esc } from "./panel.js";
+import { recordar } from "./estado.js";
 
 const reducido = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -11,10 +12,22 @@ const medir = () => document.documentElement.style.setProperty("--alto-encabezad
 medir();
 addEventListener("resize", medir);
 
-// Cada visita empieza por la apertura (el navegador no debe restaurar el desplazamiento)
+// La primera visita empieza por la apertura (el navegador no debe restaurar el desplazamiento).
+// Si la persona ya estuvo en la portada en esta pestaña, vuelve a donde estaba, sin la animación.
 history.scrollRestoration = "manual";
+const deVuelta = document.documentElement.classList.contains("de-vuelta");
+let guardado = null;
+try { guardado = JSON.parse(sessionStorage.getItem("portada") || "null"); } catch (e) {}
+let pendiente = false;
+const guardarPosicion = () => {
+  if (pendiente) return;
+  pendiente = true;
+  setTimeout(() => { pendiente = false; recordar({ y: scrollY }); }, 200);
+};
 // Un enlace compartido a un concepto o palabra va directo al explorador
-if (!/concepto=|palabra=/.test(location.hash)) scrollTo(0, 0);
+const enlaceDirecto = !deVuelta && /concepto=|palabra=/.test(location.hash);
+if (deVuelta && !enlaceDirecto) scrollTo({ top: guardado?.y || 0, behavior: "instant" });
+else if (!enlaceDirecto) scrollTo(0, 0);
 else {
   document.body.classList.add("sin-apertura");
   requestAnimationFrame(() => document.getElementById("explorar").scrollIntoView());
@@ -50,7 +63,8 @@ function siguientePalabra() {
 mostrar();
 
 // La pregunta termina de aparecer a los ~2,3 s; luego 2 s para pensar la respuesta propia
-const PAUSA = 4300, INTERVALO = 1500;
+const PAUSA = deVuelta ? 0 : 4300, INTERVALO = 1500;
+if (deVuelta) bajar.classList.add("visible");
 if (!reducido) {
   let reloj = null;
   setTimeout(() => {
@@ -75,8 +89,10 @@ if (!reducido) {
     ], { duration: 1300, easing: "ease-in-out" });
   };
   const primerRebote = Math.max(0, PAUSA - performance.now()) + INTERVALO * 3;
-  setTimeout(rebotar, primerRebote);
-  setTimeout(rebotar, primerRebote + 9000);
+  if (!deVuelta) {
+    setTimeout(rebotar, primerRebote);
+    setTimeout(rebotar, primerRebote + 9000);
+  }
   addEventListener("scroll", () => { if (scrollY > innerHeight) clearInterval(reloj); }, { passive: true });
 } else {
   caja.classList.remove("esperando");
@@ -180,3 +196,11 @@ const observador = new IntersectionObserver((entradas) => {
   for (const e of entradas) if (e.isIntersecting) activar(+e.target.dataset.paso);
 }, { rootMargin: matchMedia("(max-width: 760px)").matches ? "-62% 0px -30% 0px" : "-45% 0px -45% 0px" });
 document.querySelectorAll(".paso").forEach((p) => observador.observe(p));
+
+recordar({ y: deVuelta ? guardado?.y || 0 : scrollY });
+addEventListener("scroll", guardarPosicion, { passive: true });
+// Con los mapas ya dibujados la página tiene su altura final: se vuelve a la posición guardada
+if (deVuelta && !enlaceDirecto && guardado?.y) {
+  await document.fonts.ready;
+  requestAnimationFrame(() => requestAnimationFrame(() => scrollTo({ top: guardado.y, behavior: "instant" })));
+}

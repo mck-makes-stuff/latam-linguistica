@@ -25,6 +25,14 @@ function escribirURL() {
   history.replaceState(null, "", "#" + p.toString());
 }
 
+// Recuerdo de la portada durante la visita (pestaña): posición y lo elegido en el explorador
+export function recordar(cambios) {
+  try {
+    const previo = JSON.parse(sessionStorage.getItem("portada") || "{}");
+    sessionStorage.setItem("portada", JSON.stringify({ ...previo, ...cambios }));
+  } catch (e) {}
+}
+
 export function leerURL() {
   const p = new URLSearchParams(location.hash.slice(1));
   return {

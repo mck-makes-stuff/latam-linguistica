@@ -8,7 +8,7 @@ Reproduce exactamente los cálculos del sitio (js/datos.js y js/quiz.js):
   - simulación del cuestionario (puntuación, softmax con temperatura 2, selección por entropía)
 Uso:  python3 scripts/metodologia.py
 """
-import collections, html, json, math, pathlib
+import collections, html, json, math, pathlib, unicodedata
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 PAISES = ["MEX", "GTM", "SLV", "HND", "NIC", "CRI", "PAN", "CUB", "DOM", "PRI",
@@ -123,6 +123,10 @@ def main():
     bloques = {}
 
     # Fuentes
+    norm = lambda s: "".join(c for c in unicodedata.normalize("NFD", s.lower()) if unicodedata.category(c) != "Mn")
+    encabezados = f"{sum(f['n'] for f in web if f.get('n')):,}".replace(",", ".")
+    lemas_pais = {(f["pais"], norm(l)) for f in web for l in f["lemas"]}
+    con_lista = [r for r in equipo if (r["pais"], norm(r.get("lema", r["forma"]))) in lemas_pais]
     cats = indice["categorias"]
     filas = [[e(NOMBRES.get(k, k)), f'{v["n"]:,}'.replace(",", ".")] for k, v in sorted(cats.items(), key=lambda kv: -kv[1]["n"])]
     usadas = [f for f in web if f.get("n")]
@@ -132,9 +136,10 @@ def main():
         f"({sum(v['n'] for v in cats.values()):,} asignaciones palabra–región; {len(lemas):,} palabras distintas en el índice del buscador):</p>".replace(",", ".")
         + '<ul class="cuadricula">' + "".join(f"<li><span>{a}</span><b>{b}</b></li>" for a, b in filas) + "</ul>"
         + f"<p>Listas web: {len(catalogo)} catalogadas, de las que {len(usadas)} aportaron palabras "
-        f"({sum(f['n'] for f in usadas):,} encabezados en total). Por tipo: "
-        .replace(",", ".") + "; ".join(f"{e(t)}, {n}" for t, n in por_tipo.most_common()) + ". "
-        f"Registro del equipo: {len(equipo)} pares concepto–país–palabra.</p>")
+        f"({encabezados} encabezados en total). Por tipo: "
+        + "; ".join(f"{e(t)}, {n}" for t, n in por_tipo.most_common()) + ". "
+        f"Registro del equipo: {len(equipo)} pares concepto–país–palabra, de los que {len(con_lista)} aparecen "
+        f"en alguna lista de su país y se usan.</p>")
 
     # Estados
     sem_pub = [c for c in semilla if c.get("publicar")]
@@ -194,6 +199,8 @@ def main():
     s = p.read_text()
     for k, v in bloques.items():
         a, z = f"<!-- {k} -->", f"<!-- /{k} -->"
+        if a not in s:  # la página ya no muestra este bloque
+            continue
         i, j = s.index(a) + len(a), s.index(z)
         s = s[:i] + "\n" + v + "\n" + s[j:]
     p.write_text(s)

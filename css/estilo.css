@@ -249,6 +249,10 @@ th { font-weight: 600; background: var(--crema); }
 @keyframes aparecer { to { opacity: 1; transform: none; } }
 @keyframes latir { 50% { transform: translateY(5px); } }
 .sin-apertura .apertura { display: none; }
+/* De vuelta en la portada durante la misma visita: sin cortinas ni entradas animadas */
+.de-vuelta .cortina { display: none; }
+.de-vuelta .apertura-mapa { animation: none; opacity: .55; }
+.de-vuelta .apertura-centro > *, .de-vuelta .apertura-centro > .apertura-bajar { animation: none; opacity: 1; transform: none; }
 
 /* ==========================================================================
    Relato: mapa fijo a la izquierda, pasos que se descubren al bajar

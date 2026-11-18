@@ -7,8 +7,7 @@
     {"orden": "Lipski", "html": "Lipski, John M. <i>Latin American Spanish</i>. Londres: Longman, 1994."},
     {"orden": "Moreno de Alba", "html": "Moreno de Alba, José G. <i>El español en América</i>. México: Fondo de Cultura Económica, 1988."},
     {"orden": "Bostock", "html": "Bostock, Mike. <i>World Atlas TopoJSON</i>. Versión 2.0.2. GitHub. Datos derivados de Natural Earth. https://github.com/topojson/world-atlas."},
-    {"orden": "Natural Earth", "html": "Natural Earth. «Admin 0 – Countries», escala 1:50 m. Dominio público. https://www.naturalearthdata.com/."},
-    {"orden": "Equipo de En otras palabras", "html": "Equipo de <i>En otras palabras</i>. «Registro de palabras por país». Datos inéditos, 2026. https://github.com/mck-makes-stuff/latam-linguistica/blob/main/data/registro_equipo.json."}
+    {"orden": "Natural Earth", "html": "Natural Earth. «Admin 0 – Countries», escala 1:50 m. Dominio público. https://www.naturalearthdata.com/."}
   ],
   "web": [
     {"orden": "CiberCuba", "html": "CiberCuba. «Diccionario de cubanismos más usados». 18 de enero de 2018; modificado el 24 de diciembre de 2019.", "url": "https://www.cibercuba.com/lecturas/2018-01-20-u196555-e196506-s27315-te-presentamos-primer-diccionario-palabras-exclusivamente"},

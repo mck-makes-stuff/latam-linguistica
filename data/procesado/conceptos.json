@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-16",
+ "generado": "2026-11-18",
  "nota": "Generado por scripts/procesar.py. No editar a mano: editar data/conceptos_semilla.json.",
  "conceptos": [
   {
@@ -554,13 +554,6 @@
        "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "SLV",
-       "forma": "cipote",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -743,13 +736,6 @@
        "fuente": "jergozo.com",
        "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
        "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "DOM",
-       "forma": "carajito",
-       "fuente": "Registro del equipo",
-       "url": "",
        "sentido": ""
       }
      ]
@@ -2222,13 +2208,6 @@
        "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "carajillo",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -2289,13 +2268,6 @@
        "fuente": "jergozo.com",
        "url": "https://jergozo.com/diccionario-venezolano",
        "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CUB",
-       "forma": "chama",
-       "fuente": "Registro del equipo",
-       "url": "",
        "sentido": ""
       }
      ]
@@ -2375,13 +2347,6 @@
        "url": "https://jergozo.com/diccionario-puertoricense",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "DOM",
-       "forma": "chamaquito",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -2436,13 +2401,6 @@
        "url": "https://jergozo.com/diccionario-peruano",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "ECU",
-       "forma": "guambra",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     }
@@ -2459,8 +2417,8 @@
    "motivos": "",
    "metricas": {
     "cobertura": 18,
-    "variantes_verificadas": 22,
-    "media_por_pais": 2.39,
+    "variantes_verificadas": 19,
+    "media_por_pais": 2.0,
     "sin_cubrir": [
      "URY"
     ]
@@ -2564,13 +2522,6 @@
        "fuente": "jergozo.com",
        "url": "https://jergozo.com/diccionario-venezolano",
        "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "BOL",
-       "forma": "cuate",
-       "fuente": "Registro del equipo",
-       "url": "",
        "sentido": ""
       }
      ]
@@ -2920,20 +2871,6 @@
        "url": "https://jergozo.com/diccionario-venezolano",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "DOM",
-       "forma": "pana",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "pana",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -3145,13 +3082,6 @@
        "url": "https://jergozo.com/diccionario-mexicano",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "SLV",
-       "forma": "chero",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -3310,13 +3240,6 @@
        "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "compa",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -3408,13 +3331,6 @@
        "fuente": "jergozo.com",
        "url": "https://jergozo.com/diccionario-venezolano",
        "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "causa",
-       "fuente": "Registro del equipo",
-       "url": "",
        "sentido": ""
       }
      ]
@@ -3551,13 +3467,6 @@
        "fuente": "jergozo.com",
        "url": "https://jergozo.com/diccionario-venezolano",
        "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "pata",
-       "fuente": "Registro del equipo",
-       "url": "",
        "sentido": ""
       }
      ]
@@ -4906,36 +4815,6 @@
      ]
     },
     {
-     "forma": "panito",
-     "etimologia": {
-      "texto": "Diminutivo de «pana».",
-      "grupo": "formacion",
-      "lengua": "",
-      "fuente": "Nota editorial (por verificar)",
-      "url": ""
-     },
-     "paises": [
-      "DOM"
-     ],
-     "paises_web": [],
-     "paises_equipo": [
-      "DOM"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "DOM",
-       "forma": "panito",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
      "forma": "veci",
      "etimologia": {
       "texto": "Acortamiento de «vecino».",
@@ -4959,8 +4838,9 @@
       {
        "pais": "ECU",
        "forma": "veci",
-       "fuente": "Registro del equipo",
-       "url": "",
+       "fuente": "lingualinkup.com",
+       "url": "https://lingualinkup.com/ecuadorian-spanish/",
+       "tipo": "comercial",
        "sentido": ""
       }
      ]
@@ -5000,13 +4880,6 @@
        "fuente": "jergozo.com",
        "url": "https://jergozo.com/diccionario-panamense",
        "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "fren",
-       "fuente": "Registro del equipo",
-       "url": "",
        "sentido": ""
       }
      ]
@@ -5088,13 +4961,6 @@
        "url": "https://jergozo.com/diccionario-mexicano",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "garra",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -5134,13 +5000,6 @@
        "url": "https://jergozo.com/diccionario-paraguayo",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "che kape",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -5162,212 +5021,17 @@
       {
        "pais": "PRY",
        "forma": "kape",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "broki",
-     "etimologia": {
-      "texto": "Del inglés bro, acortamiento de brother («hermano»).",
-      "grupo": "ingles",
-      "lengua": "inglés",
-      "fuente": "Nota editorial (por verificar)",
-      "url": ""
-     },
-     "paises": [
-      "PRI"
-     ],
-     "paises_web": [],
-     "paises_equipo": [
-      "PRI"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "PRI",
-       "forma": "broki",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "mano",
-     "etimologia": {
-      "texto": "Acortamiento de «hermano».",
-      "grupo": "formacion",
-      "lengua": "",
-      "fuente": "Nota editorial (por verificar)",
-      "url": ""
-     },
-     "paises": [
-      "COL",
-      "MEX",
-      "PER",
-      "PRI",
-      "VEN"
-     ],
-     "paises_web": [
-      "ARG",
-      "CHL",
-      "CRI",
-      "ECU",
-      "ESP",
-      "GTM",
-      "SLV"
-     ],
-     "paises_equipo": [
-      "PRI"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "verificado",
-     "evidencia": [
-      {
-       "pais": "COL",
-       "forma": "mano",
-       "fuente": "Wikcionario",
-       "url": "https://es.wiktionary.org/wiki/mano",
-       "sentido": "Tratamiento dirigido a un amigo o para referirse a alguien de forma afectuosa."
-      },
-      {
-       "pais": "MEX",
-       "forma": "mano",
-       "fuente": "Wikcionario",
-       "url": "https://es.wiktionary.org/wiki/mano",
-       "sentido": "Tratamiento dirigido a un amigo o para referirse a alguien de forma afectuosa."
-      },
-      {
-       "pais": "PER",
-       "forma": "mano",
-       "fuente": "Wikcionario",
-       "url": "https://es.wiktionary.org/wiki/mano",
-       "sentido": "Tratamiento dirigido a un amigo o para referirse a alguien de forma afectuosa."
-      },
-      {
-       "pais": "VEN",
-       "forma": "mano",
-       "fuente": "Wikcionario",
-       "url": "https://es.wiktionary.org/wiki/mano",
-       "sentido": "Tratamiento dirigido a un amigo o para referirse a alguien de forma afectuosa."
-      },
-      {
-       "pais": "SLV",
-       "forma": "mano",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-salvadore%C3%B1o",
+       "fuente": "diccionariolibre.com",
+       "url": "https://diccionariolibre.com/pais/paraguay",
        "tipo": "colaborativa",
        "sentido": ""
       },
       {
-       "pais": "ARG",
-       "forma": "mano",
+       "pais": "PRY",
+       "forma": "kape",
        "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-argentino",
+       "url": "https://jergozo.com/diccionario-paraguayo",
        "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ARG",
-       "forma": "mano",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-argentino",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CHL",
-       "forma": "mano",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-chileno",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "COL",
-       "forma": "mano",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "mano",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-costaricense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ECU",
-       "forma": "mano",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-ecuatoriano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "GTM",
-       "forma": "mano",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-guatemalteco",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "mano",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "mano",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-peruano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "mano",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-venezolano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ESP",
-       "forma": "mano",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ESP",
-       "forma": "mano",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRI",
-       "forma": "mano",
-       "fuente": "Registro del equipo",
-       "url": "",
        "sentido": ""
       }
      ]
@@ -5528,13 +5192,6 @@
        "fuente": "jergozo.com",
        "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
        "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CHL",
-       "forma": "gancho",
-       "fuente": "Registro del equipo",
-       "url": "",
        "sentido": ""
       }
      ]
@@ -8399,13 +8056,6 @@
        "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "asado",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -8610,20 +8260,6 @@
        "url": "https://jergozo.com/diccionario-venezolano",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "arrecho",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "arrecho",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -8662,13 +8298,6 @@
        "fuente": "jergozo.com",
        "url": "https://jergozo.com/diccionario-paraguayo",
        "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "nde ra kóre",
-       "fuente": "Registro del equipo",
-       "url": "",
        "sentido": ""
       }
      ]
@@ -9118,1206 +8747,6 @@
     "mate",
     "pipián",
     "porongo"
-   ]
-  },
-  {
-   "id": "cerveza",
-   "concepto": "cerveza (coloquial)",
-   "campo": "bebida",
-   "definicion": "Bebida alcohólica de cebada fermentada, en registro coloquial.",
-   "corto": "cerveza",
-   "publicar": true,
-   "motivos": "",
-   "metricas": {
-    "cobertura": 12,
-    "variantes_verificadas": 11,
-    "media_por_pais": 1.33,
-    "sin_cubrir": [
-     "BOL",
-     "GTM",
-     "HND",
-     "MEX",
-     "NIC",
-     "PRI",
-     "URY"
-    ]
-   },
-   "variantes": [
-    {
-     "forma": "birra",
-     "etimologia": {
-      "texto": "Del italiano birra, y este del alemán Bier.",
-      "codigo": "it",
-      "grupo": "italiano",
-      "lengua": "italiano",
-      "etimo": "birra",
-      "fuente": "Wikcionario",
-      "url": "https://es.wiktionary.org/wiki/birra#Etimología"
-     },
-     "paises": [
-      "ARG",
-      "CHL",
-      "CRI",
-      "ESP",
-      "PER",
-      "VEN"
-     ],
-     "paises_web": [
-      "COL",
-      "HND",
-      "MEX"
-     ],
-     "paises_equipo": [],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "verificado",
-     "evidencia": [
-      {
-       "pais": "ARG",
-       "forma": "birra",
-       "fuente": "Wikcionario",
-       "url": "https://es.wiktionary.org/wiki/birra",
-       "sentido": "cerveza.<ref name=l></ref>"
-      },
-      {
-       "pais": "CHL",
-       "forma": "birra",
-       "fuente": "Wikcionario",
-       "url": "https://es.wiktionary.org/wiki/birra",
-       "sentido": "cerveza.<ref name=l></ref>"
-      },
-      {
-       "pais": "CRI",
-       "forma": "birra",
-       "fuente": "Wikcionario",
-       "url": "https://es.wiktionary.org/wiki/birra",
-       "sentido": "cerveza.<ref name=l></ref>"
-      },
-      {
-       "pais": "ESP",
-       "forma": "birra",
-       "fuente": "Wikcionario",
-       "url": "https://es.wiktionary.org/wiki/birra",
-       "sentido": "cerveza.<ref name=l></ref>"
-      },
-      {
-       "pais": "PER",
-       "forma": "birra",
-       "fuente": "Wikcionario",
-       "url": "https://es.wiktionary.org/wiki/birra",
-       "sentido": "cerveza.<ref name=l></ref>"
-      },
-      {
-       "pais": "VEN",
-       "forma": "birra",
-       "fuente": "Wikcionario",
-       "url": "https://es.wiktionary.org/wiki/birra",
-       "sentido": "cerveza.<ref name=l></ref>"
-      },
-      {
-       "pais": "ARG",
-       "forma": "birra",
-       "fuente": "tango.blue",
-       "url": "https://tango.blue/en/lunfardo/",
-       "tipo": "divulgativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "birra",
-       "fuente": "www.nadaincluido.com",
-       "url": "https://www.nadaincluido.com/diccionario-de-costa-rica/",
-       "tipo": "comercial",
-       "sentido": ""
-      },
-      {
-       "pais": "ARG",
-       "forma": "birra",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-argentino",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CHL",
-       "forma": "birra",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-chileno",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "COL",
-       "forma": "birra",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "birra",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-costaricense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "HND",
-       "forma": "birra",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "birra",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "birra",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-venezolano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ESP",
-       "forma": "birra",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "birra",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "chela",
-     "etimologia": null,
-     "paises": [
-      "PER",
-      "SLV"
-     ],
-     "paises_web": [
-      "BOL",
-      "CHL",
-      "COL",
-      "CRI",
-      "ECU",
-      "GTM",
-      "HND",
-      "MEX",
-      "NIC",
-      "PAN",
-      "VEN"
-     ],
-     "paises_equipo": [
-      "PER",
-      "SLV"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "SLV",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-salvadore%C3%B1o",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "chela",
-       "fuente": "visionlinguistica.wordpress.com",
-       "url": "https://visionlinguistica.wordpress.com/2019/05/30/regionalismos-y-diferencias-lexicas-en-el-norte-centro-y-sur-de-mexico/",
-       "tipo": "divulgativa",
-       "sentido": ""
-      },
-      {
-       "pais": "NIC",
-       "forma": "chela",
-       "fuente": "es.wiktionary.org",
-       "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice:Nicaraguanismos",
-       "tipo": "lexicografica",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "chela",
-       "fuente": "psicologiaymente.com",
-       "url": "https://psicologiaymente.com/reflexiones/palabras-expresiones-peruanas",
-       "tipo": "divulgativa",
-       "sentido": ""
-      },
-      {
-       "pais": "BOL",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-boliviano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CHL",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-chileno",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "COL",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-costaricense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ECU",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-ecuatoriano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "GTM",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-guatemalteco",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "HND",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "NIC",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-nicaraguense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-panamense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-peruano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "chela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-venezolano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "chela",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      },
-      {
-       "pais": "SLV",
-       "forma": "chela",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "laguer",
-     "etimologia": {
-      "texto": "Del inglés lager, y este del alemán Lagerbier («cerveza de almacén»).",
-      "grupo": "ingles",
-      "lengua": "inglés",
-      "fuente": "Nota editorial (por verificar)",
-      "url": ""
-     },
-     "paises": [
-      "CUB"
-     ],
-     "paises_web": [],
-     "paises_equipo": [
-      "CUB"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "CUB",
-       "forma": "laguer",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-cubano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CUB",
-       "forma": "laguer",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "biela",
-     "etimologia": null,
-     "paises": [
-      "ECU"
-     ],
-     "paises_web": [
-      "MEX"
-     ],
-     "paises_equipo": [
-      "ECU"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "ECU",
-       "forma": "biela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-ecuatoriano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "biela",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ECU",
-       "forma": "biela",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "fría",
-     "etimologia": {
-      "texto": "Adjetivo sustantivado: la cerveza que se pide «bien fría».",
-      "grupo": "formacion",
-      "lengua": "",
-      "fuente": "Nota editorial (por verificar)",
-      "url": ""
-     },
-     "paises": [
-      "DOM"
-     ],
-     "paises_web": [
-      "COL",
-      "CRI",
-      "GTM",
-      "MEX",
-      "PRI",
-      "VEN"
-     ],
-     "paises_equipo": [
-      "DOM"
-     ],
-     "general": true,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "COL",
-       "forma": "fría",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "fría",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-costaricense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "DOM",
-       "forma": "fría",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-dominicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "GTM",
-       "forma": "fría",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-guatemalteco",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "fría",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRI",
-       "forma": "fría",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-puertoricense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "fría",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-venezolano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "DOM",
-       "forma": "fría",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "rubia",
-     "etimologia": {
-      "texto": "Por el color de la cerveza clara.",
-      "grupo": "formacion",
-      "lengua": "",
-      "fuente": "Nota editorial (por verificar)",
-      "url": ""
-     },
-     "paises": [
-      "PER"
-     ],
-     "paises_web": [
-      "ARG",
-      "CHL",
-      "HND",
-      "URY"
-     ],
-     "paises_equipo": [
-      "PER"
-     ],
-     "general": true,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "PER",
-       "forma": "rubia",
-       "fuente": "psicologiaymente.com",
-       "url": "https://psicologiaymente.com/reflexiones/palabras-expresiones-peruanas",
-       "tipo": "divulgativa",
-       "sentido": ""
-      },
-      {
-       "pais": "URY",
-       "forma": "rubia",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-uruguayo",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ARG",
-       "forma": "rubia",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-argentino",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CHL",
-       "forma": "rubia",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-chileno",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "HND",
-       "forma": "rubia",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "rubia",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-peruano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "rubia",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "birria",
-     "etimologia": {
-      "texto": "Variante de «birra», del italiano birra («cerveza»).",
-      "grupo": "italiano",
-      "lengua": "italiano",
-      "fuente": "Nota editorial (por verificar)",
-      "url": ""
-     },
-     "paises": [
-      "VEN"
-     ],
-     "paises_web": [
-      "COL",
-      "ESP",
-      "HND",
-      "MEX",
-      "PAN",
-      "SLV"
-     ],
-     "paises_equipo": [
-      "VEN"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "SLV",
-       "forma": "birria",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-salvadore%C3%B1o",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "birria",
-       "fuente": "visionlinguistica.wordpress.com",
-       "url": "https://visionlinguistica.wordpress.com/2019/05/30/regionalismos-y-diferencias-lexicas-en-el-norte-centro-y-sur-de-mexico/",
-       "tipo": "divulgativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "birria",
-       "fuente": "en.wiktionary.org",
-       "url": "https://en.wiktionary.org/wiki/Appendix:Glossary_of_Panamanian_Spanish",
-       "tipo": "lexicografica",
-       "sentido": ""
-      },
-      {
-       "pais": "COL",
-       "forma": "birria",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "HND",
-       "forma": "birria",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "birria",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "birria",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-panamense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ESP",
-       "forma": "birria",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "birria",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "pola",
-     "etimologia": null,
-     "paises": [
-      "COL"
-     ],
-     "paises_web": [
-      "CHL"
-     ],
-     "paises_equipo": [],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "verificado",
-     "evidencia": [
-      {
-       "pais": "COL",
-       "forma": "pola",
-       "fuente": "Wikcionario",
-       "url": "https://es.wiktionary.org/wiki/pola",
-       "sentido": "cerveza.<ref></ref>"
-      },
-      {
-       "pais": "COL",
-       "forma": "pola",
-       "fuente": "quillbot.com",
-       "url": "https://quillbot.com/es/blog/vocabulario/palabras-de-colombia/",
-       "tipo": "divulgativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CHL",
-       "forma": "pola",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-chileno",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "COL",
-       "forma": "pola",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "guaro",
-     "etimologia": null,
-     "paises": [
-      "PAN"
-     ],
-     "paises_web": [
-      "COL",
-      "CRI",
-      "ECU",
-      "GTM",
-      "HND",
-      "NIC",
-      "SLV",
-      "VEN"
-     ],
-     "paises_equipo": [
-      "PAN"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "SLV",
-       "forma": "guaro",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-salvadore%C3%B1o",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "NIC",
-       "forma": "guaro",
-       "fuente": "es.wiktionary.org",
-       "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice:Nicaraguanismos",
-       "tipo": "lexicografica",
-       "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "guaro",
-       "fuente": "en.wiktionary.org",
-       "url": "https://en.wiktionary.org/wiki/Appendix:Glossary_of_Panamanian_Spanish",
-       "tipo": "lexicografica",
-       "sentido": ""
-      },
-      {
-       "pais": "COL",
-       "forma": "guaro",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "guaro",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-costaricense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ECU",
-       "forma": "guaro",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-ecuatoriano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "GTM",
-       "forma": "guaro",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-guatemalteco",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "HND",
-       "forma": "guaro",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "NIC",
-       "forma": "guaro",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-nicaraguense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "guaro",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-panamense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "guaro",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-venezolano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "guaro",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "guari",
-     "etimologia": null,
-     "paises": [
-      "PRY"
-     ],
-     "paises_web": [],
-     "paises_equipo": [
-      "PRY"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "PRY",
-       "forma": "guari",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "caña",
-     "etimologia": {
-      "texto": "Del latín canna, del griego antiguo κᾰ́ννᾱ, del acadio 𒂵𒉡𒌑𒌝 («junco»).",
-      "codigo": "la",
-      "grupo": "herencia",
-      "lengua": "latín",
-      "etimo": "canna",
-      "fuente": "Wikcionario",
-      "url": "https://es.wiktionary.org/wiki/ca%C3%B1a#Etimología"
-     },
-     "paises": [
-      "ESP",
-      "PRY"
-     ],
-     "paises_web": [
-      "ARG",
-      "BOL",
-      "CHL",
-      "COL",
-      "CRI",
-      "CUB",
-      "DOM",
-      "ECU",
-      "MEX",
-      "PER",
-      "PRI",
-      "SLV",
-      "URY",
-      "VEN"
-     ],
-     "paises_equipo": [
-      "PRY"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "verificado",
-     "evidencia": [
-      {
-       "pais": "ESP",
-       "forma": "caña",
-       "fuente": "Wikcionario",
-       "url": "https://es.wiktionary.org/wiki/ca%C3%B1a",
-       "sentido": "vaso alto y angosto de cerveza u otra bebida alcohólica"
-      },
-      {
-       "pais": "ARG",
-       "forma": "caña",
-       "fuente": "tango.blue",
-       "url": "https://tango.blue/en/lunfardo/",
-       "tipo": "divulgativa",
-       "sentido": ""
-      },
-      {
-       "pais": "SLV",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-salvadore%C3%B1o",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "caña",
-       "fuente": "diccionariolibre.com",
-       "url": "https://diccionariolibre.com/pais/paraguay",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "URY",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-uruguayo",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "URY",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-uruguayo",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ARG",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-argentino",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ARG",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-argentino",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "BOL",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-boliviano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "BOL",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-boliviano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CHL",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-chileno",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CHL",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-chileno",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "COL",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "COL",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-costaricense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-costaricense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CUB",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-cubano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "DOM",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-dominicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ECU",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-ecuatoriano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ECU",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-ecuatoriano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-paraguayo",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-peruano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-peruano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRI",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-puertoricense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-venezolano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-venezolano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ESP",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ESP",
-       "forma": "caña",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "caña",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    }
-   ],
-   "sugerencias": [
-    "cerveza",
-    "pilsen"
    ]
   },
   {
@@ -10786,13 +9215,6 @@
        "fuente": "jergozo.com",
        "url": "https://jergozo.com/diccionario-peruano",
        "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CUB",
-       "forma": "bacán",
-       "fuente": "Registro del equipo",
-       "url": "",
        "sentido": ""
       }
      ]
@@ -12510,13 +10932,6 @@
        "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "chiva",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     }
@@ -12530,6 +10945,1127 @@
     "lujoso",
     "magnífico",
     "maravilloso"
+   ]
+  },
+  {
+   "id": "cerveza",
+   "concepto": "cerveza (coloquial)",
+   "campo": "bebida",
+   "definicion": "Bebida alcohólica de cebada fermentada, en registro coloquial.",
+   "corto": "cerveza",
+   "publicar": true,
+   "motivos": "",
+   "metricas": {
+    "cobertura": 12,
+    "variantes_verificadas": 9,
+    "media_por_pais": 1.17,
+    "sin_cubrir": [
+     "BOL",
+     "GTM",
+     "HND",
+     "MEX",
+     "NIC",
+     "PRI",
+     "URY"
+    ]
+   },
+   "variantes": [
+    {
+     "forma": "birra",
+     "etimologia": {
+      "texto": "Del italiano birra, y este del alemán Bier.",
+      "codigo": "it",
+      "grupo": "italiano",
+      "lengua": "italiano",
+      "etimo": "birra",
+      "fuente": "Wikcionario",
+      "url": "https://es.wiktionary.org/wiki/birra#Etimología"
+     },
+     "paises": [
+      "ARG",
+      "CHL",
+      "CRI",
+      "ESP",
+      "PER",
+      "VEN"
+     ],
+     "paises_web": [
+      "COL",
+      "HND",
+      "MEX"
+     ],
+     "paises_equipo": [],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "verificado",
+     "evidencia": [
+      {
+       "pais": "ARG",
+       "forma": "birra",
+       "fuente": "Wikcionario",
+       "url": "https://es.wiktionary.org/wiki/birra",
+       "sentido": "cerveza.<ref name=l></ref>"
+      },
+      {
+       "pais": "CHL",
+       "forma": "birra",
+       "fuente": "Wikcionario",
+       "url": "https://es.wiktionary.org/wiki/birra",
+       "sentido": "cerveza.<ref name=l></ref>"
+      },
+      {
+       "pais": "CRI",
+       "forma": "birra",
+       "fuente": "Wikcionario",
+       "url": "https://es.wiktionary.org/wiki/birra",
+       "sentido": "cerveza.<ref name=l></ref>"
+      },
+      {
+       "pais": "ESP",
+       "forma": "birra",
+       "fuente": "Wikcionario",
+       "url": "https://es.wiktionary.org/wiki/birra",
+       "sentido": "cerveza.<ref name=l></ref>"
+      },
+      {
+       "pais": "PER",
+       "forma": "birra",
+       "fuente": "Wikcionario",
+       "url": "https://es.wiktionary.org/wiki/birra",
+       "sentido": "cerveza.<ref name=l></ref>"
+      },
+      {
+       "pais": "VEN",
+       "forma": "birra",
+       "fuente": "Wikcionario",
+       "url": "https://es.wiktionary.org/wiki/birra",
+       "sentido": "cerveza.<ref name=l></ref>"
+      },
+      {
+       "pais": "ARG",
+       "forma": "birra",
+       "fuente": "tango.blue",
+       "url": "https://tango.blue/en/lunfardo/",
+       "tipo": "divulgativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CRI",
+       "forma": "birra",
+       "fuente": "www.nadaincluido.com",
+       "url": "https://www.nadaincluido.com/diccionario-de-costa-rica/",
+       "tipo": "comercial",
+       "sentido": ""
+      },
+      {
+       "pais": "ARG",
+       "forma": "birra",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-argentino",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CHL",
+       "forma": "birra",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-chileno",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "COL",
+       "forma": "birra",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-colombiano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CRI",
+       "forma": "birra",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-costaricense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "HND",
+       "forma": "birra",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "birra",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "VEN",
+       "forma": "birra",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-venezolano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ESP",
+       "forma": "birra",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "chela",
+     "etimologia": null,
+     "paises": [
+      "PER",
+      "SLV"
+     ],
+     "paises_web": [
+      "BOL",
+      "CHL",
+      "COL",
+      "CRI",
+      "ECU",
+      "GTM",
+      "HND",
+      "MEX",
+      "NIC",
+      "PAN",
+      "VEN"
+     ],
+     "paises_equipo": [
+      "PER",
+      "SLV"
+     ],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "equipo",
+     "evidencia": [
+      {
+       "pais": "SLV",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-salvadore%C3%B1o",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "chela",
+       "fuente": "visionlinguistica.wordpress.com",
+       "url": "https://visionlinguistica.wordpress.com/2019/05/30/regionalismos-y-diferencias-lexicas-en-el-norte-centro-y-sur-de-mexico/",
+       "tipo": "divulgativa",
+       "sentido": ""
+      },
+      {
+       "pais": "NIC",
+       "forma": "chela",
+       "fuente": "es.wiktionary.org",
+       "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice:Nicaraguanismos",
+       "tipo": "lexicografica",
+       "sentido": ""
+      },
+      {
+       "pais": "PER",
+       "forma": "chela",
+       "fuente": "psicologiaymente.com",
+       "url": "https://psicologiaymente.com/reflexiones/palabras-expresiones-peruanas",
+       "tipo": "divulgativa",
+       "sentido": ""
+      },
+      {
+       "pais": "BOL",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-boliviano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CHL",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-chileno",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "COL",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-colombiano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CRI",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-costaricense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ECU",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-ecuatoriano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "GTM",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-guatemalteco",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "HND",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "NIC",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-nicaraguense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PAN",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-panamense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PER",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-peruano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "VEN",
+       "forma": "chela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-venezolano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "laguer",
+     "etimologia": {
+      "texto": "Del inglés lager, y este del alemán Lagerbier («cerveza de almacén»).",
+      "grupo": "ingles",
+      "lengua": "inglés",
+      "fuente": "Nota editorial (por verificar)",
+      "url": ""
+     },
+     "paises": [
+      "CUB"
+     ],
+     "paises_web": [],
+     "paises_equipo": [
+      "CUB"
+     ],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "equipo",
+     "evidencia": [
+      {
+       "pais": "CUB",
+       "forma": "laguer",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-cubano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "biela",
+     "etimologia": null,
+     "paises": [
+      "ECU"
+     ],
+     "paises_web": [
+      "MEX"
+     ],
+     "paises_equipo": [
+      "ECU"
+     ],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "equipo",
+     "evidencia": [
+      {
+       "pais": "ECU",
+       "forma": "biela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-ecuatoriano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "biela",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "fría",
+     "etimologia": {
+      "texto": "Adjetivo sustantivado: la cerveza que se pide «bien fría».",
+      "grupo": "formacion",
+      "lengua": "",
+      "fuente": "Nota editorial (por verificar)",
+      "url": ""
+     },
+     "paises": [
+      "DOM"
+     ],
+     "paises_web": [
+      "COL",
+      "CRI",
+      "GTM",
+      "MEX",
+      "PRI",
+      "VEN"
+     ],
+     "paises_equipo": [
+      "DOM"
+     ],
+     "general": true,
+     "americano": false,
+     "excluidos": [],
+     "estado": "equipo",
+     "evidencia": [
+      {
+       "pais": "COL",
+       "forma": "fría",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-colombiano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CRI",
+       "forma": "fría",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-costaricense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "DOM",
+       "forma": "fría",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-dominicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "GTM",
+       "forma": "fría",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-guatemalteco",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "fría",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PRI",
+       "forma": "fría",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-puertoricense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "VEN",
+       "forma": "fría",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-venezolano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "rubia",
+     "etimologia": {
+      "texto": "Por el color de la cerveza clara.",
+      "grupo": "formacion",
+      "lengua": "",
+      "fuente": "Nota editorial (por verificar)",
+      "url": ""
+     },
+     "paises": [
+      "PER"
+     ],
+     "paises_web": [
+      "ARG",
+      "CHL",
+      "HND",
+      "URY"
+     ],
+     "paises_equipo": [
+      "PER"
+     ],
+     "general": true,
+     "americano": false,
+     "excluidos": [],
+     "estado": "equipo",
+     "evidencia": [
+      {
+       "pais": "PER",
+       "forma": "rubia",
+       "fuente": "psicologiaymente.com",
+       "url": "https://psicologiaymente.com/reflexiones/palabras-expresiones-peruanas",
+       "tipo": "divulgativa",
+       "sentido": ""
+      },
+      {
+       "pais": "URY",
+       "forma": "rubia",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-uruguayo",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ARG",
+       "forma": "rubia",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-argentino",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CHL",
+       "forma": "rubia",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-chileno",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "HND",
+       "forma": "rubia",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PER",
+       "forma": "rubia",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-peruano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "birria",
+     "etimologia": {
+      "texto": "Variante de «birra», del italiano birra («cerveza»).",
+      "grupo": "italiano",
+      "lengua": "italiano",
+      "fuente": "Nota editorial (por verificar)",
+      "url": ""
+     },
+     "paises": [
+      "COL",
+      "ESP",
+      "HND",
+      "MEX",
+      "PAN",
+      "SLV"
+     ],
+     "paises_web": [
+      "COL",
+      "ESP",
+      "HND",
+      "MEX",
+      "PAN",
+      "SLV"
+     ],
+     "paises_equipo": [],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "parcial",
+     "evidencia": [
+      {
+       "pais": "SLV",
+       "forma": "birria",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-salvadore%C3%B1o",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "birria",
+       "fuente": "visionlinguistica.wordpress.com",
+       "url": "https://visionlinguistica.wordpress.com/2019/05/30/regionalismos-y-diferencias-lexicas-en-el-norte-centro-y-sur-de-mexico/",
+       "tipo": "divulgativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PAN",
+       "forma": "birria",
+       "fuente": "en.wiktionary.org",
+       "url": "https://en.wiktionary.org/wiki/Appendix:Glossary_of_Panamanian_Spanish",
+       "tipo": "lexicografica",
+       "sentido": ""
+      },
+      {
+       "pais": "COL",
+       "forma": "birria",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-colombiano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "HND",
+       "forma": "birria",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "birria",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PAN",
+       "forma": "birria",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-panamense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ESP",
+       "forma": "birria",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "pola",
+     "etimologia": null,
+     "paises": [
+      "COL"
+     ],
+     "paises_web": [
+      "CHL"
+     ],
+     "paises_equipo": [],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "verificado",
+     "evidencia": [
+      {
+       "pais": "COL",
+       "forma": "pola",
+       "fuente": "Wikcionario",
+       "url": "https://es.wiktionary.org/wiki/pola",
+       "sentido": "cerveza.<ref></ref>"
+      },
+      {
+       "pais": "COL",
+       "forma": "pola",
+       "fuente": "quillbot.com",
+       "url": "https://quillbot.com/es/blog/vocabulario/palabras-de-colombia/",
+       "tipo": "divulgativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CHL",
+       "forma": "pola",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-chileno",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "COL",
+       "forma": "pola",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-colombiano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "guaro",
+     "etimologia": null,
+     "paises": [
+      "PAN"
+     ],
+     "paises_web": [
+      "COL",
+      "CRI",
+      "ECU",
+      "GTM",
+      "HND",
+      "NIC",
+      "SLV",
+      "VEN"
+     ],
+     "paises_equipo": [
+      "PAN"
+     ],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "equipo",
+     "evidencia": [
+      {
+       "pais": "SLV",
+       "forma": "guaro",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-salvadore%C3%B1o",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "NIC",
+       "forma": "guaro",
+       "fuente": "es.wiktionary.org",
+       "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice:Nicaraguanismos",
+       "tipo": "lexicografica",
+       "sentido": ""
+      },
+      {
+       "pais": "PAN",
+       "forma": "guaro",
+       "fuente": "en.wiktionary.org",
+       "url": "https://en.wiktionary.org/wiki/Appendix:Glossary_of_Panamanian_Spanish",
+       "tipo": "lexicografica",
+       "sentido": ""
+      },
+      {
+       "pais": "COL",
+       "forma": "guaro",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-colombiano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CRI",
+       "forma": "guaro",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-costaricense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ECU",
+       "forma": "guaro",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-ecuatoriano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "GTM",
+       "forma": "guaro",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-guatemalteco",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "HND",
+       "forma": "guaro",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "NIC",
+       "forma": "guaro",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-nicaraguense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PAN",
+       "forma": "guaro",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-panamense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "VEN",
+       "forma": "guaro",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-venezolano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "guari",
+     "etimologia": null,
+     "paises": [],
+     "paises_web": [],
+     "paises_equipo": [],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "sin_datos",
+     "evidencia": []
+    },
+    {
+     "forma": "caña",
+     "etimologia": {
+      "texto": "Del latín canna, del griego antiguo κᾰ́ννᾱ, del acadio 𒂵𒉡𒌑𒌝 («junco»).",
+      "codigo": "la",
+      "grupo": "herencia",
+      "lengua": "latín",
+      "etimo": "canna",
+      "fuente": "Wikcionario",
+      "url": "https://es.wiktionary.org/wiki/ca%C3%B1a#Etimología"
+     },
+     "paises": [
+      "ESP",
+      "PRY"
+     ],
+     "paises_web": [
+      "ARG",
+      "BOL",
+      "CHL",
+      "COL",
+      "CRI",
+      "CUB",
+      "DOM",
+      "ECU",
+      "MEX",
+      "PER",
+      "PRI",
+      "SLV",
+      "URY",
+      "VEN"
+     ],
+     "paises_equipo": [
+      "PRY"
+     ],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "verificado",
+     "evidencia": [
+      {
+       "pais": "ESP",
+       "forma": "caña",
+       "fuente": "Wikcionario",
+       "url": "https://es.wiktionary.org/wiki/ca%C3%B1a",
+       "sentido": "vaso alto y angosto de cerveza u otra bebida alcohólica"
+      },
+      {
+       "pais": "ARG",
+       "forma": "caña",
+       "fuente": "tango.blue",
+       "url": "https://tango.blue/en/lunfardo/",
+       "tipo": "divulgativa",
+       "sentido": ""
+      },
+      {
+       "pais": "SLV",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-salvadore%C3%B1o",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PRY",
+       "forma": "caña",
+       "fuente": "diccionariolibre.com",
+       "url": "https://diccionariolibre.com/pais/paraguay",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "URY",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-uruguayo",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "URY",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-uruguayo",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ARG",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-argentino",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ARG",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-argentino",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "BOL",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-boliviano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "BOL",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-boliviano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CHL",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-chileno",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CHL",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-chileno",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "COL",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-colombiano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "COL",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-colombiano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CRI",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-costaricense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CRI",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-costaricense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CUB",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-cubano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "DOM",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-dominicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ECU",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-ecuatoriano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ECU",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-ecuatoriano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PRY",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-paraguayo",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PER",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-peruano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PER",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-peruano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PRI",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-puertoricense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "VEN",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-venezolano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "VEN",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-venezolano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ESP",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ESP",
+       "forma": "caña",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    }
+   ],
+   "sugerencias": [
+    "cerveza",
+    "pilsen"
    ]
   },
   {
@@ -13875,20 +13411,6 @@
        "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "chamba",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "chamba",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -14695,13 +14217,6 @@
        "url": "https://jergozo.com/diccionario-venezolano",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "rebusque",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -14877,13 +14392,6 @@
        "fuente": "jergozo.com",
        "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
        "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "camarón",
-       "fuente": "Registro del equipo",
-       "url": "",
        "sentido": ""
       }
      ]
@@ -22748,13 +22256,6 @@
        "url": "https://jergozo.com/diccionario-argentino",
        "tipo": "colaborativa",
        "sentido": ""
-      },
-      {
-       "pais": "ARG",
-       "forma": "escabiar",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
       }
      ]
     },
@@ -23802,815 +23303,6 @@
    ]
   },
   {
-   "id": "mentiroso",
-   "concepto": "mentiroso (coloquial)",
-   "campo": "personas",
-   "definicion": "Persona que miente o exagera, en registro coloquial.",
-   "corto": "mentiroso",
-   "publicar": true,
-   "motivos": "",
-   "metricas": {
-    "cobertura": 4,
-    "variantes_verificadas": 9,
-    "media_por_pais": 2.5,
-    "sin_cubrir": [
-     "ARG",
-     "BOL",
-     "CHL",
-     "COL",
-     "CRI",
-     "CUB",
-     "DOM",
-     "ECU",
-     "GTM",
-     "HND",
-     "MEX",
-     "NIC",
-     "PRI",
-     "SLV",
-     "URY"
-    ]
-   },
-   "variantes": [
-    {
-     "forma": "boletero",
-     "etimologia": null,
-     "paises": [
-      "PRY"
-     ],
-     "paises_web": [
-      "ARG",
-      "CHL"
-     ],
-     "paises_equipo": [
-      "PRY"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "PRY",
-       "forma": "boletero",
-       "fuente": "diccionariolibre.com",
-       "url": "https://diccionariolibre.com/pais/paraguay",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ARG",
-       "forma": "boletero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-argentino",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CHL",
-       "forma": "boletero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-chileno",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "boletero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-paraguayo",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "boletero",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "garca",
-     "etimologia": null,
-     "paises": [
-      "PRY"
-     ],
-     "paises_web": [
-      "ARG",
-      "URY"
-     ],
-     "paises_equipo": [
-      "PRY"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "ARG",
-       "forma": "garca",
-       "fuente": "tango.blue",
-       "url": "https://tango.blue/en/lunfardo/",
-       "tipo": "divulgativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "garca",
-       "fuente": "diccionariolibre.com",
-       "url": "https://diccionariolibre.com/pais/paraguay",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "URY",
-       "forma": "garca",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-uruguayo",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ARG",
-       "forma": "garca",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-argentino",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "garca",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-paraguayo",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "garca",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "atorrante",
-     "etimologia": null,
-     "paises": [
-      "PRY"
-     ],
-     "paises_web": [
-      "ARG",
-      "BOL",
-      "CHL",
-      "COL",
-      "ECU",
-      "MEX",
-      "PAN",
-      "PER",
-      "URY",
-      "VEN"
-     ],
-     "paises_equipo": [
-      "PRY"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "ARG",
-       "forma": "atorrante",
-       "fuente": "tango.blue",
-       "url": "https://tango.blue/en/lunfardo/",
-       "tipo": "divulgativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "atorrante",
-       "fuente": "diccionariolibre.com",
-       "url": "https://diccionariolibre.com/pais/paraguay",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "atorrante",
-       "fuente": "psicologiaymente.com",
-       "url": "https://psicologiaymente.com/reflexiones/palabras-expresiones-peruanas",
-       "tipo": "divulgativa",
-       "sentido": ""
-      },
-      {
-       "pais": "URY",
-       "forma": "atorrante",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-uruguayo",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ARG",
-       "forma": "atorrante",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-argentino",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "BOL",
-       "forma": "atorrante",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-boliviano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CHL",
-       "forma": "atorrante",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-chileno",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "COL",
-       "forma": "atorrante",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ECU",
-       "forma": "atorrante",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-ecuatoriano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "atorrante",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "atorrante",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-panamense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "atorrante",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-paraguayo",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "atorrante",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-peruano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "atorrante",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-venezolano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "atorrante",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "florero",
-     "etimologia": null,
-     "paises": [
-      "PER"
-     ],
-     "paises_web": [
-      "CHL",
-      "MEX"
-     ],
-     "paises_equipo": [
-      "PER"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "CHL",
-       "forma": "florero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-chileno",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "florero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "florero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-peruano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "florero",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "palero",
-     "etimologia": null,
-     "paises": [
-      "PER"
-     ],
-     "paises_web": [
-      "COL",
-      "CUB",
-      "MEX",
-      "PRY"
-     ],
-     "paises_equipo": [
-      "PER"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "PRY",
-       "forma": "palero",
-       "fuente": "diccionariolibre.com",
-       "url": "https://diccionariolibre.com/pais/paraguay",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "COL",
-       "forma": "palero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CUB",
-       "forma": "palero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-cubano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "palero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRY",
-       "forma": "palero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-paraguayo",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "palero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-peruano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "palero",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "cuentista",
-     "etimologia": {
-      "texto": "De «cuento» y el sufijo «-ista».",
-      "codigo": "sufijo",
-      "grupo": "formacion",
-      "lengua": "",
-      "etimo": "",
-      "fuente": "Wikcionario",
-      "url": "https://es.wiktionary.org/wiki/cuentista#Etimología"
-     },
-     "paises": [
-      "PAN",
-      "PER"
-     ],
-     "paises_web": [
-      "ARG"
-     ],
-     "paises_equipo": [
-      "PAN",
-      "PER"
-     ],
-     "general": true,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "ARG",
-       "forma": "cuentista",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-argentino",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "cuentista",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "cuentista",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "embustero",
-     "etimologia": {
-      "texto": "De «embuste» y el sufijo «-ero».",
-      "codigo": "sufijo",
-      "grupo": "formacion",
-      "lengua": "",
-      "etimo": "",
-      "fuente": "Wikcionario",
-      "url": "https://es.wiktionary.org/wiki/embustero#Etimología"
-     },
-     "paises": [
-      "VEN"
-     ],
-     "paises_web": [
-      "DOM",
-      "ESP",
-      "GTM",
-      "NIC",
-      "PRI"
-     ],
-     "paises_equipo": [
-      "VEN"
-     ],
-     "general": true,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "DOM",
-       "forma": "embustero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-dominicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "GTM",
-       "forma": "embustero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-guatemalteco",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "NIC",
-       "forma": "embustero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-nicaraguense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PRI",
-       "forma": "embustero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-puertoricense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ESP",
-       "forma": "embustero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "embustero",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "cobero",
-     "etimologia": null,
-     "paises": [
-      "VEN"
-     ],
-     "paises_web": [],
-     "paises_equipo": [
-      "VEN"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "VEN",
-       "forma": "cobero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-venezolano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "cobero",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "paquero",
-     "etimologia": null,
-     "paises": [
-      "PAN"
-     ],
-     "paises_web": [
-      "ARG",
-      "MEX"
-     ],
-     "paises_equipo": [
-      "PAN"
-     ],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "equipo",
-     "evidencia": [
-      {
-       "pais": "ARG",
-       "forma": "paquero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-argentino",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "paquero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PAN",
-       "forma": "paquero",
-       "fuente": "Registro del equipo",
-       "url": "",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "bolero",
-     "etimologia": null,
-     "paises": [
-      "COL",
-      "CRI",
-      "CUB",
-      "ESP",
-      "GTM",
-      "HND",
-      "MEX",
-      "NIC",
-      "PER"
-     ],
-     "paises_web": [
-      "COL",
-      "CRI",
-      "CUB",
-      "ESP",
-      "GTM",
-      "HND",
-      "MEX",
-      "NIC",
-      "PER"
-     ],
-     "paises_equipo": [],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "parcial",
-     "evidencia": [
-      {
-       "pais": "NIC",
-       "forma": "bolero",
-       "fuente": "es.wiktionary.org",
-       "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice:Nicaraguanismos",
-       "tipo": "lexicografica",
-       "sentido": ""
-      },
-      {
-       "pais": "COL",
-       "forma": "bolero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CRI",
-       "forma": "bolero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-costaricense",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "CUB",
-       "forma": "bolero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-cubano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "GTM",
-       "forma": "bolero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-guatemalteco",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "HND",
-       "forma": "bolero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "bolero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "PER",
-       "forma": "bolero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-peruano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ESP",
-       "forma": "bolero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
-       "tipo": "colaborativa",
-       "sentido": ""
-      }
-     ]
-    },
-    {
-     "forma": "chivero",
-     "etimologia": null,
-     "paises": [
-      "CHL",
-      "COL",
-      "ECU",
-      "MEX",
-      "VEN"
-     ],
-     "paises_web": [
-      "CHL",
-      "COL",
-      "ECU",
-      "MEX",
-      "VEN"
-     ],
-     "paises_equipo": [],
-     "general": false,
-     "americano": false,
-     "excluidos": [],
-     "estado": "parcial",
-     "evidencia": [
-      {
-       "pais": "CHL",
-       "forma": "chivero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-chileno",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "COL",
-       "forma": "chivero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-colombiano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "ECU",
-       "forma": "chivero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-ecuatoriano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "MEX",
-       "forma": "chivero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-mexicano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      },
-      {
-       "pais": "VEN",
-       "forma": "chivero",
-       "fuente": "jergozo.com",
-       "url": "https://jergozo.com/diccionario-venezolano",
-       "tipo": "colaborativa",
-       "sentido": ""
-      }
-     ]
-    }
-   ],
-   "sugerencias": []
-  },
-  {
    "id": "piscina",
    "concepto": "piscina",
    "campo": "ocio",
@@ -24883,6 +23575,735 @@
     "aguadero",
     "bebedero"
    ]
+  },
+  {
+   "id": "mentiroso",
+   "concepto": "mentiroso (coloquial)",
+   "campo": "personas",
+   "definicion": "Persona que miente o exagera, en registro coloquial.",
+   "corto": "mentiroso",
+   "publicar": true,
+   "motivos": "",
+   "metricas": {
+    "cobertura": 3,
+    "variantes_verificadas": 6,
+    "media_por_pais": 2.0,
+    "sin_cubrir": [
+     "ARG",
+     "BOL",
+     "CHL",
+     "COL",
+     "CRI",
+     "CUB",
+     "DOM",
+     "ECU",
+     "GTM",
+     "HND",
+     "MEX",
+     "NIC",
+     "PAN",
+     "PRI",
+     "SLV",
+     "URY"
+    ]
+   },
+   "variantes": [
+    {
+     "forma": "boletero",
+     "etimologia": null,
+     "paises": [
+      "PRY"
+     ],
+     "paises_web": [
+      "ARG",
+      "CHL"
+     ],
+     "paises_equipo": [
+      "PRY"
+     ],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "equipo",
+     "evidencia": [
+      {
+       "pais": "PRY",
+       "forma": "boletero",
+       "fuente": "diccionariolibre.com",
+       "url": "https://diccionariolibre.com/pais/paraguay",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ARG",
+       "forma": "boletero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-argentino",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CHL",
+       "forma": "boletero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-chileno",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PRY",
+       "forma": "boletero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-paraguayo",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "garca",
+     "etimologia": null,
+     "paises": [
+      "PRY"
+     ],
+     "paises_web": [
+      "ARG",
+      "URY"
+     ],
+     "paises_equipo": [
+      "PRY"
+     ],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "equipo",
+     "evidencia": [
+      {
+       "pais": "ARG",
+       "forma": "garca",
+       "fuente": "tango.blue",
+       "url": "https://tango.blue/en/lunfardo/",
+       "tipo": "divulgativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PRY",
+       "forma": "garca",
+       "fuente": "diccionariolibre.com",
+       "url": "https://diccionariolibre.com/pais/paraguay",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "URY",
+       "forma": "garca",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-uruguayo",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ARG",
+       "forma": "garca",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-argentino",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PRY",
+       "forma": "garca",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-paraguayo",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "atorrante",
+     "etimologia": null,
+     "paises": [
+      "PRY"
+     ],
+     "paises_web": [
+      "ARG",
+      "BOL",
+      "CHL",
+      "COL",
+      "ECU",
+      "MEX",
+      "PAN",
+      "PER",
+      "URY",
+      "VEN"
+     ],
+     "paises_equipo": [
+      "PRY"
+     ],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "equipo",
+     "evidencia": [
+      {
+       "pais": "ARG",
+       "forma": "atorrante",
+       "fuente": "tango.blue",
+       "url": "https://tango.blue/en/lunfardo/",
+       "tipo": "divulgativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PRY",
+       "forma": "atorrante",
+       "fuente": "diccionariolibre.com",
+       "url": "https://diccionariolibre.com/pais/paraguay",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PER",
+       "forma": "atorrante",
+       "fuente": "psicologiaymente.com",
+       "url": "https://psicologiaymente.com/reflexiones/palabras-expresiones-peruanas",
+       "tipo": "divulgativa",
+       "sentido": ""
+      },
+      {
+       "pais": "URY",
+       "forma": "atorrante",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-uruguayo",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ARG",
+       "forma": "atorrante",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-argentino",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "BOL",
+       "forma": "atorrante",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-boliviano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CHL",
+       "forma": "atorrante",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-chileno",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "COL",
+       "forma": "atorrante",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-colombiano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ECU",
+       "forma": "atorrante",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-ecuatoriano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "atorrante",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PAN",
+       "forma": "atorrante",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-panamense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PRY",
+       "forma": "atorrante",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-paraguayo",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PER",
+       "forma": "atorrante",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-peruano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "VEN",
+       "forma": "atorrante",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-venezolano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "florero",
+     "etimologia": null,
+     "paises": [
+      "PER"
+     ],
+     "paises_web": [
+      "CHL",
+      "MEX"
+     ],
+     "paises_equipo": [
+      "PER"
+     ],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "equipo",
+     "evidencia": [
+      {
+       "pais": "CHL",
+       "forma": "florero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-chileno",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "florero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PER",
+       "forma": "florero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-peruano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "palero",
+     "etimologia": null,
+     "paises": [
+      "PER"
+     ],
+     "paises_web": [
+      "COL",
+      "CUB",
+      "MEX",
+      "PRY"
+     ],
+     "paises_equipo": [
+      "PER"
+     ],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "equipo",
+     "evidencia": [
+      {
+       "pais": "PRY",
+       "forma": "palero",
+       "fuente": "diccionariolibre.com",
+       "url": "https://diccionariolibre.com/pais/paraguay",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "COL",
+       "forma": "palero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-colombiano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CUB",
+       "forma": "palero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-cubano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "palero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PRY",
+       "forma": "palero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-paraguayo",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PER",
+       "forma": "palero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-peruano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "cuentista",
+     "etimologia": {
+      "texto": "De «cuento» y el sufijo «-ista».",
+      "codigo": "sufijo",
+      "grupo": "formacion",
+      "lengua": "",
+      "etimo": "",
+      "fuente": "Wikcionario",
+      "url": "https://es.wiktionary.org/wiki/cuentista#Etimología"
+     },
+     "paises": [],
+     "paises_web": [
+      "ARG"
+     ],
+     "paises_equipo": [],
+     "general": true,
+     "americano": false,
+     "excluidos": [],
+     "estado": "general",
+     "evidencia": [
+      {
+       "pais": "ARG",
+       "forma": "cuentista",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-argentino",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "embustero",
+     "etimologia": {
+      "texto": "De «embuste» y el sufijo «-ero».",
+      "codigo": "sufijo",
+      "grupo": "formacion",
+      "lengua": "",
+      "etimo": "",
+      "fuente": "Wikcionario",
+      "url": "https://es.wiktionary.org/wiki/embustero#Etimología"
+     },
+     "paises": [],
+     "paises_web": [
+      "DOM",
+      "ESP",
+      "GTM",
+      "NIC",
+      "PRI"
+     ],
+     "paises_equipo": [],
+     "general": true,
+     "americano": false,
+     "excluidos": [],
+     "estado": "general",
+     "evidencia": [
+      {
+       "pais": "DOM",
+       "forma": "embustero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-dominicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "GTM",
+       "forma": "embustero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-guatemalteco",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "NIC",
+       "forma": "embustero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-nicaraguense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PRI",
+       "forma": "embustero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-puertoricense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ESP",
+       "forma": "embustero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "cobero",
+     "etimologia": null,
+     "paises": [
+      "VEN"
+     ],
+     "paises_web": [],
+     "paises_equipo": [
+      "VEN"
+     ],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "equipo",
+     "evidencia": [
+      {
+       "pais": "VEN",
+       "forma": "cobero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-venezolano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "paquero",
+     "etimologia": null,
+     "paises": [
+      "ARG",
+      "MEX"
+     ],
+     "paises_web": [
+      "ARG",
+      "MEX"
+     ],
+     "paises_equipo": [],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "parcial",
+     "evidencia": [
+      {
+       "pais": "ARG",
+       "forma": "paquero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-argentino",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "paquero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "bolero",
+     "etimologia": null,
+     "paises": [
+      "COL",
+      "CRI",
+      "CUB",
+      "ESP",
+      "GTM",
+      "HND",
+      "MEX",
+      "NIC",
+      "PER"
+     ],
+     "paises_web": [
+      "COL",
+      "CRI",
+      "CUB",
+      "ESP",
+      "GTM",
+      "HND",
+      "MEX",
+      "NIC",
+      "PER"
+     ],
+     "paises_equipo": [],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "parcial",
+     "evidencia": [
+      {
+       "pais": "NIC",
+       "forma": "bolero",
+       "fuente": "es.wiktionary.org",
+       "url": "https://es.wiktionary.org/wiki/Ap%C3%A9ndice:Nicaraguanismos",
+       "tipo": "lexicografica",
+       "sentido": ""
+      },
+      {
+       "pais": "COL",
+       "forma": "bolero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-colombiano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CRI",
+       "forma": "bolero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-costaricense",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "CUB",
+       "forma": "bolero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-cubano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "GTM",
+       "forma": "bolero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-guatemalteco",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "HND",
+       "forma": "bolero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-hondure%C3%B1o",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "bolero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "PER",
+       "forma": "bolero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-peruano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ESP",
+       "forma": "bolero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-jerga-de-espa%C3%B1a",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    },
+    {
+     "forma": "chivero",
+     "etimologia": null,
+     "paises": [
+      "CHL",
+      "COL",
+      "ECU",
+      "MEX",
+      "VEN"
+     ],
+     "paises_web": [
+      "CHL",
+      "COL",
+      "ECU",
+      "MEX",
+      "VEN"
+     ],
+     "paises_equipo": [],
+     "general": false,
+     "americano": false,
+     "excluidos": [],
+     "estado": "parcial",
+     "evidencia": [
+      {
+       "pais": "CHL",
+       "forma": "chivero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-chileno",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "COL",
+       "forma": "chivero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-colombiano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "ECU",
+       "forma": "chivero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-ecuatoriano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "MEX",
+       "forma": "chivero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-mexicano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      },
+      {
+       "pais": "VEN",
+       "forma": "chivero",
+       "fuente": "jergozo.com",
+       "url": "https://jergozo.com/diccionario-venezolano",
+       "tipo": "colaborativa",
+       "sentido": ""
+      }
+     ]
+    }
+   ],
+   "sugerencias": []
   },
   {
    "id": "cacahuete",

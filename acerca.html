@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Metodología y fuentes · En otras palabras</title>
-  <meta name="description" content="Fuentes, procesamiento de datos, fórmulas y bibliografía del mapa léxico del español.">
+  <meta name="description" content="Cómo se hizo y de dónde salen los datos del mapa léxico del español.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -24,204 +24,52 @@
   <div class="documento">
     <nav class="indice" aria-label="Índice">
       <ol>
-        <li><a href="#enfoque">Enfoque</a></li>
-        <li><a href="#fuentes">Fuentes de datos</a></li>
-        <li><a href="#procesamiento">Procesamiento</a></li>
-        <li><a href="#etimologia">Etimologías</a></li>
-        <li><a href="#mapa">Cómo se dibuja el mapa</a></li>
-        <li><a href="#poder-distintivo">Poder distintivo</a></li>
-        <li><a href="#vecinos">Vecinos léxicos</a></li>
-        <li><a href="#cuestionario">Cuestionario</a></li>
-        <li><a href="#construccion">Cómo se hizo el sitio</a></li>
-        <li><a href="#limitaciones">Limitaciones</a></li>
-        <li><a href="#bibliografia">Bibliografía</a></li>
-        <li><a href="#cita">Cita</a></li>
+        <li><a href="#historia">Cómo lo hicimos</a></li>
+        <li><a href="#palabras">De dónde salen las palabras</a></li>
+        <li><a href="#funciona">Cómo funciona el sitio</a></li>
+        <li><a href="#limites">Límites</a></li>
+        <li><a href="#bibliografia">Fuentes</a></li>
+        <li><a href="#cita">Equipo y cita</a></li>
       </ol>
     </nav>
 
     <main class="texto">
       <h1>Metodología y fuentes</h1>
 
-      <section id="enfoque">
-        <h2>1. Enfoque</h2>
-        <p>El mapa es onomasiológico: parte de un <b>concepto</b> (los granos de maíz que revientan al calentarse) y registra las palabras que lo nombran en cada país. Se comparan los diecinueve países hispanohablantes de América y España. El español es una lengua pluricéntrica: ninguna variante se toma como norma.</p>
-        <p>La unidad geográfica es el país. Cada dato es un par <i>(concepto, palabra)</i> asignado a uno o varios países, con al menos una fuente citada.</p>
+      <section id="historia">
+        <h2>Cómo lo hicimos</h2>
+        <p>[Por escribir: la narrativa de cómo fue construir este proyecto.]</p>
       </section>
 
-      <section id="fuentes">
-        <h2>2. Fuentes de datos</h2>
-        <h3>2.1 Wikcionario</h3>
-        <p>Fuente principal. Se descargaron, con la API de MediaWiki, los miembros de las categorías <code>Categoría:ES:&lt;país&gt;</code> y de los apéndices de regionalismos por país (<code>scripts/cosechar_wikcionario.py</code>). Para cada palabra candidata se descargó después el texto completo de su entrada, en lotes de 50 títulos por petición (<code>prop=revisions</code>), porque la API limita las consultas individuales. Licencia CC BY-SA 4.0.</p>
-        <!-- CIFRAS-FUENTES -->
-<p>Categorías regionales del Wikcionario consultadas el 2026-11-11 (28.154 asignaciones palabra–región; 13.505 palabras distintas en el índice del buscador):</p><ul class="cuadricula"><li><span>Argentina</span><b>3.533</b></li><li><span>Chile</span><b>3.112</b></li><li><span>España</span><b>2.992</b></li><li><span>México</span><b>2.203</b></li><li><span>Venezuela</span><b>1.742</b></li><li><span>Uruguay</span><b>1.726</b></li><li><span>Colombia</span><b>1.593</b></li><li><span>Caribe (categoría)</span><b>1.549</b></li><li><span>Honduras</span><b>982</b></li><li><span>Perú</span><b>938</b></li><li><span>Cuba</span><b>937</b></li><li><span>Bolivia</span><b>853</b></li><li><span>El Salvador</span><b>853</b></li><li><span>Río de la Plata (categoría)</span><b>796</b></li><li><span>Ecuador</span><b>758</b></li><li><span>Nicaragua</span><b>741</b></li><li><span>Costa Rica</span><b>545</b></li><li><span>Puerto Rico</span><b>523</b></li><li><span>Guatemala</span><b>492</b></li><li><span>Paraguay</span><b>451</b></li><li><span>República Dominicana</span><b>443</b></li><li><span>Panamá</span><b>315</b></li><li><span>Estados Unidos</span><b>67</b></li><li><span>Guinea Ecuatorial</span><b>10</b></li></ul><p>Listas web: 37 catalogadas. de las que 35 aportaron palabras (132.178 encabezados en total). Por tipo: colaborativa, 21; divulgativa, 9; comercial, 5; lexicografica, 2. Registro del equipo: 54 pares concepto–país–palabra.</p>
-<!-- /CIFRAS-FUENTES -->
-        <h3>2.2 Listas web por país</h3>
-        <p>El equipo reunió listas de regionalismos publicadas en la web (<code>data/fuentes_web.json</code>) y las clasificó por fiabilidad:</p>
-        <table class="datos">
-          <thead><tr><th>Nivel</th><th>Tipo</th><th>Ejemplos</th><th>Uso en el mapa</th></tr></thead>
-          <tbody>
-            <tr><td>A</td><td>Lexicografía académica y corpus</td><td><i>Diccionario de americanismos</i>, DLE, VARILEX, CORPES XXI</td><td>Aún no incorporado</td></tr>
-            <tr><td>B</td><td>Wiki lexicográfica con marcas regionales</td><td>Wikcionario</td><td>Verifica una variante</td></tr>
-            <tr><td>C</td><td>Divulgación y medios</td><td>Marca Chile, CiberCuba, blogs</td><td>Evidencia secundaria («en revisión»)</td></tr>
-            <tr><td>D</td><td>Diccionarios colaborativos y sitios comerciales</td><td>jergozo.com, Diccionario Libre, guías de viaje</td><td>Evidencia secundaria («en revisión»)</td></tr>
-          </tbody>
-        </table>
-        <p>Las páginas se descargaron (<code>scripts/descargar_web.py</code>) y de cada una se extrajeron sólo las palabras encabezado, con una regla de extracción por dominio (<code>scripts/extraer_web.py</code>); las definiciones no se guardan porque tienen derechos de autor. QuillBot bloquea las descargas automáticas: sus encabezados se copiaron a mano. Para comparar todos los países con el mismo método se añadió la serie completa de jergozo.com (una lista por país). Dos fuentes (Guatemala, Honduras) no aportaron palabras: una es un índice de blog y la otra exige iniciar sesión.</p>
-        <h3>2.3 Registro del equipo</h3>
-        <p>El equipo revisó las listas de cada país y anotó las palabras que se repetían para cada concepto (<code>data/registro_equipo.json</code>). Cada registro es un triple <i>(concepto, país, palabra)</i>.</p>
+      <section id="palabras">
+        <h2>De dónde salen las palabras</h2>
+        <p>Partimos de una idea (por ejemplo, los granos de maíz que revientan al calentarse) y buscamos cómo se dice en cada uno de los diecinueve países hispanohablantes de América y en España. Ninguna forma de hablar se toma como la correcta.</p>
+        <p>La fuente principal es el Wikcionario, que marca muchas palabras con el país donde se usan. También reunimos listas de expresiones de cada país publicadas en internet. El equipo revisó esas listas y anotó las palabras que se repetían. Una palabra sólo aparece en el mapa si alguna de estas fuentes la asocia con ese país, y cada dato del mapa enlaza a su fuente.</p>
+        <p>El origen de cada palabra (si viene del quechua, del inglés, del italiano…) también sale del Wikcionario. Cuando falta, el equipo escribió una nota que se muestra como provisional.</p>
       </section>
 
-      <section id="procesamiento">
-        <h2>3. Procesamiento</h2>
-        <p>El programa <code>scripts/procesar.py</code> recorre cada concepto de <code>data/conceptos_semilla.json</code> (lista curada a mano: definición, palabras candidatas y <b>glosas</b>, es decir, palabras que deben aparecer en la definición para reconocer la acepción correcta).</p>
-        <h3>3.1 Verificación por acepción</h3>
-        <p>Una palabra puede significar cosas distintas en cada país (<i>guagua</i> es «autobús» en el Caribe y «bebé» en los Andes), así que se verifica la <b>acepción</b>, no la palabra. Para cada entrada:</p>
-        <ol>
-          <li>Se aísla la sección en español (<code>{{lengua|es}}</code>) y se divide en acepciones (líneas <code>;1</code>, <code>;2</code>…).</li>
-          <li>Se normalizan definición y glosas: minúsculas y sin diacríticos (descomposición Unicode NFD, eliminando las marcas combinantes).</li>
-          <li>Una acepción corresponde al concepto si alguna glosa, distinta de la propia palabra, aparece como subcadena de su definición.</li>
-          <li>Sus marcas regionales se leen de la plantilla <code>{{ámbito|…}}</code> (y de <code>{{csem}}</code>/<code>{{uso}}</code> en entradas antiguas). Las regiones se traducen a países: Río de la Plata → Argentina y Uruguay; Caribe y Antillas → Cuba, República Dominicana y Puerto Rico; Centroamérica → los seis países del istmo; Andes → Bolivia, Ecuador y Perú; Cono Sur → Argentina, Chile, Paraguay y Uruguay; Sudamérica → los nueve países sudamericanos; Canarias y Andalucía → España. «América» o «Hispanoamérica» indican un americanismo general, sin país.</li>
-          <li>Se suman como evidencia secundaria las listas web en que aparece la palabra (comparación de formas normalizadas).</li>
-          <li>Se aplican las exclusiones manuales de la semilla (<code>excluir</code>), con su motivo, cuando la acepción reconocida es otra.</li>
-          <li>Se añaden los países del registro del equipo.</li>
-        </ol>
-        <h3>3.2 Estados de una variante</h3>
-        <table class="datos">
-          <thead><tr><th>Estado</th><th>Condición</th><th>¿En el mapa?</th></tr></thead>
-          <tbody>
-            <tr><td>verificado</td><td>Acepción del concepto con marca de país en el Wikcionario</td><td>Sí</td></tr>
-            <tr><td>registro del equipo</td><td>Sin marca de país en el Wikcionario, pero registrada por el equipo</td><td>Sí, con la indicación «registro del equipo»</td></tr>
-            <tr><td>americanismo general</td><td>Acepción marcada sólo como «América»</td><td>No; se cita como forma general</td></tr>
-            <tr><td>general</td><td>Acepción sin marca regional</td><td>No; se cita como forma general</td></tr>
-            <tr><td>en revisión</td><td>Sólo aparece en listas web (niveles C y D)</td><td>No; se lista aparte</td></tr>
-            <tr><td>sin datos</td><td>Ninguna evidencia</td><td>No</td></tr>
-          </tbody>
-        </table>
-        <!-- CIFRAS-ESTADOS -->
-<p>26 conceptos en la semilla, 18 publicados; 250 variantes candidatas en los conceptos publicados; 115 entradas del Wikcionario citadas.</p><table class="datos"><thead><tr><th>Estado</th><th>Variantes</th></tr></thead><tbody><tr><td>verificado</td><td>114</td></tr><tr><td>registro del equipo</td><td>32</td></tr><tr><td>americanismo general</td><td>2</td></tr><tr><td>general (sin marca)</td><td>24</td></tr><tr><td>en revisión</td><td>71</td></tr><tr><td>sin datos</td><td>7</td></tr></tbody></table>
-<!-- /CIFRAS-ESTADOS -->
-      </section>
-
-      <section id="etimologia">
-        <h2>4. Etimologías</h2>
-        <p>La etimología se toma de la sección «Etimología» del Wikcionario a la que pertenece la acepción reconocida (una entrada puede tener varias etimologías, una por sentido). La plantilla <code>{{etimología|código|étimo|glosa}}</code> se convierte en una frase («Del quechua <i>wawa</i> ("lactante")») y su código de lengua determina el grupo de origen:</p>
-        <table class="datos">
-          <thead><tr><th>Grupo</th><th>Códigos</th></tr></thead>
-          <tbody>
-            <tr><td>Lenguas indígenas de América</td><td>quechua, náhuatl, guaraní, mapudungun, taíno, aimara, maya, purépecha, garífuna, caribe</td></tr>
-            <tr><td>Herencia latina y peninsular</td><td>latín, griego antiguo, español antiguo, asturiano, mozárabe, árabe, árabe hispánico, caló, guanche</td></tr>
-            <tr><td>Creación dentro del español</td><td>derivación, sufijación, acortamiento, diminutivo, composición y otras formaciones internas</td></tr>
-            <tr><td>Italiano e inmigración</td><td>italiano, genovés, napolitano</td></tr>
-            <tr><td>Contacto con el inglés</td><td>inglés</td></tr>
-            <tr><td>Francés, portugués y otras</td><td>francés, portugués, alemán, húngaro</td></tr>
-            <tr><td>Lenguas africanas</td><td>wolof, kikongo, yoruba, kimbundu</td></tr>
-            <tr><td>Origen incierto</td><td>«incierta», onomatopeya o sin código</td></tr>
-          </tbody>
-        </table>
-        <p>El grupo corresponde a la lengua de la que el español tomó la palabra (étimo inmediato), no a su origen más remoto. Se recortan las cadenas de protolenguas reconstruidas. Cuando el Wikcionario no da etimología, o la da para otra acepción, el equipo escribe una nota en <code>data/etimologias_manual.json</code>; mientras no cite una fuente publicada se muestra como provisional.</p>
-        <!-- CIFRAS-ETIMOLOGIA -->
-<p>De las 146 palabras del mapa, 110 tienen etimología (93 del Wikcionario, 17 notas editoriales; 17 notas en total) y 36 quedan «sin documentar».</p><table class="datos"><thead><tr><th>Grupo de origen</th><th>Palabras</th></tr></thead><tbody><tr><td>Lenguas indígenas de América</td><td>18</td></tr><tr><td>Herencia latina y peninsular</td><td>20</td></tr><tr><td>Creación dentro del español</td><td>43</td></tr><tr><td>Italiano e inmigración</td><td>6</td></tr><tr><td>Contacto con el inglés</td><td>6</td></tr><tr><td>Francés, portugués y otras lenguas europeas</td><td>6</td></tr><tr><td>Lenguas africanas</td><td>0</td></tr><tr><td>Origen incierto o discutido</td><td>11</td></tr></tbody></table>
-<!-- /CIFRAS-ETIMOLOGIA -->
-      </section>
-
-      <section id="mapa">
-        <h2>5. Cómo se dibuja el mapa</h2>
+      <section id="funciona">
+        <h2>Cómo funciona el sitio</h2>
         <ul>
-          <li><b>Palabras incluidas:</b> las de estado «verificado» o «registro del equipo» con al menos un país.</li>
-          <li><b>Orden y color:</b> las palabras de un concepto se ordenan por número de países (de más a menos; en caso de empate, por el orden de la semilla). Las ocho primeras reciben un color propio; el resto comparte el color «otras». Los colores son categorías sin orden: ninguno indica más o menos.</li>
-          <li><b>Palabra principal de un país:</b> la primera de ese orden entre las que se registran allí, es decir, la más extendida en el conjunto de países. Colorea el país; la etiqueta «+n» indica n palabras más.</li>
-          <li><b>Rayado:</b> ningún registro regional para ese país; probablemente se usa la forma general.</li>
-          <li><b>Modo «Origen»:</b> el país toma el color del grupo de origen de su palabra principal.</li>
-          <li><b>Proyección:</b> cónica equivalente de Albers (paralelos estándar 20° S y 20° N, meridiano central 75° O), ajustada a los países hispanohablantes de América. España se dibuja en un recuadro con su propia proyección (paralelos 36° N y 43° N, meridiano 3,7° O), a otra escala. Geometría de Natural Earth 1:50 m.</li>
+          <li><b>El mapa</b> pinta cada país con la palabra más extendida de las que se usan allí. Los países rayados no tienen ninguna palabra registrada.</li>
+          <li><b>Los grupos de conceptos</b> («distinguen mucho», «poco»…) dependen de cuántas palabras distintas usan los países: cuantas más, más ayuda la palabra a adivinar de dónde es alguien.</li>
+          <li><b>El cuestionario</b> da puntos a los países que usan las palabras que eliges y quita a los que usan otras. Cada pregunta nueva es la que mejor separa a los países que siguen en juego.</li>
         </ul>
+        <p>Es un sitio estático, hecho con HTML, CSS y JavaScript; los datos se prepararon con Python. El código está en <a href="https://github.com/mck-makes-stuff/latam-linguistica">GitHub</a>. Lo desarrollamos con ayuda de Claude, un asistente de IA de Anthropic; el equipo eligió las fuentes, catalogó las palabras y revisó los resultados.</p>
       </section>
 
-      <section id="poder-distintivo">
-        <h2>6. Poder distintivo</h2>
-        <p>Mide cuánto separa un concepto a los países: si saber qué palabra usa alguien permite adivinar de dónde es. Se define como la entropía de Shannon de la partición de los países según su palabra principal, normalizada por su valor máximo.</p>
-        <p>Sea <i>P</i> el conjunto de los <i>N</i> = 20 países. A cada país <i>p</i> se le asigna su palabra principal <i>f</i>(<i>p</i>), o la clase «sin registro» si no tiene ninguna. Eso divide <i>P</i> en <i>k</i> clases de tamaños <i>n</i><sub>1</sub>, …, <i>n</i><sub><i>k</i></sub>, con <i>n</i><sub>1</sub> + … + <i>n</i><sub><i>k</i></sub> = <i>N</i>.</p>
-        <div class="formula">
-          <math display="block"><mi>H</mi><mo>=</mo><mo>−</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><mfrac><msub><mi>n</mi><mi>i</mi></msub><mi>N</mi></mfrac><msub><mi>log</mi><mn>2</mn></msub><mfrac><msub><mi>n</mi><mi>i</mi></msub><mi>N</mi></mfrac><mspace width="2em"/><mi>D</mi><mo>=</mo><mfrac><mi>H</mi><mrow><msub><mi>log</mi><mn>2</mn></msub><mi>N</mi></mrow></mfrac></math>
-        </div>
-        <p><i>D</i> vale 0 si todos los países caen en la misma clase y 1 si cada país tiene una palabra principal distinta. El sitio muestra 100 · <i>D</i> redondeado. Los conceptos se agrupan en «distinguen mucho» (<i>D</i> ≥ 0,50), «bastante» (0,38 ≤ <i>D</i> &lt; 0,50) y «poco» (<i>D</i> &lt; 0,38); los umbrales se fijaron para repartir los conceptos actuales en tres grupos de tamaño parecido.</p>
-        <p>Dos decisiones condicionan el valor: sólo cuenta la palabra principal de cada país (no las secundarias), y todos los países sin registro forman una sola clase, porque no hay datos para distinguirlos entre sí.</p>
-        <!-- DISTINCION -->
-<p><b>Ejemplo: <i>palomitas</i>.</b> Clases de la partición (sin registro: 9; pororó: 4; cotufa: 2; cancha: 2; poporopo: 1; crispeta: 1; canguil: 1). Proporciones 9/20 + 4/20 + 2/20 + 2/20 + 1/20 + 1/20 + 1/20. H = 2,295 bits; H<sub>máx</sub> = log<sub>2</sub> 20 = 4,322 bits; D = 2,295 / 4,322 = 0,531, que el sitio muestra como 53/100.</p><table class="datos"><thead><tr><th>Concepto</th><th>Palabras en el mapa</th><th>Clases (k)</th><th>H (bits)</th><th>D</th><th>En el sitio</th><th>Grupo</th></tr></thead><tbody><tr><td>cerveza</td><td>11</td><td>9</td><td>2,564</td><td>0,593</td><td>59</td><td>mucho</td></tr><tr><td>niño</td><td>18</td><td>8</td><td>2,559</td><td>0,592</td><td>59</td><td>mucho</td></tr><tr><td>amigo</td><td>22</td><td>8</td><td>2,559</td><td>0,592</td><td>59</td><td>mucho</td></tr><tr><td>palomitas</td><td>10</td><td>7</td><td>2,295</td><td>0,531</td><td>53</td><td>mucho</td></tr><tr><td>autobús</td><td>7</td><td>6</td><td>2,259</td><td>0,523</td><td>52</td><td>mucho</td></tr><tr><td>camiseta</td><td>5</td><td>6</td><td>2,220</td><td>0,514</td><td>51</td><td>mucho</td></tr><tr><td>¡genial!</td><td>10</td><td>6</td><td>2,164</td><td>0,501</td><td>50</td><td>mucho</td></tr><tr><td>pajita</td><td>6</td><td>6</td><td>2,158</td><td>0,499</td><td>50</td><td>bastante</td></tr><tr><td>dinero</td><td>7</td><td>5</td><td>1,920</td><td>0,444</td><td>44</td><td>bastante</td></tr><tr><td>enojado</td><td>8</td><td>5</td><td>1,915</td><td>0,443</td><td>44</td><td>bastante</td></tr><tr><td>fiesta</td><td>5</td><td>6</td><td>1,885</td><td>0,436</td><td>44</td><td>bastante</td></tr><tr><td>trabajo</td><td>6</td><td>5</td><td>1,695</td><td>0,392</td><td>39</td><td>bastante</td></tr><tr><td>bolígrafo</td><td>3</td><td>4</td><td>1,675</td><td>0,388</td><td>39</td><td>bastante</td></tr><tr><td>frijol</td><td>7</td><td>5</td><td>1,517</td><td>0,351</td><td>35</td><td>poco</td></tr><tr><td>mazorca tierna</td><td>4</td><td>4</td><td>1,461</td><td>0,338</td><td>34</td><td>poco</td></tr><tr><td>coche</td><td>5</td><td>4</td><td>1,257</td><td>0,291</td><td>29</td><td>poco</td></tr><tr><td>beber</td><td>3</td><td>3</td><td>1,141</td><td>0,264</td><td>26</td><td>poco</td></tr><tr><td>mentiroso</td><td>9</td><td>4</td><td>1,022</td><td>0,236</td><td>24</td><td>poco</td></tr></tbody></table>
-<!-- /DISTINCION -->
-      </section>
-
-      <section id="vecinos">
-        <h2>7. Vecinos léxicos</h2>
-        <p>Al hacer clic en un país, el panel lista los tres países con los que comparte más palabras. Para cada país <i>a</i> se forma el conjunto <i>S</i><sub><i>a</i></sub> de pares <i>(concepto, palabra)</i> registrados allí en todos los conceptos del mapa, y la similitud entre dos países es el índice de Jaccard:</p>
-        <div class="formula">
-          <math display="block"><mi>J</mi><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mo>|</mo><msub><mi>S</mi><mi>a</mi></msub><mo>∩</mo><msub><mi>S</mi><mi>b</mi></msub><mo>|</mo></mrow><mrow><mo>|</mo><msub><mi>S</mi><mi>a</mi></msub><mo>∪</mo><msub><mi>S</mi><mi>b</mi></msub><mo>|</mo></mrow></mfrac></math>
-        </div>
-        <p>El buscador usa otro índice, más amplio: todas las palabras de las categorías regionales del Wikcionario con los países que las marcan (sin verificar la acepción).</p>
-      </section>
-
-      <section id="cuestionario">
-        <h2>8. Cuestionario</h2>
-        <h3>8.1 Puntuación</h3>
-        <p>Cada país empieza con 0 puntos. En cada pregunta la persona elige una o varias palabras, o «ninguna de estas». Para cada país <i>p</i>, con su conjunto de palabras registradas <i>R</i><sub><i>p</i></sub> para ese concepto:</p>
-        <table class="datos">
-          <thead><tr><th>Respuesta</th><th>Condición del país</th><th>Puntos</th></tr></thead>
-          <tbody>
-            <tr><td rowspan="3">Una o varias palabras</td><td>Alguna palabra elegida está en <i>R</i><sub><i>p</i></sub></td><td>+2</td></tr>
-            <tr><td>Tiene palabras registradas, pero ninguna elegida</td><td>−1</td></tr>
-            <tr><td>Sin palabras registradas (no hay datos)</td><td>0</td></tr>
-            <tr><td rowspan="2">«Ninguna de estas»</td><td>Sin palabras registradas</td><td>+1</td></tr>
-            <tr><td>Con palabras registradas</td><td>−1</td></tr>
-          </tbody>
-        </table>
-        <h3>8.2 Probabilidades</h3>
-        <p>Las puntuaciones acumuladas <i>s</i><sub><i>p</i></sub> se convierten en probabilidades con una función softmax de temperatura <i>T</i> = 2. La temperatura reparte la probabilidad entre más países que <i>T</i> = 1, porque los datos son incompletos: que una palabra no esté registrada no prueba que no se use.</p>
-        <div class="formula">
-          <math display="block"><mi>π</mi><mo>(</mo><mi>p</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>exp</mi><mo>(</mo><msub><mi>s</mi><mi>p</mi></msub><mo>/</mo><mi>T</mi><mo>)</mo></mrow><mrow><munder><mo>∑</mo><mrow><mi>q</mi><mo>∈</mo><mi>P</mi></mrow></munder><mi>exp</mi><mo>(</mo><msub><mi>s</mi><mi>q</mi></msub><mo>/</mo><mi>T</mi><mo>)</mo></mrow></mfrac></math>
-        </div>
-        <h3>8.3 Elección de la siguiente pregunta</h3>
-        <p>Entre los conceptos aún no preguntados se elige el que maximiza la entropía de la respuesta esperada bajo las probabilidades actuales: con <i>f</i><sub><i>c</i></sub>(<i>p</i>) la palabra principal del país <i>p</i> para el concepto <i>c</i>,</p>
-        <div class="formula">
-          <math display="block"><msub><mi>P</mi><mi>c</mi></msub><mo>(</mo><mi>w</mi><mo>)</mo><mo>=</mo><munder><mo>∑</mo><mrow><mi>p</mi><mo>:</mo><msub><mi>f</mi><mi>c</mi></msub><mo>(</mo><mi>p</mi><mo>)</mo><mo>=</mo><mi>w</mi></mrow></munder><mi>π</mi><mo>(</mo><mi>p</mi><mo>)</mo><mspace width="2em"/><msup><mi>c</mi><mo>*</mo></msup><mo>=</mo><munder><mi>arg max</mi><mi>c</mi></munder><mo>−</mo><munder><mo>∑</mo><mi>w</mi></munder><msub><mi>P</mi><mi>c</mi></msub><mo>(</mo><mi>w</mi><mo>)</mo><msub><mi>log</mi><mn>2</mn></msub><msub><mi>P</mi><mi>c</mi></msub><mo>(</mo><mi>w</mi><mo>)</mo></math>
-        </div>
-        <p>Es decir, se pregunta lo que más divide a los países que siguen en juego. La primera pregunta, con todas las probabilidades iguales, es el concepto de mayor poder distintivo.</p>
-        <h3>8.4 Final y resultado</h3>
-        <p>El cuestionario termina tras 8 preguntas, o antes si se han hecho al menos 4 y algún país supera <i>π</i> ≥ 0,75. Se muestran los cinco países más probables. Si el segundo tiene más del 60 % de la probabilidad del primero, el resultado se presenta como empate. Las «palabras decisivas» son las respuestas que dieron puntos positivos al país ganador y a cuatro países o menos.</p>
-        <h3>8.5 Simulación</h3>
-        <p>Para comprobar si el cuestionario puede distinguir países, se simula a una persona de cada país que responde a cada pregunta con todas las palabras registradas para su país (o «ninguna» si no hay ninguna) y responde las 8 preguntas. El juego acierta si el país más probable es el suyo. En la página del cuestionario, dos países se presentan como «vecinos que se parecen» si, al simular uno, el otro obtiene al menos un 4 % de probabilidad.</p>
-        <!-- SIMULACION -->
-<p>Aciertos: 20 de 20 con 8 preguntas.</p><table class="datos"><thead><tr><th>País simulado</th><th>¿Acierta?</th><th>p(país)</th><th>Segundo</th><th>Preguntas que hizo</th></tr></thead><tbody><tr><td>México</td><td>sí</td><td>93 %</td><td>Guatemala (2 %)</td><td>cerveza, amigo, camiseta, ¡genial!, palomitas, autobús, pajita, frijol</td></tr><tr><td>Guatemala</td><td>sí</td><td>81 %</td><td>Honduras (11 %)</td><td>cerveza, amigo, camiseta, autobús, palomitas, ¡genial!, beber, bolígrafo</td></tr><tr><td>El Salvador</td><td>sí</td><td>91 %</td><td>Nicaragua (5 %)</td><td>cerveza, amigo, ¡genial!, dinero, camiseta, autobús, beber, pajita</td></tr><tr><td>Honduras</td><td>sí</td><td>72 %</td><td>Guatemala (10 %)</td><td>cerveza, amigo, autobús, camiseta, ¡genial!, palomitas, bolígrafo, fiesta</td></tr><tr><td>Nicaragua</td><td>sí</td><td>70 %</td><td>El Salvador (9 %)</td><td>cerveza, amigo, autobús, camiseta, ¡genial!, dinero, bolígrafo, palomitas</td></tr><tr><td>Costa Rica</td><td>sí</td><td>95 %</td><td>Panamá (1 %)</td><td>cerveza, amigo, ¡genial!, autobús, dinero, bolígrafo, camiseta, fiesta</td></tr><tr><td>Panamá</td><td>sí</td><td>96 %</td><td>Nicaragua (1 %)</td><td>cerveza, autobús, niño, ¡genial!, fiesta, mentiroso, dinero, bolígrafo</td></tr><tr><td>Cuba</td><td>sí</td><td>99 %</td><td>Puerto Rico (0 %)</td><td>cerveza, amigo, niño, pajita, autobús, ¡genial!, enojado, palomitas</td></tr><tr><td>República Dominicana</td><td>sí</td><td>72 %</td><td>Puerto Rico (27 %)</td><td>cerveza, niño, amigo, autobús, pajita, enojado, trabajo, fiesta</td></tr><tr><td>Puerto Rico</td><td>sí</td><td>70 %</td><td>República Dominicana (26 %)</td><td>cerveza, amigo, niño, pajita, enojado, camiseta, autobús, trabajo</td></tr><tr><td>Venezuela</td><td>sí</td><td>100 %</td><td>Puerto Rico (0 %)</td><td>cerveza, amigo, niño, camiseta, ¡genial!, palomitas, dinero, mazorca tierna</td></tr><tr><td>Colombia</td><td>sí</td><td>100 %</td><td>Puerto Rico (0 %)</td><td>cerveza, niño, palomitas, fiesta, mazorca tierna, bolígrafo, trabajo, autobús</td></tr><tr><td>Ecuador</td><td>sí</td><td>99 %</td><td>Perú (0 %)</td><td>cerveza, amigo, niño, palomitas, autobús, pajita, mazorca tierna, enojado</td></tr><tr><td>Perú</td><td>sí</td><td>98 %</td><td>Chile (1 %)</td><td>cerveza, amigo, camiseta, fiesta, palomitas, pajita, dinero, enojado</td></tr><tr><td>Bolivia</td><td>sí</td><td>99 %</td><td>Guatemala (0 %)</td><td>cerveza, amigo, camiseta, palomitas, niño, coche, autobús, dinero</td></tr><tr><td>Chile</td><td>sí</td><td>99 %</td><td>Perú (0 %)</td><td>cerveza, amigo, camiseta, fiesta, dinero, trabajo, autobús, enojado</td></tr><tr><td>Paraguay</td><td>sí</td><td>99 %</td><td>Uruguay (0 %)</td><td>cerveza, amigo, niño, enojado, ¡genial!, autobús, pajita, trabajo</td></tr><tr><td>Argentina</td><td>sí</td><td>94 %</td><td>Uruguay (5 %)</td><td>cerveza, amigo, camiseta, fiesta, autobús, enojado, dinero, niño</td></tr><tr><td>Uruguay</td><td>sí</td><td>95 %</td><td>Argentina (5 %)</td><td>cerveza, amigo, niño, autobús, enojado, beber, fiesta, dinero</td></tr><tr><td>España</td><td>sí</td><td>99 %</td><td>Puerto Rico (0 %)</td><td>cerveza, amigo, niño, camiseta, palomitas, ¡genial!, fiesta, pajita</td></tr></tbody></table>
-<!-- /SIMULACION -->
-        <p>Es un caso ideal y en parte circular: la persona simulada usa exactamente los datos con que se puntúa, así que el resultado mide sobre todo cuánto vocabulario propio está documentado para cada país.</p>
-      </section>
-
-      <section id="construccion">
-        <h2>9. Cómo se hizo el sitio</h2>
-        <p>Es un sitio estático: HTML, CSS y JavaScript sin servidor ni base de datos. Los datos se procesan con Python (sólo la biblioteca estándar) y se publican como archivos JSON. Orden de los programas:</p>
-        <ol>
-          <li><code>cosechar_wikcionario.py</code>: categorías y apéndices regionales del Wikcionario.</li>
-          <li><code>descargar_web.py</code> y <code>extraer_web.py</code>: listas web y extracción de encabezados.</li>
-          <li><code>procesar.py</code> (con <code>etimologia.py</code>): verificación por acepción, estados, etimologías y registro del equipo.</li>
-          <li><code>analizar.py</code>: índice del buscador y análisis exploratorio de las categorías.</li>
-          <li><code>preparar_geo.py</code>: recorte del atlas mundial a las Américas.</li>
-          <li><code>bibliografia.py</code> y <code>metodologia.py</code>: bibliografía y cifras de esta página.</li>
-        </ol>
-        <p>El mapa usa D3 7.9.0 y topojson-client 3.1.0, con geometría de Natural Earth a través de world-atlas 2.0.2. Tipografías: Archivo y Source Sans 3 (Google Fonts). El sitio se publica en GitHub Pages mediante GitHub Actions; no usa cookies ni analítica. Respeta la preferencia del sistema de reducir el movimiento.</p>
-        <p>El código y el procesamiento de datos se desarrollaron con ayuda de Claude, un asistente de IA de Anthropic. El equipo eligió las fuentes, catalogó las palabras y revisó los resultados.</p>
-        <p>Los datos derivados del Wikcionario se publican bajo CC BY-SA 4.0. De las fuentes web sólo se guardan los encabezados y el enlace. El código está en <a href="https://github.com/mck-makes-stuff/latam-linguistica">GitHub</a>.</p>
-      </section>
-
-      <section id="limitaciones">
-        <h2>10. Limitaciones</h2>
+      <section id="limites">
+        <h2>Límites</h2>
         <ul>
-          <li>El número de palabras documentadas por país refleja la actividad de quienes editan las fuentes, no la riqueza léxica: Argentina y Chile están mucho mejor documentados que Panamá o Paraguay.</li>
-          <li>«País» es una simplificación: dentro de cada país hay variación regional, social y generacional.</li>
-          <li>Que una palabra esté registrada no indica su frecuencia. No se usan aún corpus (CORPES XXI) ni fuentes de nivel A.</li>
-          <li>La verificación por glosas puede fallar si la definición usa otras palabras; los casos detectados se corrigen con exclusiones manuales.</li>
+          <li>Algunos países están mucho mejor documentados que otros en las fuentes, y eso se nota en el mapa.</li>
+          <li>Dentro de cada país hay diferencias por región, edad y grupo social que el mapa no muestra.</li>
+          <li>Que una palabra esté registrada no dice cuánto se usa.</li>
         </ul>
       </section>
 
       <section id="bibliografia">
-        <h2>11. Bibliografía</h2>
+        <h2>Fuentes</h2>
+        <p>Los datos tomados del Wikcionario se publican bajo la licencia CC BY-SA 4.0. De las listas web sólo guardamos las palabras y el enlace.</p>
         <!-- BIBLIOGRAFIA -->
     <ol class="biblio">
       <li>Asociación de Academias de la Lengua Española. <i>Diccionario de americanismos</i>. Madrid: Santillana, 2010.</li>
@@ -230,7 +78,6 @@
       <li>Colonial Tour &amp; Travel. «Diccionario dominicano: dominicanismos». Consultado el 16 de noviembre de 2026. <a href="https://www.colonialtours.com/diccionario.htm">https://www.colonialtours.com/diccionario.htm</a>.</li>
       <li>Conde, Oscar. <i>Diccionario etimológico del lunfardo</i>. Buenos Aires: Libros Perfil, 1998.</li>
       <li>Diccionario Libre. «Jerga de Paraguay: palabras y su significado». Consultado el 16 de noviembre de 2026. <a href="https://diccionariolibre.com/pais/paraguay">https://diccionariolibre.com/pais/paraguay</a>.</li>
-      <li>Equipo de <i>En otras palabras</i>. «Registro de palabras por país». Datos inéditos, 2026. <a href="https://github.com/mck-makes-stuff/latam-linguistica/blob/main/data/registro_equipo.json">https://github.com/mck-makes-stuff/latam-linguistica/blob/main/data/registro_equipo.json</a>.</li>
       <li>Jergozo. «Diccionario argentino: jerga y regionalismos de Argentina, argentinismos». Consultado el 16 de noviembre de 2026. <a href="https://jergozo.com/diccionario-argentino">https://jergozo.com/diccionario-argentino</a>.</li>
       <li>Jergozo. «Diccionario boliviano: jerga y regionalismos de Bolivia, bolivianismos». Consultado el 16 de noviembre de 2026. <a href="https://jergozo.com/diccionario-boliviano">https://jergozo.com/diccionario-boliviano</a>.</li>
       <li>Jergozo. «Diccionario chileno: jerga y regionalismos de Chile, chilenismos». Consultado el 16 de noviembre de 2026. <a href="https://jergozo.com/diccionario-chileno">https://jergozo.com/diccionario-chileno</a>.</li>

@@ -1,6 +1,6 @@
 # Fuentes: enlaces y número de palabras
 
-Generado por `scripts/analizar.py` el 2026-11-16. Niveles: A = lexicografía académica · B = Wikcionario · C = divulgación · D = colaborativa o comercial. Lista completa de palabras: [`analisis/todas_las_palabras.csv`](analisis/todas_las_palabras.csv).
+Generado por `scripts/analizar.py` el 2026-11-18. Niveles: A = lexicografía académica · B = Wikcionario · C = divulgación · D = colaborativa o comercial. Lista completa de palabras: [`analisis/todas_las_palabras.csv`](analisis/todas_las_palabras.csv).
 
 ## Wikcionario: categorías por país
 

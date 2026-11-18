@@ -1,6 +1,6 @@
 // Punto de entrada: conecta datos, estado, mapa y panel.
 import { cargarTodo, vistaConcepto, colorTono, colorOrigen, grupoDe, normalizar, similitudes, ORIGENES, PAISES } from "./datos.js";
-import { estado, actualizar, suscribir, leerURL } from "./estado.js";
+import { estado, actualizar, suscribir, leerURL, recordar } from "./estado.js";
 import { iniciarMapa, pintar, definirInfo } from "./mapa.js";
 import { esc, configurarPanel, fichaConcepto, fichaVariante, fichaPais, fichaPalabra, tablaConcepto } from "./panel.js";
 
@@ -130,8 +130,14 @@ function render() {
 
 suscribir(render);
 
+// Lo elegido en el explorador se recuerda durante la visita, para volver igual desde otra página
+let previo = null;
+try { previo = JSON.parse(sessionStorage.getItem("portada") || "null")?.estado; } catch (e) {}
+suscribir((e) => recordar({ estado: { ...e } }));
+
 function desdeURL() {
-  const u = leerURL();
+  const u = previo && !/concepto=|palabra=|pais=|vista=/.test(location.hash) ? { ...previo } : leerURL();
+  previo = null;
   if (!porId.has(u.concepto)) u.concepto = estado.concepto || (porId.has(PORTADA) ? PORTADA : conceptos[0].id);
   buscador.value = u.palabra || "";
   // Sin hash (visita normal) no se escribe nada en la URL: la portada empieza por la apertura

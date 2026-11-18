@@ -1,5 +1,5 @@
 {
-  "_nota": "Palabras catalogadas por el equipo al revisar las fuentes web de cada país. Editar a mano. Cada registro: concepto (id de data/conceptos_semilla.json), pais (código ISO de tres letras), forma (en minúsculas, singular, con tildes). scripts/procesar.py las añade al mapa con la fuente «Registro del equipo».",
+  "_nota": "Palabras catalogadas por el equipo al revisar las fuentes web de cada país. Editar a mano. Cada registro: concepto (id de data/conceptos_semilla.json), pais (código ISO de tres letras), forma (en minúsculas, singular, con tildes) y, si el encabezado de la lista es distinto de la forma, lema (el encabezado tal como aparece). El registro no es una fuente: scripts/procesar.py cita cada registro con la lista web del país donde aparece la palabra, y descarta (avisando) los registros que no aparecen en ninguna lista de ese país.",
   "registros": [
     {"concepto": "cerveza", "pais": "CRI", "forma": "birra"},
     {"concepto": "cerveza", "pais": "SLV", "forma": "chela"},
@@ -16,7 +16,7 @@
     {"concepto": "amigo", "pais": "CRI", "forma": "compa"},
     {"concepto": "amigo", "pais": "DOM", "forma": "pana"},
     {"concepto": "amigo", "pais": "DOM", "forma": "panito"},
-    {"concepto": "amigo", "pais": "ECU", "forma": "veci"},
+    {"concepto": "amigo", "pais": "ECU", "forma": "veci", "lema": "El veci"},
     {"concepto": "amigo", "pais": "SLV", "forma": "chero"},
     {"concepto": "amigo", "pais": "PER", "forma": "pata"},
     {"concepto": "amigo", "pais": "PER", "forma": "causa"},
@@ -24,7 +24,7 @@
     {"concepto": "amigo", "pais": "PAN", "forma": "fren"},
     {"concepto": "amigo", "pais": "PAN", "forma": "garra"},
     {"concepto": "amigo", "pais": "PRY", "forma": "che kape"},
-    {"concepto": "amigo", "pais": "PRY", "forma": "kape"},
+    {"concepto": "amigo", "pais": "PRY", "forma": "kape", "lema": "che kape"},
     {"concepto": "amigo", "pais": "PRI", "forma": "broki"},
     {"concepto": "amigo", "pais": "PRI", "forma": "mano"},
     {"concepto": "amigo", "pais": "BOL", "forma": "cuate"},

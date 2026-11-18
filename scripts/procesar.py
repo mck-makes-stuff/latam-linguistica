@@ -9,7 +9,7 @@ Para cada concepto de data/conceptos_semilla.json y cada variante candidata:
   3. Lee la plantilla {{ámbito|...}} de esas acepciones -> países.
   4. Añade como evidencia secundaria las listas web (data/procesado/lemas_web.json).
   5. Añade los registros del equipo (data/registro_equipo.json): cuentan para el mapa
-     y se citan como «Registro del equipo».
+     sólo si la palabra aparece en una lista web de ese país, que es la que se cita.
 
 Estados de cada variante:
   verificado  -> acepción con ámbito en el Wikcionario
@@ -178,10 +178,20 @@ def main():
         for l in f["lemas"]:
             indice_web.setdefault(norm(l), []).append(f)
 
-    equipo = {}
+    # El registro del equipo no es una fuente: cada registro se cita con la lista web del país
+    # donde aparece la palabra (o su «lema»); los que no aparecen en ninguna se descartan.
+    equipo, equipo_ev = {}, {}
     f_equipo = RAIZ / "data/registro_equipo.json"
     for r in (json.loads(f_equipo.read_text())["registros"] if f_equipo.exists() else []):
+        listas = [f for f in indice_web.get(norm(r.get("lema", r["forma"])), []) if f["pais"] == r["pais"]]
+        if not listas:
+            print(f"  aviso: registro sin fuente, descartado: {r['concepto']} / {r['pais']} / {r['forma']}")
+            continue
         equipo.setdefault(r["concepto"], {}).setdefault(r["forma"], set()).add(r["pais"])
+        for f in listas:
+            equipo_ev.setdefault((r["concepto"], r["forma"]), []).append(
+                {"pais": f["pais"], "forma": r["forma"], "fuente": urllib.parse.urlparse(f["url"]).netloc,
+                 "url": f["url"], "tipo": f["tipo"], "sentido": ""})
     for c in semilla:  # las formas del equipo también son candidatas
         c["variantes"] = list(dict.fromkeys(c["variantes"] + list(equipo.get(c["id"], {}))))
 
@@ -226,8 +236,8 @@ def main():
             secundarios -= excluidos
             evidencia = [e for e in evidencia if e["pais"] not in excluidos]
             del_equipo = equipo.get(c["id"], {}).get(forma, set())
-            for iso in sorted(del_equipo):
-                evidencia.append({"pais": iso, "forma": forma, "fuente": "Registro del equipo", "url": "", "sentido": ""})
+            vistas = {(e["pais"], e["url"]) for e in evidencia}
+            evidencia += [e for e in equipo_ev.get((c["id"], forma), []) if (e["pais"], e["url"]) not in vistas]
             verificados = set(paises)
             paises |= del_equipo
             secundarios -= paises
