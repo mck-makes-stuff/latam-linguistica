@@ -36,6 +36,10 @@ export function crearMapa(paises, { svg: selSvg, info: selInfo, contenedor: selC
     const izquierda = Math.min(x + 14, caja.clientWidth - 250);
     info.html(textoInfo(d.properties)).style("left", `${Math.max(0, izquierda)}px`).style("top", `${y + 14}px`).style("opacity", 1);
   };
+  // El contorno oscuro sólo se ve entero si el país está delante de sus vecinos:
+  // si no, el vecino dibujado después tapa la mitad del trazo en la frontera compartida.
+  const alFrente = (nodo) => { if (nodo.nextSibling) nodo.parentNode.appendChild(nodo); };
+  const alFrenteMarcados = () => svg.selectAll("path.pais.resaltado, path.pais.activo").each(function () { alFrente(this); });
   const dibujarPaises = (grupo, datos, r) => {
     grupo.selectAll("path").data(datos).join("path")
       .attr("d", r)
@@ -43,8 +47,9 @@ export function crearMapa(paises, { svg: selSvg, info: selInfo, contenedor: selC
       .attr("data-iso", (d) => d.properties.iso3)
       .style("--rayado", `url(#rayado-${id})`)
       .on("click", (_, d) => d.properties.hispano && alHacerClic(d.properties.iso3))
+      .on("mouseenter", function (_, d) { if (d.properties.hispano) alFrente(this); })
       .on("mousemove", (ev, d) => mostrarInfo(ev, d))
-      .on("mouseleave", () => info.style("opacity", 0));
+      .on("mouseleave", () => { info.style("opacity", 0); alFrenteMarcados(); });
   };
 
   // Mapa principal: el encuadre lo deciden sólo los países hispanohablantes de América
@@ -102,6 +107,7 @@ export function crearMapa(paises, { svg: selSvg, info: selInfo, contenedor: selC
       .classed("resaltado", (d) => !!resaltados?.has(d.properties.iso3))
       .classed("atenuado", (d) => !!resaltados && !resaltados.has(d.properties.iso3));
     grupoEsp.classed("destacado", recuadroDestacado);
+    alFrenteMarcados();
 
     ultimo = { etiqueta, resaltados };
     rotular(true);

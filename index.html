@@ -13,6 +13,15 @@
   <script>try { if (sessionStorage.getItem("portada")) document.documentElement.classList.add("de-vuelta"); } catch (e) {}</script>
 </head>
 <body class="con-apertura">
+  <header class="encabezado">
+    <a class="marca" href="index.html">En otras palabras<span class="subtitulo">Un mapa de las diferencias léxicas en el mundo hispanohablante</span></a>
+    <nav aria-label="Secciones">
+      <a href="index.html" aria-current="page">Mapa</a>
+      <a href="quiz.html">¿De dónde eres?</a>
+      <a href="acerca.html">Metodología y fuentes</a>
+    </nav>
+  </header>
+
   <!-- 1. Apertura: la pantalla se abre desde el centro y deja una pregunta -->
   <section class="apertura" id="apertura" aria-label="Presentación">
     <div class="cortina izquierda" aria-hidden="true"></div>
@@ -26,15 +35,6 @@
       <a class="apertura-bajar" href="#relato">Descúbrelo <span aria-hidden="true">↓</span></a>
     </div>
   </section>
-
-  <header class="encabezado">
-    <a class="marca" href="index.html">En otras palabras<span class="subtitulo">Un mapa de las diferencias léxicas en el mundo hispanohablante</span></a>
-    <nav aria-label="Secciones">
-      <a href="index.html" aria-current="page">Mapa</a>
-      <a href="quiz.html">¿De dónde eres?</a>
-      <a href="acerca.html">Metodología y fuentes</a>
-    </nav>
-  </header>
 
   <!-- 2. Relato: una palabra, luego todas, luego su origen -->
   <section class="relato" id="relato" aria-label="Cómo leer el mapa, paso a paso">

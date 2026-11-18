@@ -217,7 +217,7 @@ th { font-weight: 600; background: var(--crema); }
    Apertura: dos cortinas se abren desde el centro y dejan una pregunta
    (sólo CSS: si el JavaScript falla, la apertura funciona igual)
    ========================================================================== */
-.apertura { position: relative; height: 100svh; min-height: 520px; display: grid; place-items: center; overflow: hidden;
+.apertura { position: relative; height: calc(100svh - var(--alto-encabezado, 56px)); min-height: 520px; display: grid; place-items: center; overflow: hidden;
   background: var(--crema); text-align: center; padding: 0 16px; }
 .cortina { position: absolute; top: 0; bottom: 0; width: 50.2%; background: var(--tinta); z-index: 3;
   animation: 1.15s cubic-bezier(.75, 0, .2, 1) .55s forwards; }
